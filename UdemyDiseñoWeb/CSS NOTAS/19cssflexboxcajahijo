@@ -1,0 +1,38 @@
+En las cajas hijo podemos usar la siguientes propiedades
+
+
+.caja{
+ width: 100px;
+ height: 100px;
+ background: #f79256;
+ text-align: center;
+ margin: 20px;
+ padding: 20px;
+ font-size: 40px;
+ color: #fff;
+ order: 1;/*Ordenamos las cajas por medio de esta propiedad*/
+
+}
+
+.dos{
+
+order: 2;
+/*flex-grow: 1;Para adaptarse al tamaño de la caja padre con relacion de sus
+otras cajas podemos utilizarlos en forma de hacer de pie pagina*/
+
+/*flex-shrink: 0;/*Hace que el elemento no se hacer mas pequeño 
+en dispositivos moviles*/
+
+/*flex-basis: 200px;Nos va  colocar el valor el valor inicial del elemento*/
+
+/*flex-grow: 2;ESTA PROPIEDAD NOS PERMITE AUMENTAR ESA CAJA EN ESTE CASO EL DOBLE EN RELACION A OTRA CAJAS*/
+
+/*flex: 1 1 auto; ESTO ENCIERRA LOS 3 FLEX EN EL ORDEN flex-shrink: ;flex-grow: ;flex-basis: 
+EN RESUMEN ES QUE TIENE PROPORCION DE 1 PARA CRECER, 1 PARA DISMINUIR Y AUTO PARA ADAPTARSE;*/
+
+/*align-self: ;CON ESTA PROPIEDAD PODEMOS MOVER LOS ELEMENTOS INDIVIDUALES PERO LO MAS RELEVANTE ES CON align-self: 
+stretch;PERO CAMBIANDO EL height: auto;*/
+
+
+
+}

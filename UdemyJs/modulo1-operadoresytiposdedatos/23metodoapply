@@ -1,0 +1,28 @@
+APPLY 
+NOS SIRVE MANDAR A LLAMAR UN METODOS EN UN OBJETO QUE NO TIENE DEFINIDO CIERTO METODO
+ CON EL METODO CALL LO PASAMOS LOS PARAMETROS CON "," , PERO CON APPLY LO HACEMOS COMO UN ARRAYS:
+  let arreglo = ['Ing','55443322'];
+  
+  Y NO ES NECESARIO PASAR DE A UNO LOS VALORES 
+  console.log( persona1.nombreCompleto.apply( persona2, arreglo) );
+ 
+ LA FUNCION QUEDARIA ASI:
+ let persona1 = {
+    nombre: 'Juan',
+    apellido: 'Perez',
+    nombreCompleto: function(titulo, tel){
+        return titulo + ': ' + this.nombre + ' ' + this.apellido + ', ' + tel;
+    }
+}
+
+let persona2 = {
+    nombre: 'Carlos',
+    apellido: 'Lara'
+}
+
+//Uso de apply para usar 
+//el metodo persona1.nombreCompleto con los datos del persona2
+console.log( persona1.nombreCompleto('Lic', '66887711') );
+
+let arreglo = ['Ing','55443322'];
+console.log( persona1.nombreCompleto.apply( persona2, arreglo) );

@@ -1,0 +1,27 @@
+PARA CAMBIAR DE UN STRING A UN NUMERO LO HACEMOS ASi ADEMAS COMPROBAMOS IF Y ELSE
+
+let miNumero = "10";
+
+let edad = Number(miNumero)//CON NUMBER CAMBIAMOS DE STRIG A NUMBER
+
+// console.log(typeof edad)
+ if(edad>=18){
+     console.log("puede votar")
+ }else{
+     console.log("muy joven para votar")
+ }
+
+
+PERO LO PODEMOS RESUMIR ASI:
+
+  let resultado = (edad>=18?"Puede votar":"Muy joven para votar")
+  
+ __________________________________________________
+ 
+PODEMOS CAMBIAR EL NOMBRE DE UNA VARIABLE ASI :
+
+let nombre = "Amilcar";
+
+nombre = "Ysbe";
+
+console.log(nombre);

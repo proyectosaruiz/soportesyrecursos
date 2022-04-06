@@ -1,0 +1,30 @@
+display: block; ES para convertir los enlaces en bloques y no el espacio que ocupa, es decir, que convierte el enlace en un bloque completo ocupando el ancho
+
+display: none; Oculta los enlaces
+
+visibility: hidden; Nos permite ocultar los botones pero nos deja los espacio.
+
+ideal para javascript para ocularlo si se pide
+
+
+ overflow: hidden; Con esta propiedad podemos ocultar el texto en una caja si sobre pasa el margin 
+ 
+ overflow: auto; NOs hace un scrol dentro de la caja para poder mover el contenido dentro de la caja
+ 
+  z-index: 9;
+  z-index: 10; CON ESTA PROPIEDAD PODEMOS SUPERPONER UNA ARRIBA DE LA OTRA, LA QUE ESTA MAYOR VA A IR HACIA ADELANTE, TENEMOS UE AGREGAR EN CADA CAJA ESTA PROPIEDAD
+  
+  NOTA: EL alt="" ES PARA AGREGAR UNA DESCRIPCION DE LA IMAGEN Y SER USADO ENCONTRADO EN GOOGLE
+  
+   vertical-align: top; ESTA PROPIEDAD NOS PERMITE QUITAR EL MARGEN DE LAS IMAGENES
+   
+   border: 1px solid=#0000; agregamos borde solidos
+   
+      .opciones1:hover{
+        border: 1px solid rgb(37, 36, 36);
+        opacity: 1;
+       
+       
+               }
+   
+   

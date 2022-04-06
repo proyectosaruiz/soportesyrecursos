@@ -1,0 +1,56 @@
+ELSE ES UN EXPRESION BOOLENA
+PUEDE REGRESAR DE FALSE O TRUE
+
+
+if(condicion){
+    console.log("Condición verdadera");
+    console.log("fin del programa");
+}
+else{
+    console.log("Condición falsa");
+}
+
+__________________________________EJERCICIO ESTACION DEL AÑO:
+
+HAREMOS 4 OPCIONES CON IF O ELSE 
+  else if : ES COMO DECIR SI NO SÍ
+  
+  else: ES SI NO ES NINGUNO DE LOS CASOS ANTERIORES
+  
+  HACEMOS UNA VARIABLE CON EL NUMERO Y OTRA CON LA CONDICION SI NO SE CUMPLE QUE SERIA let numeroIncorrecto, ESTA SE USARIA EN EL else Y LUEGO SE DARIA UN console.log(numeroIncorrecto); EN EL CASO QUE NINGUNA EXPRESION SE CUMPLIERA
+  
+  let numero = 2;
+let numeroIncorrecto;
+
+if (numero === 1) {
+  console.log("El numero es uno");
+} else if (numero === 2) {
+  console.log("El numero es dos");
+} else if (numero === 3) {
+  console.log("El numero es tres");
+} else if (numero === 4) {
+  console.log("El numero es cuatro");
+} else {
+  numeroIncorrecto = "No es niguno de los valores";
+}
+
+console.log(numeroIncorrecto);
+ AUNQUE TAMBIEN PODEMOS QUITAR ESA ESA VARIABLE Y SOLO DEJAR UN console.log SI NO HAY NO ES NIGUNA DE LAS OPCIONES
+ ASI:
+ 
+ 
+ let numero = 4;
+
+if (numero === 1) {
+  console.log("El numero es uno");
+} else if (numero === 2) {
+  console.log("El numero es dos");
+} else if (numero === 3) {
+  console.log("El numero es tres");
+} else if (numero === 4) {
+  console.log("El numero es cuatro");
+} else {
+  console.log("Valor desconocido");
+}
+
+

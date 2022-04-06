@@ -1,0 +1,41 @@
+abrimos una terminal
+ ssh-keygen 
+
+
+
+Para hacer un repositorio colocamos :
+ preference=ssh keys
+ 
+ luego copiamos la terminal que generamos 
+
+
+
+
+copiamos la url en clone en la pagina:
+
+luego colocamos el comando en una terminar al copiar pero antes git clone
+
+
+con git init iniciamos el fichero:
+
+con git add 
+
+UN  commit es un nuevo guardado :
+  con  git commit -m"titulo"
+  
+  
+Para ver un historial con:
+  git log  
+   Y CON :
+      git log  --underline resume el commit o actualizaciones
+      
+ CON ESTO VEREMOS LOS CAMBIOS:
+ 
+   git status
+   
+   
+PARA GUARDAR:
+
+  git add .
+  
+  

@@ -1,0 +1,20 @@
+EJERCICIO DE NUMERO PAR
+PARA HALLAR UN NUMERO PARA DEBEMOS UTILIZAR % QUE NOS DA EL RESIDUO DE LA DIVISIO, ES DECIR, SI HACER UNA DIVISION DE NUMERO PAR NO QUEDA RESIDUO ES IMPAR
+
+let a = 9;
+
+if( a % 2 == 0){
+    console.log("Es un número par");
+}
+else{
+    console.log("Es un número impar");
+}
+
+
+AHORA BIEN SI QUEREMOS SABER SI ES NUMERO IMPAR SERIA ASI
+
+if (a % 3 == 0) {
+  console.log("Es un número impar");
+} else {
+  console.log("Es un número par");
+}

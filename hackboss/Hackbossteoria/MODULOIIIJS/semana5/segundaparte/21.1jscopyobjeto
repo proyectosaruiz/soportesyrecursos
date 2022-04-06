@@ -1,0 +1,16 @@
+const usuario = {
+  nombre: "pepe",
+  apellido: "ruiz",
+  direccion: {
+    pais: "pais",
+    provincia: "coruña",
+  },
+};
+const copiaUsuario = { ...usuario };
+usuario.apellido = "robles";
+usuario.direccion.provincia = "lugo";
+
+console.log(usuario, copiaUsuario);
+
+
+PODEMOS ANIDAR Y LLAMAR

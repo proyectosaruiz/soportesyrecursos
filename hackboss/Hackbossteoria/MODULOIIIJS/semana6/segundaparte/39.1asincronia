@@ -1,0 +1,37 @@
+ES UN ESTADO QUE ESTA PENDIENTE Y SE NECESITA QUE SE EJECUTE CON LAS PROMELAS FUNCIONES ASINCRONAS SIEMPRE DEVUELVE UNA PROMESA  CON asyn
+
+
+await readFile("./file/texto.txt", "utf-8");NOS DEVUELVE LA PROMESA Y ESPERA Y CUANDO SE RESEULVA PASA A LA OTRA
+
+constleerFichero = async () => { CON asyn LO TRASNFORMAMOS EN UNA PROMESA
+
+SERIA ASI
+
+const { readFile } = require("fs").promises;
+
+const leerFichero = async () => {
+  try {
+    await readFile("./file/texto.txt", "utf-8");
+    console.log(contenidoFichero);
+  } catch (err) {
+    console.log(err.message, "No funciona");
+  } finally {
+    console.log("SE ACABO");
+  }
+};
+
+leerFichero();
+
+EL FINALLY SIEMPRE SE EJECUTA AL FINAL 
+_____________________________________________________________
+SI ES UNA FUNCION
+
+async function leerFichero() {
+  try {
+    const contenidoFichero = await readFile("./file/texto.txt", "utf-8");
+    console.log(contenidoFichero);
+  } catch (err) {
+    console.log(err.message, "No funciona");
+  }
+}
+

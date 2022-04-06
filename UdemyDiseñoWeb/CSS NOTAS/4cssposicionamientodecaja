@@ -1,0 +1,70 @@
+
+Posicionamiento de las cajas
+
+position: relative; nos permite mover la caja donde queramos y la empujamos con los comando de abajo
+
+right: ;
+left: ;
+top: ;
+bottom: ;
+
+position: absolute; va a empezar donde esta la caja y no le va importar donde estan las otras cajas y las demas cajas toman su lugar
+a diferencia de relative que si lo toma en cuenta
+
+
+position: fixed; Hace que la caja se queda estatica en la pantalla, mientras las demas se mueven
+
+right: ;
+left: ;
+top: ;
+bottom: ; se mueven por % con respecto a la pagina
+
+
+la caja padre lleva 
+position: relative; 
+position: absolute; LA CAJA HIJO
+
+posicionamiento flotante
+
+ float: left; con float left moveremos todos los elementos de derecha a izquierda, para poder elemento tipo bloque moverlos.
+ 
+ y lo movemos de derecha izquierda rigth, por ejemplo los div>.
+ 
+ Para acomodar el error de la cajas flotantes lo hacemos con las propiedad 
+ 
+ EN HTML
+ 
+ <div class="cajapadre">
+
+<div class="caja hijo 1"></div>
+
+
+<div class="caja hijo 2"></div>
+
+<div class="clear"></div>
+
+</div>
+
+EN CSS
+
+.clear{
+
+    clear: both;
+}
+
+PERO ES MAS RECOMENDABLE
+
+overflow: hidden; EN LA CAJA PADRE PARA PODER MOVER LAS CAJAS TIPO BLOQUE LOS CONTENEDORES HIJO, QUITANDO EL ERROR DONDE DESAPARECE LA CAJA AL DARLES ESTILOS CSS
+
+
+El float les sirve para colocar una imagen en un articulo y colocar contenido en dicha imagen
+
+
+
+
+
+
+
+
+
+

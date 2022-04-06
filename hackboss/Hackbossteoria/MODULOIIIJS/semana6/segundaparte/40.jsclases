@@ -1,0 +1,31 @@
+LAS CLASES LA PRIMERA LETRA ES EN MAYUSCULA
+
+
+EL METODO constructor SE EJECUTA CUANDO const user1 = new User();
+
+
+class User {
+  constructor(username, userage) {
+    this.name = username;
+    this.age = userage;
+  }
+  greet() {
+    return `Hola soy ${this.name}`;
+  }
+  isAdult() {
+    return this.age > 18;
+  }
+}
+const user1 = new User("Amilcar", 38);SON DOS OBJETOS QUE INSTACIAMOS Y DARLE PROPIEDADES 
+const user2 = new User("Ysbe", 33); USAMOS EL OBJETO Y LE DAMOS PRPIEDADES
+const user3 = new User("Sylvia", 10);
+
+console.log(user1);
+console.log(user2.greet()); AQUI NOS DA SOY YSBE
+console.log(user3.isAdult()); FALSE
+
+
+
+
+
+

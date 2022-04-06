@@ -1,0 +1,68 @@
+rust NUEVO LENGUAJE se usa web aseming.
+
+USAR NODE SE LLAMA REPEL EN LA TERMINAL 
+ESCRIBIMOS NODE
+
+PODEMOS DESARROLLAR EN LA TERMINAL
+
+EN NODE NO ESTA LA VARIABLE WINDOWS
+
+EN EL NAVEGADOR NO ESTA LA VARIABLE DE NODE LLAMADA PROCESS
+
+crtl +c DOS VECES PARA SALIR
+
+LEER, EVALUAR E IMPRIMIR
+
+CREAR ARCHIVO 
+
+PARA EJECUTAR CON NODE
+  node pruebasenbe.js
+  
+PODEMOS VER LAS PROPIEDADES DE NODE DEL ARCHIVO 
+
+  console.log(process);
+  
+PARA ENTRAR A LAS VARIABLES GLOBALES DE ENTORNO
+
+ console.log(process.env);
+  console.info(process.env);
+  console.error("esto es un error");
+ 
+ DIGITALOCEAN SERVIDOR RECOMENDADO
+ 
+ 
+ module SON ARCHIVOS QUE SE DIVIDEN PARA EJECUTAR CADA COSA 
+ son variables que otros archivos puedan acceder
+ module.exports ={}
+ 
+ EL DIRECTORIO QUE NOS DA EL ARCHIVO
+ console.log(__filename);
+ 
+ LA RUTA DEL DIRECTORIO
+  console.log(__dirname);
+  
+  PARA DAR UN TIEMPO QUE SE EJECUTE ES CON 
+   setInterval(() => console.log("hola"), 1000 * 2);
+   
+ PARA PARAR ESE INTERVALO DE TIEMPO
+  setTimeout(() => console.log("estoy en un tiempo"), 1000 * 4);
+  
+ PARA IMPORTAR DE OTRO ARCHIVO
+ 
+ PODEMOS TENER ARRAYS POR EJEMPLO EN EL TERMINAL Y VISUALIZARLOS CON UN CONSOLE.LOG
+ PRIMERO COLOCAMOS 
+ node pruebasenbe.js argumento1 argumento2
+ 
+ AL HACER 
+ console.log(process.argv); 
+ 
+ APARECE EN EL TERMINAL
+    '/home/amilcar/.nvm/versions/node/v16.13.2/bin/node',
+  '/media/amilcar/Datos Linux/usos/pruebas/pruebanode/pruebasenbe.js',
+  'argumento1',
+  'argumento2'
+  
+ 
+  
+ 
+

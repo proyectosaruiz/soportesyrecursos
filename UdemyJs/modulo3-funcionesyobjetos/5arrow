@@ -1,0 +1,27 @@
+CON FLECHA OMITIMOS EN LA EXPRESION DE LA FUNCION LA function POR =>
+
+TAMPOCO USAMO0S {}
+
+TAMPOCO USAMOS RETURN
+
+EN EL SIGUIENTE CASO REUTILIZAMOS LA VARIABLE resultado 
+resultado = sumar(1, 2);
+ TENIENDO EN CUENTA QUE RESULTADO VIENE DE LA function sumar, PERO LA VOLVEMOS A REUTILIZARLA DE LA FUNCION 
+ let sumar = function (a, b) {
+  return a + b;
+};
+
+POR ELLOS SERIA ASI:
+
+let sumar = function (a, b) {
+  return a + b;
+};
+
+resultado = sumar(1, 2);
+console.log(resultado);
+
+const sumarFuncionTipoFlecha = (a, b) => a + b;
+resultado = sumarFuncionTipoFlecha(3, 5);
+console.log(resultado);
+
+EL RESULTADO DE sumarFuncionTipoFlecha EN CONSOLA ES 8, USANDO =>

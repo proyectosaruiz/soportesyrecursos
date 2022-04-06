@@ -1,0 +1,14 @@
+PARA ORDENAR UNA PAGINA PRIMERO EN LA CAJA PADRE:
+
+grid-template-columns: 1fr 2fr CON ESTO HAGO QUE CONTENEDORES  ALGUNOS SEAN MAS GRANDES QUE OTROS
+
+ LUEGO:
+ grid-template-areas:
+ 
+ "header"
+ "main" ;
+}
+
+LO IDENTIFICAMOS EN EL CONTENEDORES:
+   grid-area: header;
+    grid-area: main;

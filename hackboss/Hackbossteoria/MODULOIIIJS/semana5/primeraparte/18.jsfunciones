@@ -1,0 +1,78 @@
+FUNCIONES:
+  LOS {} SON ARGUMENTOS DE UNA FUNCION
+  --LA INVOCAMOS--
+  function sumar (numerouno, numerodos ){
+ console.log (numerouno + numerodos);}
+ ---LUEGO LE PASAMOS LOS ARGUMENTOS---
+ sumar(4, 5); EN CONSOLA SERA 9
+ PODEMOS LUEGO LLAMARLOS LAS VECES QUE QUERAMOS
+ sumar(1, 3); EN CONSOLA SERA 4
+ 
+ LOS BUCLES FOR TIENE TRES PARTE
+  1VARIABLE
+  2CONDICION
+  3LO QUE REALIZA
+ ___________________________________________________________________
+ EJERCICIOS HECHO EN CLASE
+ FORMA 1 
+ const height = 5;
+let floorContent = "";
+for (let i = 0; i <= height; i++) {
+  floorContent = floorContent + "*";
+  console.log(floorContent);
+}
+_____________________________________________________________________
+ FORMA 2
+ 
+ 
+function dibujarPiramide(height) {
+  let floorContent = "";
+  for (let i = 0; i <= height; i++) {
+    floorContent = floorContent + "*";
+    console.log(floorContent);
+  }
+}
+
+dibujarPiramide(5);
+dibujarPiramide(8);PODEMOS REPETIRLA
+console.log(dibujarPiramide(5)); NOS DARA UNDEFINE, ASI RECIBIMOS EL VALOR
+___________________________________________________________
+ USAREMOS EL RETURN PARA ENVIAR Y DEVOLVER RESULTADO:
+ 
+  function sumar(numerouno, numerodos) {
+  return numeroUno + numeroDos; AQUI DA LA SUMA PERO SI LE DAMOS LET UNDEFINE
+}
+
+        const resultado = sumar(4, 5);
+         sumar(2, 3);
+           console.log(resultado);
+           
+RETURN LE DA FUNCIONABILIDAD ME DA EL RESULTADO
+ SI DECLARAMOS CON LET LA FUNCION NO DARA UNDEFINE, CON RETURN NOS PEMITE ENVIAR EL RESULTADO A CONSOLA
+ _____________________________________________________
+ 
+ function saludar() {
+  console.log("hola");
+}
+
+saludar(); CON () NOS PEMIRTE EJECUTAR Y MOSTRAR LA EJECUCION
+
+___________________________________________________________________
+
+function saludar(name) {
+  console.log(`Hola ${name}que tal`);
+}
+
+saludar("pedro ");
+saludar("jose ");
+saludar("marcos ");
+saludar(" "); AQUI EN EL ESPACIO DEL NAME SALDRA UNDEFINED
+PODEMOS USAR ARGUMENTO NAME DESDE LA FUCTION Y UTILIZAMOS NAME COMO UNA EXPRESION QUE RETORNAMOS PARA INVOCAR A LOS NOMBRES.
+
+ console.log(Saludar); SALDRA EN CONSOLA:
+   saludar(name) {
+      console.log(`Hola ${name}que tal`);
+         }
+ ______________________________________________________________________
+
+ 

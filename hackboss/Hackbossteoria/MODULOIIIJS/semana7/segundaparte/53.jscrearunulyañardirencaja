@@ -1,0 +1,29 @@
+EN HTML
+
+<body>
+    <form name="nueva tarea">
+      <label for="tarea" Escribir una tarea></label>
+      <input id="tarea" name="tarea" />
+      <button>Añadir</button>
+    </form>
+    <ul></ul>
+  </body>
+</html>
+
+
+EN JS
+"use strict";
+
+const formularioTareas = document.querySelector("form");
+
+formularioTareas.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const inputTarea = formularioTareas.elements.tarea;
+
+  const li = document.createElement("li");
+  li.textContent = inputTarea.value;
+
+  formularioTareas.nextElementSibling.appendChild(li);
+  inputTarea.value = "";
+});

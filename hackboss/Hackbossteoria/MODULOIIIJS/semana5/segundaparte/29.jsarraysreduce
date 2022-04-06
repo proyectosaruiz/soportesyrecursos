@@ -1,0 +1,27 @@
+
+ACUMULADOR 
+const nums = [4, 2, 1, 8];
+
+const acumuladorFinal = nums.reduce((acc, numero) => {
+  console.log("acc", acc, "num:", numero);
+  return acc + numero;
+}, "");
+console.log(acumuladorFinal);
+
+SI NO PONEMOS VALOR TOMA EL PRIMER VALOR Y COMIENZA DESDE EL SEGUNDO ELEMENTO DEL ARRAYS
+
+PASAMOS EL CALLBACK Y LUEGO EL ACUMULADOR PRINCIPAL
+
+INTERNAMENTE ES ASI:
+
+const nums = [4, 2, 1, 8];
+
+const reduce = (callback, accInicial) => {
+  let acc = accInicial;
+  for (const num of nums) {
+    //acc:0 num:4
+    acc = callback(acc, nums);
+  }
+  return acc;
+};
+

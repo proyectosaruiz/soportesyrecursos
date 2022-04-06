@@ -1,0 +1,24 @@
+SET ES COMO LOS ARRAYS Y CREAR UNA LISTA DE ELEMENTOS PARA QUE NO SE REPITAN
+
+UTILIZA LOS MISMO METODOS QUE maps
+delete, has, clear
+
+const lista = new Set();
+
+lista.add("Amilcar");
+lista.add(123);
+lista.add(["a", "b", "c"]);
+lista.add(["a", "b", "c"]);
+
+console.log(lista);
+
+
+EJEMPLO 
+ lista.clear();
+ 
+ PARA RECORRER LAS LISTAS SET
+ 
+ for (const value of lista) {
+  console.log(value);
+}
+

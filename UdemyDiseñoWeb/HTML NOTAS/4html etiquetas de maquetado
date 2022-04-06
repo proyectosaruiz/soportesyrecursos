@@ -1,0 +1,60 @@
+  section class
+  div class
+  nav class
+  
+  
+ 
+ 
+ div> Es un contenedor que nos sirve para agregar enlaces, h1, imagenes no tiene semantica, es decir, no define el contenido. Es universal
+agregamos un div con una clase class, mein o footer. Se usa mejor para imagenes
+
+header en el div encabezado
+main contenido principal
+el footer pie de pagina
+
+pero si agregamos un div dentro del header con la clase nav seria un contenedor hijo y tomaria los atributos de su padre o puede cambiarlo con css
+
+etiquetas
+ header: Es un contenedor que nos permite egregar encabezado
+ 
+ nav:agregar  Es un contenedor que nos permite hacer enlace o menu de navegacion
+ 
+ section : Es un contenedor que nos permite agregar section independientes para obtener un grupo, es la seccion y podemos tener varios articulos y al articulo le podemos agregar class
+ ejemplo:
+  <section class="articulo">
+  
+   <article class="articulo">
+    <p></p> xxxxxx</p>
+    </article>
+    
+    <article class="articulo2">
+    <p></p> xxxxxx</p>
+    </article>
+    
+  </section>
+ 
+ article:Es un contenedor que nos pemirte agregar articulo
+ 
+ aside: Es un contenedor que nos sirve para agregar contenido para agregar fuera del contenido principal
+ 
+  etiqueta iframe nos sirve para  agregar una pagina web dentro de otra.
+  
+
+  
+  se ejecuta en el navegador asi:
+  
+  <iframe src="http://www.ejemplo.com" width="200" heigth="200" frameborder="0"> </iframe>
+  
+  ejemplo youtube se usa, tambien se usa para los anuncios.
+  
+ la etiqueta span nos sirve para poder agregar una clase a una frase o palabra idependiente del parrafo, sin cambiar el comportamiento.
+ 
+   se ejecuta asi :
+  
+  <p>xxxxxx<div class="azul">ejemplo que se pone en azul</span>xxxxxx</p>
+ 
+ 
+ 
+ 
+ 
+ 

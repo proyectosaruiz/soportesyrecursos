@@ -1,0 +1,94 @@
+CON GET NO ES NECESARIO COLOCAR () PARA ACCEDER, ES DECIR, PARA NO TENER QUE MODIFICAR UNA FUNCION USAMAMOS GET
+
+GET:OBTENER
+
+
+
+let persona = {
+  nombre: "Juan",
+  apellido: "Perez",
+  email: "jperez@mail.com",
+  edad: 28,
+  idioma: 'es',
+    get lang(){
+        return this.idioma.toUpperCase();
+    },
+    set lang( lang ){
+        this.idioma = lang.toUpperCase();
+    },
+  get nombreCompleto() {
+    return this.nombre + " " + this.apellido;
+  },
+};
+
+console.log(persona.nombreCompleto);
+console.log( persona.lang );
+
+
+YA COLOCANDO  Y DECLARANDO get nombreCompleto PODEMOS OBVIAR (persona.nombreCompleto())
+
+AGREAGREMOS UN VALOR MAS QUE ES IDIOMA
+Y LUEGO CON 
+
+idioma: 'es',
+Y LUEGO CON LLAMAMOS CON return this.idioma Y MODIFICAMOS CON EL METODO .toUpperCase() ASI:
+    get lang(){
+        return this.idioma.toUpperCase();
+    },
+    
+  IMPRIMIMOS SABIENDO QUE NO ES NECESARIO USAR GET YA QUE ES UNA FUNCION console.log( persona.lang );
+  
+ AGREAGREMOS UN VALOR MAS QUE ES IDIOMA
+Y LUEGO CON 
+
+idioma: 'es',
+Y LUEGO CON LLAMAMOS CON return this.idioma Y MODIFICAMOS CON EL METODO .toUpperCase() ASI:
+    get lang(){
+        return this.idioma.toUpperCase();
+    },
+    
+  IMPRIMIMOS SABIENDO QUE NO ES NECESARIO USAR GET YA QUE ES UNA FUNCION console.log( persona.lang );
+  
+
+____________METODO SET
+
+SET:ESTABLECER O MODIFICAR
+
+MODIFICAREMOS EL IDIOMA CON SET ASI:
+
+ set lang( lang ){
+        this.idioma = lang.toUpperCase();
+    },
+    
+PRIMERO LO CONVERTIMOS A MAYUSCULAS
+LUEGO DESDE AFUERA LE DAMOS EL CAMBIO
+persona.lang = 'en'; DE es A en, ES DECIR, DE INGLES A ESPAÑOL
+
+let persona = {
+    nombre: 'Juan',
+    apellido: 'Perez',
+    email: 'jperez@mail.com',
+    edad: 28,
+    idioma: 'es',
+    get lang(){
+        return this.idioma.toUpperCase();
+    },
+    set lang( lang ){
+        this.idioma = lang.toUpperCase();
+    },
+    get nombreCompleto(){
+        return this.nombre + ' ' + this.apellido;
+    }
+}
+
+console.log( persona.lang );
+
+persona.lang = 'en';//se llama metodo set lang
+
+console.log( persona.lang );//se llama metodo get lang
+console.log( persona.idioma );
+
+LANG SIGNIFICA INDIOMA PERO EN ESTE CASO PUEDE SER CUALQUIER OTRO NOMBRE
+
+
+

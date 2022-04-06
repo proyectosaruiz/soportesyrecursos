@@ -1,0 +1,33 @@
+PARA EL CONTENEDOR PADRE PODEMOS USAR LAS PROPIEDADES
+
+
+.contenedor{
+    width: 80% auto;
+    height: 500px;
+    max-width: 700px;
+    background:#212d40;
+   display: flex; /*Para hacer los contenedores hijo flexibles*/
+  /*  flex-direction: row-reverse;Cambia el posicionmaiento a la derecha*/
+  /*flex-direction: column;Para transformar los elementos en columna,
+  ASI LO PODEMOS COLOCAR PARA DISPOSITIVOS MOVILES*/
+
+/*flex-wrap: wrap;Con esta propiedad va ocupando el elemento aumentando su espacio, pero "nowrap" hace que se ajuste
+al mismo espacio*/
+/* flex-flow: row wrap;Aqui podemos combinar las dos propiedades*/
+/*justify-content: end;Posociona a la derecha*/
+/*justify-content: center;/*Posiciona al centro*/
+/*justify-content:space-between;/*Distribuye el espacio sobrante entre los 
+elementos*/
+justify-content: space-around;/*Distribuye el espacio disponible entre
+los elementos y el padding*/
+align-items: center;/*PODEMOS ALINEAR TANTO DE ANCHO COMO DE LARRGO
+POR EJEMPLO LO COLOCAMOS EN "end"SE POSICIONA ABAJO*/
+/* align-items: stretch;si las cajas hijo no tienen alto esto se estira
+hasta el margen de la caja padre, es decir, cubre su espacio vertical respetando el padding*/
+/**/
+
+/*align-content: center;PUEDO ALINEAR  TODO EL CONTENIDO CUANDO 
+TENGAMOS MAS DE UNA LINEA DE ELEMENTO*/
+
+
+}

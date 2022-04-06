@@ -1,0 +1,12 @@
+PODEMOS DECLARAR TODA LA VARIBLE COMO HOISTIGN 
+Y DARLE PARAMETROS:
+let resultado = sumarTodo(5, 4, 13, 10, 9, 10, 11, 3)
+
+LUEGO HACEMOS LA FUNCION Y LA RECORREMOS 
+ for(let i = 0; i < arguments.length; i++){
+        suma += arguments[i]; // suma = suma + arguments[i]
+    }
+    
+     CON ESTO TENEMOS TODOS LOS VALORES DEL ARRAYSsumarTodo(5, 4, 13, 10, 9, 10, 11, 3)
+     
+     USANDO EL COMPARADOR DE += ANTES DE suma Y ASI PODEMOS SUMAR TODOS LO ELEMENTOS DEL ARGUMENTO

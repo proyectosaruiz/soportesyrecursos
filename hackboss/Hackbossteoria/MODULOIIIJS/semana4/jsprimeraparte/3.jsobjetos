@@ -1,0 +1,31 @@
+// El tipo de datos más importante de JavaScript es el objeto.
+// Un objeto es una colección de pares de nombre/valor, o una string para mapa de valores.
+
+let HackABossJS = {   // Los objetos se colocan entre llaves.
+	topic: "JavaScript",  // Una propiedad "topic" tiene el valor "JavaScript".
+	base: true    					// Una propiedad "base" que tiene el valor true.
+};
+// Accede a las propiedades de un objeto con . o []:
+HackABossJS.topic  // => "JavaScript"
+HackABossJS["base"] // => true: otro modo de acceder a los valores de la propiedad.
+HackABossJS.author = "Berto"; // Crear nuevas propiedades a través de la asignación. 
+HackABossJS.contents = {}; // {} es un objeto vacío sin ninguna propiedad.
+
+// JavaScript también acepta matrices/arrays (listas indexadas numéricamente) de valores.
+var primes = [2, 3, 5, 7]; // Una array de 4 valores, delimitada con [ ]. 
+primes[0] // => 2: El primer elemento del array (índice 0).
+primes.lenght // => 4: La cantidad de elementos del array.
+primes[primes.lenght-1] // => 7: El último elemento del array.
+primes[4] = 9; // Agrega un nuevo elemento por medio de la atribución.
+primes[4] = 11; // Podemos cambiar un elemento a través de la atribución.
+var empty = []; // [] es un array vacío, sin ningún elemento.
+empty.lenght // ==> 0
+ 
+//Las arrays y los objetos pueden contener otras arrays y objetos:
+var points = [ // Un array con 2 elementos.
+  {x:0, y:0},   //Cada elemento es un objeto.
+	{x:1, y:1} ];   					 
+var data = { 		// Un objeto con 2 propiedades.					 .
+	trial1: [[1,2], [3,4]], // El valor de cada propiedad es un array.
+  trial2: [[2,3], [4,5]], // Los elementos del array son arrays.
+};

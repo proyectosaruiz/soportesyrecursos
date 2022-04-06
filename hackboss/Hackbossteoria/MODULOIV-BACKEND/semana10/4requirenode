@@ -1,0 +1,21 @@
+PRIMERO HACEMOS LO QUE NECESITEMOS EN JS 
+
+const suma = (a, b) => {
+  return a + b;
+};
+console.log(suma);
+
+const simboloSuma = "+";
+
+LUEGO 
+ module.exports = {
+  suma,
+  simboloSuma,
+}; 
+
+EN EL OTRO ARCHIVO LLAMAMOS EL ARCHIVO 
+ const moduloSuma = require("./ejemplo0require");
+ 
+ Y PODEMOS DESARROLLAR DANDO VALORES  Y HACIENDO SUS VARIABLES
+   const miSuma = moduloSuma.suma(5, 20);
+console.log(miSuma);

@@ -1,0 +1,52 @@
+VARIABLE PARA DEMOSTRAR EN PANTALLA
+
+<script>
+        var nombre = 'Carlos';
+       
+        numero1 = 5;
+        numero2 = 2;
+        alert(numero1 + numero2);
+
+    </script>
+    
+PARA ACCEDER EN EL DOCUMENTO E INSCRIBIR EN EL USAREMOS:
+  
+  
+        numero1 = 5;
+        document.write(numero1);
+         APARECE EN LA PAGINA 5
+         
+ PARA QUE APAREZCA SOLO EN LA CONSOLA ES:
+  <script>
+       console.log('Hola Consola');
+
+    </script>
+ LAS VARIABLES SIEMPRE SE DECLARAN BAJO LA PALABRA var
+ 
+ TAMBIEN PODEMOS HACER UNA DECLARACION VAR  ASI:
+     var nombre = 'Carlos',       
+        numero1 = 5,
+        numero2 = 2;
+   COLOCANDO COMAS Y AL FINAL ";"
+   
+ PODEMOS UNIR CADENAS DE TEXTO DE LA SIGUIENTE MANERA:
+ var nombre = 'Amilcar', 
+           segundoNombre = 'Ruiz'
+           document.write(nombre +' '+  segundoNombre);
+           
+ CUANDO QUEREMOS HACER CUALQUIER SUSTRACCION QUE SALGA EN LA PAGINA ES ASI:
+   numero1 = 5,
+       numero2 = 2,
+       resultado = numero1 + numero2;
+           document.write(resultado);
+           GUARDANDO LAS VARIABLES DENTRO DE OTRAS VARIABLES
+
+
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 

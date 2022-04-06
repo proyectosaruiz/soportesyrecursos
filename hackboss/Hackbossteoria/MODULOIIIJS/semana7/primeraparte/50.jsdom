@@ -1,0 +1,47 @@
+ES LA VINCULACION DE HTML CON EL JS
+
+LOS OBJTOS REPRESENTADOS EN HTML EN JS SON NODOS
+
+NODOS IMPORTANTES:
+
+1.ELEMENT SON ETIQUETAS EN HTML
+2.ATRIBUTOS DIV, ASIDE, ATICLE
+3.TEXT 
+8.COMMENT
+9.DOCUMENT ES EL HTML
+
+
+PROPIEDADES 
+
+childnodes:SON LOS HIJOS DE ESE HTML
+
+children NOS DA HEAD Y BODY, LOS HIJOS DE HTML EN SÍ
+
+
+const h2 = document.querySelector("h2"); //ES DOCUMENTO Y UN PARAMETRO QUE VA A TENER ESAS PRPIEDADES
+
+console.log(h2);
+
+const html = document.querySelector("html");
+
+console.dir(html);
+
+const body = document.querySelector("body");
+
+console.dir(body.childNodes);
+
+const sectionPrincipal = document.getElementById("principal");
+
+console.log(sectionPrincipal);
+
+
+UTILIZAMOS LOS ELEMENTOS DE CSS PARA USAR LAS CLASES
+
+const parrafo = document.querySelector("section#principal p");LLAMAMOS A LOS PARRAFOS
+
+const parrafos = document.querySelectorAll("section#principal p");LLAMAMOS A LA CLASE COMPLETA
+
+const contenParrafos = document.getElementsByClassName("content");LLAMAMOS A LA CLASE 
+document.querySelectorAll(".content"); 
+console.log(contenParrafos);
+

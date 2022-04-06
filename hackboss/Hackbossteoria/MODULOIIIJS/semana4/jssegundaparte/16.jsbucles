@@ -1,0 +1,84 @@
+LOS BUCLES DA VUELTA MIENTRAS DE TRUE
+
+1.BUCLE WHILE
+---EJEMPLO SI LET VALE 0 PERO SI:
+
+PERMITE SACAR EL PEDAZO DE CODIGO Y DA TRUE HASTA DA FALSE ES DECIR 10
+
+let a = 0;
+while (a < 10) {
+  console.log(a);
+  a++;
+}
+++ SUMA UNO MAS HASTA DAR 4 POR QUE SIEMPRE RESTA 1 Y LLEGA A SER FALSE
+
+2. BUCLE FOR ES EL MAS USADO NOS PERMITE 
+declaracion de variable, la condion de tru hasta dar las vuelta y que queremos hacer a cada vuelta
+for (let a = 0; a < 5; a++) {
+  console.log(a);
+}
+
+---PARA HACER UNA CUENTA REGRESIVA:
+ for (let i = 10; i > 4; i--) {
+  console.log(i);
+}
+
+---BUCLE DENTRO DE UN BUCLE PARA SUMAR EXPRESIONES EN LA CONSOLA POR EJEMPLO
+
+
+ for (let i = 0; i < 5; i++) {
+  for (let j = 0; j <= i; j++) {
+    console.log(i, j);
+  }
+}
+
+---UN ELEMENTO ITERABLE DE BUCLE
+
+const listFrutas = ["narana", "pera", "manzana", "melocoton"];
+
+for (let i = 0; i < listFrutas.length; ++i) {
+  console.log(listFrutas[i]);
+}
+
+
+3. BUCLE FOR  PARA CUALQUIER ELEMENTO ITERABLE FOR OF
+CON CONST OF
+ ASI:
+  const listFrutas = ["narana", "pera", "manzana", "melocoton"];
+
+for (const frutas of listFrutas) {
+  console.log(frutas);
+}
+
+
+4. BUCLE KEY
+A CADA VUELTA TE DA UNA PROPIEDAD, A DAR TANTAS VUELTA COMO PROPIEDADES TENGA, EN ESE CASO 3
+
+const usuario = {
+  nombre: "pepe",
+  aprellido: "ruiz",
+  edad: "43",
+};
+
+for (const key in usuario) {
+  console.log(usuario[key]); AQUI NOS DA POR MEDIO [] A KEY ES UNA PROPIEDAD
+}
+
+ KEY ES LA VARIABLE QUE CREA EL BUCLE PARA QUE EJECUTE LOS VALORES
+ 
+ --- SI SACAMOS UNA PROPIEDAD DE UN ELEMENTO SERIA ASI:
+   const usuario = {
+  nombre: "pepe",
+  aprellido: "ruiz",
+  edad: "43",
+};
+
+for (const key in usuario) {
+  console.log(usuario["x"]);
+}
+
+const x = "edad";
+ ESTA VARIABLE ESTA AFUERA Y LA EJECUTAMOS EN LA CONSOLA CON EL BUCLE QUE SERIA 3 VECES QUE DE LA VUELTA Y CON EL VALOR 43 QUE ES A EDAD
+ 
+ 
+ 

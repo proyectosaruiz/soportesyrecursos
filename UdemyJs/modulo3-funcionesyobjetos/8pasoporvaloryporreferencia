@@ -1,0 +1,32 @@
+EL PASO POR VALOR ES CUANDO USAMOS DATOS PRIMITIVOS QUE NO SON OBJETOS
+
+let x = 10; EL 10 ES UN DATO PRIMITIVO Y NO SE PUEDE CAMBIAR, PERO SI SE PUEDE HACER UNA COPIA DEL EL, EN ESTE CASO CON UNA FUNCION 
+
+function cambiarValor(a){
+    a = 20;
+}
+
+//Paso por valor
+   cambiarValor(x)
+   
+   RECORDANDO QUE EL VALOR DE x SE AGREGA A LA VARIABLE a.
+    ES DECIR a = x
+    PERO :
+    
+    let x = 10;
+
+function cambiarValor(a){
+    a = 20;
+}
+
+//Paso por valor
+cambiarValor(x);//10
+console.log(x);
+//console.log(a);
+
+
+EL VALOR DE x SIEMPRE SERA 10, SIMPLEMENTE PASA POR a, PERO NO ALTERA NADA.
+
+LA VARIABLE a NO SE PUEDE USAR AFUERA Y SE DESTRUYE AL TERMINAR LA FUNCION
+
+SOLO PASO POR LA VARIABLE a

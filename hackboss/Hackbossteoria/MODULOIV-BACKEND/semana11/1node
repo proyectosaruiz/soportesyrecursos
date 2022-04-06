@@ -1,0 +1,40 @@
+PARA VER LO QUE HACE UN PACKAGE
+ minimist NO ORDENA Y TROCEA LOS CODIGOS, PROCESANDO DOCUMENTOS DE ENTRADAS
+ 
+ 
+ OS : ES PARA PARA RECOGER DEL SISTEMA OPERATIVO
+ 
+   const os = requiere('os')
+   
+   console.log(os.totalmem()); MEMORIA TOTAL
+   
+   console.log(os.freemem()); ESPACIO LIBRE
+   
+   console.log(os.hostname()); NOMBRE DEL ORDENADOR
+   
+   console.log(os.homedir()); DIRECTORIO DONDE ESTAMOS TRABAJANDO
+   
+   console.log(os.tmpdir); DONDE ESTA EL DIRECTORIO TEMPORAL
+   
+   PARA LOS MODULOS DE LAS RUTAS NOS UBICA LA RURA ASI:
+   
+     const path = require("path"); //path - ruta
+      const nombreArchivo = "ejemplo.txt";
+
+        console.log(path.join(__dirname, nombreArchivo)); //nos junta esta ruta a una ruta valida
+        
+        
+         PARA LAS RUTAS ESTABLECIDAD:
+         const rutaArchivo = path.join(__dirname, nombreArchivo);
+         console.log(path.extname(rutaArchivo));
+       
+       
+       JUNTA RUTAS RELATIVA Y NO LAS JUNTA EN UNA ABSOLUTA:
+       console.log(path.resolve) 
+       
+  NORMALIZE LIMPIAR LA RUTA:
+   console.log(path.normalize("/user/miusuario"))
+   
+   
+        
+        

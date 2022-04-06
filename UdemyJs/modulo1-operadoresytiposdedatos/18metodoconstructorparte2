@@ -1,0 +1,33 @@
+SI QUEREMOS QUE CAMBIE TODOS LOS OBJETOS QUE USEMOS,  DEBEMOS HACERLO DESDE EL METODO CONSTRUCTOR. 
+ POR EJEMPLO EN ESTE CASO QUEREMOS AGREGAR NOMBRE COMPLETO ASI: 
+  this.nombreCompleto = function(){
+        return this.nombre + ' ' + this.apellido;
+    }
+    
+     .this TRABAJARA EN ESA FUNCION QUE TRABAJE EN ESE MOMENTO.
+     
+     IMPORTANTE COMO ESTAMOS LLAMANDO A UNA FUNCION DEBEMOS USAR ()
+     console.log( padre.nombreCompleto() );
+SI AGREGAMOS METODOS Y PROPIEDADES EN LA FUNCION  CONSTRUCTOR TODO LOS OBJETOS CREADO EN NEW DE ESE OBJETO CAMBIARA.
+LA FUNCION COMPLETA SERIA ASI:
+
+unction Persona(nombre, apellido, email){
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
+    this.nombreCompleto = function(){
+        return this.nombre + ' ' + this.apellido;
+    }
+}
+
+let padre = new Persona('Juan', 'Perez', 'jperez@mail.com');
+console.log( padre.nombreCompleto() );
+
+let madre = new Persona('Laura', 'Quintero', 'lquintero@mail.com');
+console.log( madre.nombreCompleto() );
+
+padre.nombre = 'Carlos';
+
+console.log( padre );
+console.log( madre );
+

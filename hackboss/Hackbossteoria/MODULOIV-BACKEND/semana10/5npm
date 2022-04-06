@@ -1,0 +1,43 @@
+CREAMOS UN NPM
+
+npm init
+
+COMENZAMOS DANDO UN ARCHIVO INDEX.JS 
+
+---LUEGO UN PACKAGE JSON  NOS DA DETALLES DEL SERVIDOR, NOS DA NUESTROS DATOS DEL INDEX.JS
+   npm init -y
+--- USAMOS npm init -y PARA COMENZAR EL PROYECTO, SI QUEREMOS COMENZAR Y DARLE CON enter A TODO SE 
+   npm init -10
+ 
+ 
+ DESUES COLOCAMOS EN EL PACKAGE 
+ {
+  "name": "index",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Amilcar Ruiz",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.0.0"
+  }
+}
+
+ --YA CON "start": "node index.js"
+  HACEMOS CONSOLE.LOG EN ESE ARCHIVO Y AL HACER 
+   npm start APARECERA LO QUE TENEMOS EN index.js
+  
+ ---PARA INSTALAR UNA LIBRERIA-
+  npm install dotenv
+  
+  LAS DEPENDENCIA NOS SIRVE LAS VER LAS VERSIONES QUE SE USARON 
+  
+ 
+
+---
+
+

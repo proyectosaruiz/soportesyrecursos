@@ -1,0 +1,30 @@
+
+OPERADORES DE COMPARACION DIFERENTE QUE
+let a = 3, b = 2, c = 3;
+
+let z = a != c; // se revisa el valor sin importar el tipo
+console.log(z);
+
+SI a ES DISTINTO A c FALSE, POR QUE SON IGUALES Y != LA PREGUNTA ES SI SON DIFERENTES
+
+!== ES ESTRICTO ASI:
+
+z = a !== c;// revisa los valores pero tambien los tipos
+console.log(z);
+
+_______________________________________________________MAYOR O IGUAL
+
+let a = 3, b = 2, c = "3";
+
+let z = a < b;
+console.log(z);
+
+z = a <= b;
+console.log(z);
+
+z = a > b;
+console.log(z);
+
+z = a >= b;
+console.log(z);
+

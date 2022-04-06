@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Día tres: formularios</title>
+    <meta name="author" content="Samuel Rodriguez" />
+    <meta name="description" content="Clases en HAB sobre formularios" />
+  </head>
+  <body>
+    <header><h1>Formularios</h1></header>
+    <main>
+      <!-- <form action="login" method="get"> -->
+      <form>
+        <fieldset>
+          <legend>Inputs comunes</legend>
+
+          <label for="name">Nombre:</label>
+          <input id="name" name="name" type="text" autofocus required />
+
+          <!-- <label>Nombre: <input type="text" /></label> -->
+
+          <label for="password">Password:</label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="La contraseña debe contener al menos una minúscula, una mayúscula y un número"
+          />
+
+          <label for="email">Email:</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            readonly
+            value="pepe@hotmail.com"
+          />
+
+          <label for="web">Web personal:</label>
+          <input id="web" name="web" type="url" />
+
+          <label for="age">Edad:</label>
+          <input id="age" name="age" type="number" min="18" max="150" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Inputs guays ;)</legend>
+
+          <label for="birth">Fecha de nacimiento:</label>
+          <input id="birth" name="birth" type="date" />
+
+          <label for="terms">Acepta las condiciones:</label>
+          <input id="terms" name="terms" type="checkbox" />
+
+          <p>Escoge el tamaño:</p>
+          <label for="small">Pequeño</label>
+          <input type="radio" id="small" name="tamano" />
+
+          <label for="medium">Mediano</label>
+          <input type="radio" id="medium" name="tamano" />
+
+          <label for="big">Grande</label>
+          <input type="radio" id="big" name="tamano" />
+
+          <label for="avatar">Sube tu avatar:</label>
+          <input id="avatar" name="avatar" type="file" accept="image/*" />
+
+          <label for="videos">Sube tus vídeos:</label>
+          <input
+            id="videos"
+            name="videos"
+            type="file"
+            accept="video/*"
+            multiple
+          />
+
+          <label for="color">Color favorito:</label>
+          <input id="color" name="color" type="color" />
+
+          <label for="brightness">Brillo:</label>
+          <input
+            id="brightness"
+            name="brightness"
+            type="range"
+            min="0"
+            max="100"
+            step="5"
+          />
+
+          <label for="comments">Notas adicionales:</label>
+          <textarea
+            id="comments"
+            name="comments"
+            cols="30"
+            rows="5"
+            placeholder="Escribe aquí..."
+            disabled
+            maxlength="30"
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Desplegables</legend>
+
+          <label for="provinces">Provincias</label>
+          <select id="provinces" name="provinces">
+            <optgroup label="Provincias del norte">
+              <option value="coruna">A Coruña</option>
+              <option value="lugo">Lugo</option>
+            </optgroup>
+            <optgroup label="Provincias del sur">
+              <option value="ourense">Ourense</option>
+              <option value="pontevedra">Pontevedra</option>
+            </optgroup>
+          </select>
+
+          <label for="food">Escoge las comidas que te gusten:</label>
+          <select id="food" name="food" multiple>
+            <option value="meat">Carne</option>
+            <option value="fish">Pescado</option>
+            <option value="apple">Manzana</option>
+            <option value="lettuce">Lechuga</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Inputs más guays aún</legend>
+
+          <label for="file_upload">Progreso de subida:</label>
+          <progress id="file_upload" max="100" value="60">60%</progress>
+
+          <label for="fuel">Gasolina:</label>
+          <meter
+            id="fuel"
+            min="0"
+            max="100"
+            low="20"
+            high="60"
+            optimum="70"
+            value="19"
+          >
+            19%
+          </meter>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
+        <button type="button">
+          Botón para hacer click al que le asignariamos una función con JS
+        </button>
+      </form>
+    </main>
+    <footer><p>Hack a boss 2022@</p></footer>
+  </body>
+</html>

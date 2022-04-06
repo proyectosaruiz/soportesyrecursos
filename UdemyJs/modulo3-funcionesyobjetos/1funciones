@@ -1,0 +1,57 @@
+LAS FUNCIONES SON CODIGOS REUTULIZABLES, LLAMARLAS LAS VECES QUE NECESITEMOS
+
+() ES EL ARGUMENTO Y ES LA QUE PUEDE TRABAJAR UNA FUNCION Y SI TIENE MAS VA CON "," O NO PUEDE TENER ARGUMENTO
+{} ESTE ES EL CUERPO DE LA FUNCION
+
+SE LLAMA LA FUNCION, LUEGO SE DECLARA 
+
+
+miFuncion(4, 2);
+
+//Declaración de la función
+function miFuncion(a, b){
+    console.log("Suma: " + (a + b));   
+}
+
+//Llamando a la función
+miFuncion(2, 3);
+
+EN LA DECLARACION COLOCAMOS LOS ARGUMENTOS QUE QUEREMOS EJECUTAR EN ESA FUNCION, ESDE DECIR
+
+HOSTING= ES COMO SE LLAMA LLAMAR A LA FUNCION Y SE PUEDE HACER ANTES O DESPUES DE DECLAR 
+
+__________USAR RETURN
+
+
+EN ESTE CASO YA NO HACEMOS UN console.log CON LOS VALORES Y LO QUE QUEREMOS HACER, CON RETURN NOS DA LA SIMPLICIDAD DE DECIRLE LO QUE QUEREMOS HACER CON ESE ARGUMENTO ASI:
+
+function miFuncion(a, b){
+     return a + b;
+}
+
+AHORA HACEMOS OTRA VARIABLE AGREGANDO miFuncion PARA SIMPLIFICAR LA FUNCION ASI:
+
+let resultado = miFuncion(2, 3);
+console.log(resultado); AQUI NOS DARIA EL VALOR DE 5
+
+Y LA FUNCION SERIA ASI :
+
+//Declaración de la función
+function miFuncion(a, b) {
+  return a + b;
+}
+
+//Llamando a la función
+let resultado = miFuncion(2, 3);
+console.log(resultado);
+
+________________________TIPO EXPRESION
+
+//Declaración Función de tipo Expresión
+let sumar = function (a, b) {
+  return a + b;
+};
+
+resultado = sumar(1, 2);
+console.log(resultado);
+

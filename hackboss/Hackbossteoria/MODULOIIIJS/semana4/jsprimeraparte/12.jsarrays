@@ -1,0 +1,102 @@
+ 
+UN ARRAYS ES UN TIPO DE OBJETO, PERO  GUARDA VALORES, NO GUARDA PROPIEDADES 
+
+
+ARRAYS LE DICEN EN AMERICA SON ARREGLOS
+
+const fruit1 = "manzana";
+const fruit2 = "pera";
+const fruit3 = "naranja";
+const fruit4 = "sandía";
+
+
+
+// Lista de valores con posiciones
+const fruitsList = ["manzana", "pera", "naranja", "sandía"];
+LO GUARDAMOS EN UNA CONSTANTE, CREANDO UNA LISTA DE VALORES, 
+SOLO ALMACENAN VALORES, ES DECIR, QUE SE EVALUE A UN VALOR
+___________________________________________________________________
+// new Array()
+LISTA DE RESULTADOS
+
+// Podemos escribir cualquier expresión que se evalúe a un valor
+const resultados = [2 + 6, 8 - 5, true || false, true && true, 5 < 3];
+
+// Acceder a datos de arrays
+ console.log(resultados);EN CONSOLA SERIA (5) QUE ES LA CANTIDAD DE ELEMENTOS Y  [8, 3, true, true, false]
+
+____________________________________________________________________
+---PODEMOS HACER UN ARRAYS
+ASI:
+  const coche = {
+      marca: "maz" + "da",
+      cv: 100 + 120,
+        };
+
+   console.log(coche);
+
+PODEMOS ESCRIBIR CUALQUIER EXPRESION QUE SE EVALUE A UN VALOR FINAL
+EN CONSOLA, ES DECIR, EN CUALQUIER LUGAR DONDE PODAMOS COLOCAR VALORES Y QUE SE EVALUE
+ marca :mazda
+ cv : 220 
+_______________________________________________________________________
+--ACCEDER A DATOS DE OBJETOS
+
+
+   
+
+    const experiencia = {
+          ciudad: "Vigo",
+          actividad: "surfear",
+          dia: "martes",
+        };
+
+    console.log(experiencia.ciudad);ACCEDO AL VALOR DE CIUDAD
+    
+    TAMBIEN PODEMOS ASI:    
+    const elDatoQueNecesito = "ciudad";
+   Y ASI PODEMOS LLAMARLA AL ARRAYS
+    console.log(experiencia[elDatoQueNecesito]);CUANDO HAGO UNA VERIFICACION EN CONSOLA DESDE LA CONSTANTE EXPERIENCIA Y METEMOS DENTRO DE CORCHETE 
+    PERO SI PODEMOS LLAMAR A LA PROPIEDAD:
+    console.log(experiencia["ciudad"]) Y APARECE EN CONSOLA
+
+console.log(
+  `La experiencia es en ${experiencia.ciudad}, se va a ${experiencia.actividad} y es el ${experiencia.dia}`
+);
+
+ASI PODEMOS LLAMAR LA EXPRESION Y QUE SE EVALUE LO QUE ESTA DENTRO ${} QUE SON LOS VALORES QUE ESTAN DENTRO DEL ARRAYS
+
+_______________________________________________________________________
+ACCEDER A VALORES DE ARRAYS Y TIENEN UN ORDEN
+ESTAN POSICIONADOS
+
+
+
+const numbers = [1, 6, 2, 9, 3, 4];
+
+
+
+console.log(numbers[3]);
+
+TAMBIEN ASI:
+
+const posicionQueNecesito = 3;
+console.log(numbers[posicionQueNecesito]); NOS DA EN CONSOLA 9
+
+
+PODEMOS TAMBIEN HACIENDO UN CONTENEDOR 
+
+const clasesFormulario = ["form", "container", "principal"];
+
+console.log(clasesFormulario[1]); // "container" Y LO LLAMAMOS ASI, LOS ARRAYS SIEMPRE CON SUS POSICIONES
+
+_____________________________________________
+
+
+SUMAR ARRAYS 
+var myValues = [1,2,3,4,5,6];
+ 
+Math.sum.apply(Math, myValues); // 21
+   
+     
+     

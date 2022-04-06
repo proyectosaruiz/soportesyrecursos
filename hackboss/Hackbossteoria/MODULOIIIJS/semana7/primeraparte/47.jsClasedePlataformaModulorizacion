@@ -1,0 +1,115 @@
+ORGANIZACION DE CODIGOS
+
+PODEMOS HACER VARIOS ARCHIVOS DE JS Y ASI PODER QUE INTERACTUE ENTRE SI Y SE EJECUTE EN UNA SOLA CONSOLA
+PARA SER UN OBJETO GLOBAL
+
+PASOS:
+
+PASO NUMERO 1:
+ DEBEMOS ASOCIAR EN EL HTML EL JS QUE LE AGREGAREMOS VALORES EN LAS VARIABLES O FUNCIONES ASI:
+  <script type="module" src="/dondeestanlosdatos.js"></script>
+  
+ PASO NUMERO 2 
+ DEBEMOS TENER UN JS EN ESTE EJEMPLO SERIA /dondeestalasoperaciones.js, DONDE ESTE LAS FUNCIONES GLOBALES Y PARAMETROS DONDE SE DESARROLLARA ESA FUNCION DEBEN ESTAR ARGUMENTADAS ASI:
+ 
+ export const add = (a, b) => {
+  return `La suma es ${a + b}`;
+};
+
+const substract = (a, b) => {
+  return `La suma es ${a - b}`;
+};
+
+const multiply = (a, b) => {
+  return `La suma es ${a / b}`;
+};
+
+export function divide(a, b) {
+  return `La division es ${a / b}`;
+}
+
+
+export{add, substract, multiply, divide}
+CON ESTO LAS EXPORTAMOS 
+ DESARROLLAMOS LAS FUCIONES QUE NECESITAMOS PARA LUEGO DARLE VALORES EN EL ARCHIVO INDEXADO EN HTML QUE SE LLAMA
+ dondeestanlosdatos.js
+ 
+ 
+ 
+PASO 3
+
+COLOCAMOS PRIMERO IMPORT PARA PODER LLAMAR A LA FUNCIONES QUE NECESITAMOS EJECUTAR ASI:
+
+
+
+ import{add, substract}from "/dondeestalasoperaciones.js";
+
+ console.log(add(3,2))
+
+EN ESTE EJEMPLO ADD QUE ES ADICION, ES DECIR, SUMA Y NOS DARIA EN CONSOLA 5
+
+______________________________________________________________
+
+PODEMOS ASOCIAR TODAS LAS FUNCIONES CON as PARA USAR TODAS LAS FUNCIONES Y LLAMARLAS SI LAS NECESITAMOS:
+
+EJEMPLO CON LOS DATOS ANTERIORES
+
+  import * as dondeestalasoperaciones from "/dondeestalasoperaciones.js";
+  
+  HACEMOS UN  console.log(operations) Y APARECERA TODO
+  
+  A SU EFECTO LLAMARIAMOS INDEPENDIENTEMENTE ASI:
+    console.log(dondeestalasoperaciones.add(3,2))
+    console.log(dondeestalasoperaciones.divide(3,2))
+ _____________________________________________________
+ 
+ TENEMOS UN OPCION SI POR EJEMPLO TENGO UNA CONSTANTE add EN EL ARCHIVO JS GLOBAL Y OTRA EN EL QUE ESTAN LAS VARIABLES QUE SE LLAMA IGUAL.
+ 
+ PODEMOS HACER QUE CAMBIE EL NOMBRE AL LLAMARLA EN ESE ARCHIVO ASI:
+   
+   import{add as suma, divide as division}from "/dondeestalasoperaciones.js";
+   
+   Y ASI SE LLAMARIAN DIFERENTE EN ESE ARCHIVO SIN ALTERAR LOS DEMAS, ES COMO COLOCARLE UN ALIAS
+   
+   ENTONCES SERIA ASI:
+   
+     console.log(suma(3,2)) QUE ES EN REALIDAD EN EL ARCHIVO GLOBAL add PERO YA TENEMOS UN add AHI Y LISTO. NO LATERA NINGUNO DE LOS ARCHIVOS.
+     
+     LO PODEMOS HACER DESDE EL GLOBAL O EL ARCHIVO QUE TIENE VALORES.
+     
+___________________________________________________
+
+PODEMOS IMPORTAR POR DEFECTO ASI:
+
+PASO 1
+EN LA JS GLOBAL EN ESTE CASO ES elarchivoconlasfunciones.js Y HACEMOS LA SIGUIENTE LINEA DE CODIGO
+
+ export default function sillyfuction(){
+   console.log("La funcion que exporte  del modulo operations")
+ }
+ 
+PASO 2
+LUEGO LA LLAMAMOS EN EL ARCHIVO JS 
+
+ import elNombreQueSea from "dondeestalasoperaciones.js"
+    
+______________________________________________________________
+
+PODEMOS TRAER OTROS ARCHIVOS Y AGREGAR AL QUE ESTA EN LA FUNCIONES GLOBALES PERO DARLE FUNCIONABILIDAD DONDE TENGAMOS LOS VALORES
+EJEMPLO:
+  
+  EN EL ARCHIVO dondeestalasoperaciones.js QUE TIENES LAS FUNCIONES COLOCAMOS 
+   
+  
+  import {logaritmo} from "/archivoaincluir.js"
+  
+  AGREGAMOS EN EL ARCHIVO GLOBAL
+  Y LUEGO EN DONDE TENEMOS LOS DATOS
+  LO PODEMOS LLAMAR TENIENDO EN CUENTA QUE EN "/archivoaincluir.js" ESTA INVOCADO ASI TAMBIEN
+  
+  SERIA 
+   export{add, substract, multiply, divide, algoritmo} 
+   ASI LO INCLUIMOS
+
+
+

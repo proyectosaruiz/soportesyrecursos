@@ -1,0 +1,52 @@
+extends hace que sea una clase derivada y heredara
+
+LOS METODOS QUE SE HEREDAN DE OTRAS CLASES LO PODEMOS SOBRE ESCRIBIR 
+PODEMOS COLOCAR CONSTRUCTOR DENTRO DE CLASES HIJOS REFIRINEDONOS AL CONTRUCTOR PRINCIPAL.
+SEL METODO SUPER SIEMPRE HAY QUE LLAMAR AL CONSTRUCTOR HIJO PARA PODER USAR
+
+super PARA LA QUE HERDA
+THIS PARA LA QUE REFIERA
+
+class Person {
+  constructor(name) {
+    this.name = name;
+    this.durmiendo = false;
+  }
+  duerme() {
+    this.durmiendo = true;
+    console.log(`${this.name} empieza a dormir`);
+  }
+  despierta() {
+    this.durmiendo = false;
+    console.log(`${this.name} se despierta`);
+  }
+}
+
+class Estudia extends Person {
+  constructor(name, bootcamp) {
+    super(name);
+    this.bootcamp = bootcamp;
+  }
+
+  estudia() {
+    console.log(
+      `${this.name} empieza a estudiar en el BOOTCAMP ${this.bootcamp}`
+    );
+  }
+
+  despierta() {
+    super.despierta();
+    this.estudia;
+  }
+}
+
+const marta = new Estudia("Marta", "JBS12CO");
+marta.duerme();
+marta.despierta();
+marta.estudia();
+
+
+EN CONSOLA 
+Marta empieza a dormir
+Marta se despierta
+Marta empieza a estudiar en el BOOTCAMP JBS12CO

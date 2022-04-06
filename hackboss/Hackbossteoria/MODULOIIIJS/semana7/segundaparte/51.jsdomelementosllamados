@@ -1,0 +1,15 @@
+ul.id = "listaNums";
+
+for (let i = 0; i <= 100; i++) {
+  //meto al li creado dentro de ul
+  const li = document.createElement("li");
+  //le doy texto
+  li.textContent = i;
+  //meto lo creado dentro de la ul
+  ul.appendChild(li);
+  //añado la ul en el body
+  body.appendChild(ul);
+}
+//LO PODEMOS ELIMINAR UN NDO CON .REMOVE
+//BODY.REMOVE()
+

@@ -1,0 +1,36 @@
+GET SON UN METODO QUE EJECUTA CUALQUIER PROPIEDAD
+
+
+SET EJECUTA CUANDO LLAMAMOS A UNA PROPIEDAD
+
+PODEMOS AGREGAR ARGUMENTOS Y DESPUES EJECUTARLOS INDEPENDIENTEMENTE
+
+class User {
+  constructor(name, surname, age) {
+    this.name = name;
+    this.surname = surname;
+    this.age = age;
+  }
+  get fullname() {
+    return this.name + "" + this.surname;
+  }
+  set age(age) {
+    if (age < 18) {
+      throw new Error("Menor de edad");
+    }
+    this._age = age;
+  }
+  get age() {
+    return this._age;
+  }
+}
+const user1 = new User("Amilcar", "Ruiz", 38);
+
+console.log(user1.name);
+console.log(user1.fullname);
+console.log(user1.age);
+
+const user2 = new User("Josmel", "Oropeza", 35);
+console.log(user2.fullname);
+
+

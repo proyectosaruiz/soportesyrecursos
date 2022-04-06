@@ -1,0 +1,29 @@
+const copiaUusario = { ...usuario }; SOLO TE COPIA USUARIO 
+SI QUIERO MAS PROFUNDA LA COPIA const copiaUusario = { ...usuario.direccion };
+
+const usuario = {
+  nombre: "pepe",
+  apellido: "ruiz",
+  direccion: {
+    pais: "pais",
+    provincia: "coruña",
+  },
+};
+const copiaUusario = { ...usuario.direccion };
+copiaUusario.nombre = "marco";
+
+console.log(usuario, copiaUusario);
+
+console.log(usuario.direccion === copiaUusario.direccion);
+ PODEMOS LLAMARLA Y HACER UNA COPIA.
+ 
+ CON LOS OBJETOS SE GUARDA LA REFERENCIA
+  NO PODEMOS CAMBIAR DATOS PRIMITIVOS, PERO SI STRING ASI:
+  
+  const nombre = { nombre: "pepe" };
+const copiaNombre = nombre;
+copiaNombre.nombre = "marcos";
+console.log(nombre, copiaNombre);
+ 
+ EN CONSOLA
+  { nombre: 'marcos' } { nombre: 'marcos' }

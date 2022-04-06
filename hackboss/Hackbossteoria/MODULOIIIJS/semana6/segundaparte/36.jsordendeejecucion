@@ -1,0 +1,25 @@
+SIEMPRE SE EJECUTA LA FUNCION Y EL CODIGO SIGUE, ES DECIR, PRIMERO SE EJECUTA UN CONSOLE PRIMERO Y LUEGO EL OTRO
+
+const f1 = () => {
+  console.log("f1");
+};
+
+const f2 = () => {
+  console.log("f2");
+};
+
+const f3 = () => {
+  console.log("f3");
+};
+
+f2();
+f3(f2());
+f1();
+
+EN CONSOLA 
+f2
+f2
+f3
+f1
+
+POR QUE PRIMERO DEBE EJECUTAR EL F2 QUE ESTA ADENTRO DE F3 Y LUEGO F3

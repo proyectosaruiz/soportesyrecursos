@@ -1,0 +1,64 @@
+ 
+ "use strict";
+const fruits = ["naranja", "pera", "manzana", "melocoton"];
+___________________________________________________________
+ fruits[0]= "sandia"
+cambiamos un elemento de un arrays 
+
+
+fruits[fruits.length] = "melon";
+AÑADIMOS
+
+fruits.push("otra fruta mas");
+MEJOR AÑADIR ASI
+
+fruits.pop();
+QUITA EL ULTIMO
+
+PODEMOS HACER QUE ESE ELEMENTO LO TENEMOS AHI
+
+
+fruits.shift();
+QUITA EL PRIMER ELEMENTO
+
+fruits.unshift("granada")
+AGREGA ADELANTE UN ELEMENTO MAS
+____________________________________________________________
+
+LA MEJOR FORMA DE RECORRER:
+
+fruits.forEach((fruits) => {
+  console.log(fruits);
+});
+________________________________________________________
+RECORREMOS UN ARRAYS ASI:
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+________________________________________________________
+TAMBIEN RECORREMOS ASI:
+
+for (const fruit of fruits) {
+  console.log(fruit);
+}
+
+_______________________________________________________________
+RECORRER UN ARRAYS FOR EACH, ES UN BUCLE
+"use strict";
+const fruits = ["naranja", "pera", "manzana", "melocoton"];
+
+const funcionParaForEach = (fruit) => {
+  console.log(fruit);
+};
+fruits.forEach(funcionParaForEach);
+
+
+INTERNAMENTE EL FOR EACH ES ASI:
+const funcionParaForEach = (fruit) => {
+  for (const fruit of fruits){
+      function(fruit);
+  }
+};
+ 
+ 
+ 

@@ -1,0 +1,24 @@
+FOMAR ANTIGUA DE DECLARAR LOS ARRAYS
+ let autos = new Array('BMW','Mercedes Benz','Volvo');
+  AHORA SE USA ASI:
+  const autos = ['BMW','Mercedes Benz','Volvo'];
+     console.log(autos);
+    LA REFERENCIA, ES DECIR, EL NOMBRE NO SE CAMBIA PERO SI EL CONTENIDO
+    
+_______________ELEMENTOS DE UN ARREGLO
+
+PODEMOS ACCEDER A LOS ELEMENTOS ASI 
+
+console.log(autos[0]); ACCEDEMOS AL PRIMER ELEMENTO 0 QUE ES BMW
+ SI ACCEDEMOS A VOLVO SERIA ASI console.log(autos[2]);
+ 
+ PARA ACCEDER A LOS ELEMENTOS SERIA ASI
+ 
+   
+for(let i = 0; i < autos.length; i++){
+    console.log(i + ' : ' + autos[i] );
+}
+
+USANDO LA PROPIEDAD length, ES DECIR, EL LARGO DE NUESTRO ARRAYS, ACCEDIENDO INDIVIDUALMENTE CON EL CONTADOR DE FOR
+
+  console.log(i + " : " + autos[i]); PODEMOS ACCEDER IDENTIFICANDO CADA ELEMENTO

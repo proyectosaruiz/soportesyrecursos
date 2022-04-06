@@ -1,0 +1,73 @@
+EL CICLO FOR NOS PERMITE AGREGAR CONTENIDO COMPLETO SIN ESTAR AGREAGANDO document.write A CADA RATO.
+
+ EL CICLO FOR SERIA ASI:
+  
+  for(inicio; condicion; actualizacion);
+      codigo
+ 
+EJEMPLOS:
+1.CON NUMERO
+for (var i = 0; i <= 10; i++){  --DECLARAMOS LA VARIABLE CON EL NOMBRE "i"
+                                --QUEREMOS QUE NUESTRO CODIGO SE REPITA 
+                                MIENTRAS I SEA MENOR A 10,SE INCREMENTA ++  
+                                CON CADA INTERACCION, ES DECIR, 
+                                SUBIRA UNA UNIDAD MIENTRAS SE CUMPLA ESTA              
+                                CONDICION SE EJECUTARA
+    document.write(i); 
+    document.write ('<br>');
+}
+
+COMENZAMOS EL CICLO ASI
+ LUEGO LA CONDICION
+ LA ACTUALIZACION
+ 
+ 2. CON NUMERO ALREVES
+ 
+ SI LO HACEMOS ALREVES
+ 
+   for (var i = 10; i <= 0; i--){ VA DECREMENTANDO
+   
+   
+ 3. SI LO HACEMOS CON CADENA DE TEXTO SERIA ASI:
+ 
+  var meses = ['enero', 'febrero', 'marzo', 'abril', 
+             'mayo', 'junio', 'julio', 'agosto', 'septiembre',
+              'octubre', 'noviembre', 'diciembre'];
+
+for (var i = 0; i < meses.length; i++){
+    document.write(meses[i]);
+    document.write('<br>')
+}
+    
+
+4. CON TEXTO ENUMERADO
+ 
+ for (var i = 0; i < meses.length; i++){
+    document.write(i+1 + '-'+ meses[i]); ---ESTAMOS DICIENDO QUE AL
+                                        i QUE TIENE ASIGNADO LA VARIABLE
+                                        MESES SUBA UN NUMERO CON RELACION, 
+                                        ES DECIR, FEBRERO:2, MARZO:3 Y ASI
+                                        CONCATENANDO CADA NUMERO CON EL 
+                                        MES CORRESPONDIENTE
+    document.write('<br>')
+}
+    
+
+
+5. CON "in" AGREGAR NUESTRO ARREGLO CON EL NOMBRE DE NUESTRA VARIABLE.
+
+ var meses = ['enero', 'febrero', 'marzo', 'abril', 
+             'mayo', 'junio', 'julio', 'agosto', 'septiembre',
+              'octubre', 'noviembre', 'diciembre'];
+
+for (mes in meses){
+    document.write(meses[mes]);
+    document.write('<br>')
+    
+  POR CADA MES ME VAS A EJECUTAR meses EN LA EJECUCION mes.
+  
+  
+
+ 
+
+ 

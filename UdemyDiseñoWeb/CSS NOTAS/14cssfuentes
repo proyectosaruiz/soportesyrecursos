@@ -1,0 +1,8 @@
+ELIGES TU FUENTE 
+@font-face {
+    font-family: "IndieFlower-Regular";
+    src: url(fonts/Indie_Flower/IndieFlower-Regular.ttf);
+}
+
+body{
+    font-family: "IndieFlower-Regular";

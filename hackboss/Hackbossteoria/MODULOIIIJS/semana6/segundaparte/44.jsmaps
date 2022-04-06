@@ -1,0 +1,70 @@
+maps ES UNA CLASE INTERNA Y SIRVA PARA TRABAJAR CON DATOS Y ES UN MECANISMO PARA ASOCIAR UNA COLECCION DE CLAVES Y VALORES, RECORRER A LOS MAPS, ES UNA ESTRUCTURA DE DATOS QUE NOS PERMITE ASOCIAR ENTRE CLAVES Y VALORES EN FORMA SIMPLE
+ EL MAPS ES UNA CLASE Y SE INSTANCIA COMO UNA CLASE
+ 
+ HAS COMPRUEBA SI HAY UN ELEMENTO EN EL MAP
+ 
+ PON EL FOR RECORREMOS EL MAP 
+ 
+ KEYS ES LA CLAVE Y VALUES ES EL VALOR EJEMPLO
+ 
+ MANZANA:1.5
+ KEYS MANZANA
+ VALUES 1.5
+ 
+ const pricelist = new Map();
+// console.log(pricelist);
+
+//INTRODUCIR DATOS
+
+pricelist.set("Tomates", 2);
+pricelist.set("Manzanas", 3);
+pricelist.set("Naranjas", 5);
+
+// console.log(pricelist);
+
+//EXTRAER DATOS
+// console.log(pricelist.get("Tomates"));
+
+//COMPROBAR SI EXISTEN LOS DATOS
+
+// const fruit = "Naranjas";
+// if (pricelist.has(fruit)) {
+//   console.log(`Precio ${fruit}: ${pricelist.get(fruit)} euros`);
+// } else {
+//   console.log(`Ahora mismo no tenemos ${fruit}`);
+// }
+//PARA BORRAR UN DATO
+// pricelist.delete("Naranjas");
+// console.log(pricelist);
+
+// //TAMANO DEL MAP
+// console.log(pricelist.size);
+
+//PARA BORRAR EL MAP o resetear
+// pricelist.clear();
+// console.log(pricelist);
+
+//PARA RECORRER SE PUEDE HACER ASI PERO ES MEJOR POR FOR
+// console.log(pricelist.entries());
+
+// //PARA RECORRER EL MAP
+
+// for (const item of pricelist) {
+//   console.log(`>>>>> ${item < [0]} cuesta ${item[1]} euro`);
+// }
+
+// //PARA ENTRAR A LAS KEYS
+
+// for (const fruit of pricelist.keys()) {
+//   console.log(fruit);
+// }
+// //PARA ENTRAR EN EL VALUE
+// for (const price of pricelist.values()) {
+//   console.log(price);
+// }
+
+//PODEMOS DESESTRUCTURAR
+
+for (const [price, value] of pricelist) {
+  console.log(price, value);
+}

@@ -1,0 +1,27 @@
+CONDICIONAMOS A LA PAGINA
+.contenedor{
+    width: 90% auto;
+    max-width: 1000px;
+    background: #ccc;
+    margin: 20px;
+    overflow:hidden; /* lo colocamos en el contenedor
+    padre para utilizar el floar left en los contenedores
+    hijo */
+}
+
+MEDIAQUERI
+
+/* para hacerlo adaptable a dispositivos moviles*/
+ @media screen and (max-width:800px){/* si lo hacemos min-width hace lo contrario*/
+     .main{
+         width: 100%;
+     }
+ aside {
+     width: 100%;
+ }
+ footer {
+    width: 100%;
+}
+
+
+ }

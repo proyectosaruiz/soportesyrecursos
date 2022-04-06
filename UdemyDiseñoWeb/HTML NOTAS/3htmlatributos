@@ -1,0 +1,9 @@
+Aparecer en google se llama SEO
+atributos
+ id nos da un identificador al elemento del resto de elementos (ID UNA SOLA VEZ solo para javascript y jquery) es para acceder el elemento del DOM
+ 
+ class este atributo es para dar estilos en css puedes repetir y el mismo nombre
+ 
+ 
+ 
+ 

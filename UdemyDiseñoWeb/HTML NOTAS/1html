@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es,en,ga">
+
+    <head>
+       <meta charset="utf-8"/>
+       <title>sr.gastronomo</title>  
+       <meta name="sistema de rentabilidad hostelera" content="inventario,rentabilidad,
+                                                               scorecard,gestion,comida,gastronomia,gourmet,negocio
+                                                               restaurante,hosteleria,restauracion"/>  
+       <link rel=stylesheet href="estilos.css" type="text/css"/>
+   </head>
+   <body>
+
+<h1>Bienvenido a Sr. Gastronomo</h1> Etiquetas
+
+<a href="http://wwww.servidor.com">Sistema de Inventarios</a> para hacer enlaces
+
+<a target="_blank" href="//wwww.servidor4.com">Indicadores de Gestion</a>para enlace en otra ventana
+
+<img src="imagenes/inventario.jpg" width="200"/> para agregar imagen
+<img src="../imagenes/inventario.jpg" width="200"/>Para buscar una carpeta atras
+<img src="../../imagenes/inventario.jpg" width="200"/> Para dos carpetas atras
+<img src="../../imagenes/inventario.jpg" width="200"title="Indicadores de Gestion"/> Agregas un titulo al señalar la imagen
+
+<a href="http://wwww.indicadoresdegestion.com">
+      <img src="imagenes/indicadoresdegestion.jpeg" width="200" title="Indicadores de Gestion"></a> Para agregar un enlace en una imagen
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+<html>

@@ -1,0 +1,44 @@
+
+EN EL SIGUIENTE EJEMPLO VEMOS QUE :
+++x QUE SERIA 5 EL RESULTADO ES 6 PORQUE ++ SERIA 1+5=6
+y-- SERIA 9 YA QUE ES 10-1=9
+CUANDO SE PIDE z COMO PRIMERO ESTA ++ ANTES DEL 5 SERIA 6, PERO y ESTA ANTES DEL --, ES DECIR, QUE PARA LA EJECUCION ES 10 DANDO EL RESULTADO DE let z = ++x + y--; ES z = 6 + 10 = 16 YA QUE EL OPERADOR DE DEREMENTO ESTA DESPUES DE LA VARIABLE
+
+
+let x = 5;
+let y = 10;
+let z = ++x + y--;
+console.log(x);
+console.log(y);
+console.log(z);
+
+__________________________________________EJEMPLO DE ORDER DE EJECUCION ARITMETICA
+
+SE REALIZA DE IZQUIERDA A DERECHA, SIN EMBARGO PRIMERO ES LA MULTIPLICACION Y LUEGO LA DIVISION PARA TERMINAR EN CON LAS SUMA 
+
+let resultado = 4 + 5 * 6 / 3;// (4 + ((5*6)/3))
+console.log(resultado);
+
+EL RESULTADO SERIA 14
+QUE ES 5*6=30
+30/3=10
+10+4=14
+
+_________________________________________________PERO EN ESTE CASO HAY ()
+
+ENTONCES LE DA PRIORIDAD AL ()
+
+resultado = (4 + 5) * 6 / 3; //(((4 + 5) * 6 )/ 3);
+console.log(resultado);
+
+EL RESULTADO SERIA 18
+QUE ES (4+5)=9
+9*6=54
+54/3=18
+
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+.pruebasjs{
+    background: #000;
+    width: 70%;
+    color: #fff;
+    font-size: 40px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 50px;
+    ;
+}
+.pruebappal{
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 200px 100px; /*una cuadricula columna*/
+    grid-template-rows: 150px 300px;
+    grid-auto-flow: 50px;
+    /*grid-template-columns: repeat(3 50px 100px);repite y le da las medidas*/
+
+     /*una cuadricula fila*/
+    grid-auto-flow: row;
+    
+    background: #fff;
+    width: 90vw;
+    height: 80vh;
+    border: 5px solid black;
+    margin: 1rem auto;
+
+    justify-items: center;/*dentro de cada celda centra los elementos*/
+    align-items: center;/*dentro de cada celda centra los elementos*/
+
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.prueba1{
+    background-color:darkorchid;
+    
+   
+}
+.prueba2{
+    background-color: chartreuse;
+   
+    
+}
+.prueba3{/*SELECIONAMOS UNA CAJA Y PODEMOS DARLE PROPIEDADES*/
+    background-color: darkblue;
+    position: relative;
+   justify-self: stretch;/*SE ADAPTA*/
+   align-self: stretch;
+}
+.prueba4{
+    background-color: deeppink;
+    
+
+}
+.prueba5{
+    background-color: midnightblue;
+}
+
+p{
+    right: 40px;
+    bottom: 40px;
+}
+h{
+    text-transform: uppercase;
+}

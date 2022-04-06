@@ -1,0 +1,73 @@
+PODEMOS HACER COMBINACIONES DE COLORES EN CSS
+
+PRIMERO
+EJEMPLO
+IDENTIFICAMOS LA CAJA CON EL NOMBRE COLORES
+
+@keyframes colores {
+    form {background: green;}
+    to {background: cornflowerblue;}
+}
+
+.caja{
+
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    animation-name: colores; ESTE IDENTIFICAMOS LA CAJA CON LA EJECUCION DE ARRIBA
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+TAMBIEN PODEMOS HACER CON VARIOS COLORES ASI:
+
+@keyframes colores {
+   0%{background: green;}
+    25% {background: cornflowerblue;}
+    50% {background: #000;}
+    75% {background:purple;}
+VA CAMBIANDO A LOS COLORES SEGUN EL ORDEN
+
+PARA AGREGAR CAMBIOS DE TAMAÑO LO PODEMOS HACER ASI:
+
+@keyframes colores {
+   0%{background: green;} 
+    25% {background: cornflowerblue; width: 300px;}
+    50% {background: #000; width: 800px;}
+    75% {background:purple; width: 100px;}
+    
+ SI QUEREMOS MOVER LA CAJA PODEMOS CON ESTO
+ 
+ 
+ @keyframes movimiento{
+   0% {transform: translate(0px);}
+    50% {transform: translate(500px);}
+    100%  {transform: translate(0px);}
+ 
+
+}
+
+.caja{
+
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    animation-name: movimiento;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+
+AHORRAMOS CODIGO CON LA SIGUIENTE EJECUCION
+
+
+.caja{
+
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    animation:movimiento 10s ease infinite;
+    
+    
+}

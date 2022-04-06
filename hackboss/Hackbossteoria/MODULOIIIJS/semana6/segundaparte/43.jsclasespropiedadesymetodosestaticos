@@ -1,0 +1,44 @@
+STATIC SON PRIPIEDADES DE LA CLASE Y NO DE LAS INSTANCIAS
+PARA ENCAMPSULAR EN LAS CLASES Y NO EN LOS METODOS
+
+HACEMOS UNA CLASE PARA VER LA EXISTENCIA DE LOS LIBROS
+
+"use strict";
+
+class Book {
+  static tienda = "Mi libreria";
+  static descripcio = "Esta clase define el libro";
+  static disponible(book) {
+    console.log(book.name);
+    if (book.unidad > 0) {
+      console.log("Hay en existencia");
+    } else {
+      console.log("No queda en exixtencia");
+    }
+  }
+  constructor(name, lanzamiento, unidad) {
+    this.name = name;
+    this.lanzamiento = lanzamiento;
+    this.unidad = unidad;
+  }
+  vender() {
+    if (this.unidad > 0) {
+      this.unidad = this.unidad - 1;
+      console.log(`Vendida una unidad de ${this.name} quedan ${this.unidad}`);
+    }
+  }
+}
+
+const libro1 = new Book("JavaScript", new Date("2021,1"), 4);
+const libro2 = new Book("HTML", new Date("2010,5"), 0);
+
+Book.disponible(libro2);
+Book.disponible(libro1);
+
+ EN CONSOLA
+ 
+ HTML
+No queda en exixtencia
+JavaScript
+Hay en existencia
+

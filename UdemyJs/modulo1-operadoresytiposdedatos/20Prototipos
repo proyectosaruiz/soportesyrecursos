@@ -1,0 +1,47 @@
+SI UTILIZAMOS UNA VARIABLE Y LE AGREGAMOS UNA REFERENCIA, ES DECIR, nombre:carlos.
+ SE CAMBIARA SOLO EN EL OBJETO DONDE SEA LLAMADO. SI EN CONSTRUCTOR TENEMOS NOMBRE, APELLIDO POR EJEMPLO. LE PODEMOS DAR VALORES EN OTRO OBJETO QUE CREAMOS CON NEW.
+ 
+ PERO TAMBIEN PODEMOS AGREGARLE ELEMENTOS A NUEVO ELEMENTO
+ let padre = new Persona('Juan', 'Perez', 'jperez@mail.com');
+padre.tel = '11223344';
+console.log( padre.tel );
+
+EN ESTE CASO EL OBJETO Persona SOLO TENIA NOMBRE, APELLIDO, EMAIL Y LA FUNCION NOMBRE COMPLETO. PERO CREAMOS OTRO OBJETO PROVENIENTE DE LOS ELEMENTOS DEL CONSTRUCTOR LLAMADO let padre = new Persona
+Y ASI LE AGREGAMOS NUMERO DE TELEFONO AL OBJETO padre QUE YA VENIA CON ELEMENTOS DEL OBJETO Padre QUE TENIA LA FUNCION CONSTRUCTOR.
+
+PERO SI QUEREMOS AGREGAR UN ELEMENTO PARA TODOS LOS OBJETOS SIN TRABAJAR DENTRO DEL CONTRUCTOR PODEMOS CON PROTOTYPE ASI:
+HAREMOS UNA PROPIEDAD TELEFONO PARA QUE ESTE EN TODOS LOS OBJETOS ASI:
+
+  Persona.prototype.tel = '44332211';
+  
+ AGREGANDO UN VALOR POR DEFAULT
+ 
+ PERO SI POR EJEMPLO QUEREMOS TENER UN ELEMENTO DIFERENTE EN EL OBJETO padre Ó madre PUEDE SER ASI:
+ 
+ 
+let padre = new Persona("Juan", "Perez", "jperez@mail.com");
+padre.tel = "11223344";
+console.log(padre.tel);
+
+Y ASI CAMBIARIA LOS VALORES DE tel EN ESE OBJETO UNICAMENTE
+
+LA FUNCION COMPLETA SERIA ASI:
+//Funcion constructor de objetos de tipo Persona
+function Persona(nombre, apellido, email) {
+  this.nombre = nombre;
+  this.apellido = apellido;
+  this.email = email;
+  this.nombreCompleto = function () {
+    return this.nombre + " " + this.apellido;
+  };
+}
+
+Persona.prototype.tel = "44332211";
+
+let padre = new Persona("Juan", "Perez", "jperez@mail.com");
+padre.tel = "11223344";
+console.log(padre.tel);
+
+let madre = new Persona("Laura", "Quintero", "lquintero@mail.com");
+madre.tel = "66889900";
+console.log(madre.tel);

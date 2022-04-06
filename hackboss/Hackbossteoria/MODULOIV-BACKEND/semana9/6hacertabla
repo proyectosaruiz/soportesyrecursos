@@ -1,0 +1,56 @@
+LA CLAVES FORANEAS SIEMPRE BUSCARA COMO REFERNECIA LA CLAVE PRIMARIA
+
+LOS NOMBRE DE LAS TABLAS SON UNICOS
+
+SENTENCIAS O COMANDOS
+ DDL LENGUAJE DE DEFINICION, CREAR ESTRUCTURA
+ 
+ DQL ES PREGUNTAR A LA BASE DATOs
+ 
+ DML PARA MANIPULAR LOS DATOS BORRAR E INSERTAR
+ 
+ DCL REGISTROS DE BASE DATOS 
+ 
+ IMPORTANTE: TENER USUARIOS MAS ESPECIALIZADOS PERO POCOS USUARIOS PARA INSERTAR, OTROS LECTURAS 
+ 
+ 
+ SINTAXIS
+ 
+ CREATE TABLA [IF NOT EXISTS] <nombre_tabla>
+  {
+  <nombre_columna> <tipo_dato> <restricciones>
+  <nombre_columna> <tipo_dato> <restricciones>
+  }
+  
+  LAS LISTAS SON DE MENTIRAS
+  
+  Y PARA CREAR LA BASE DE DATOS
+  
+  CREATE DATABASE[IF NOT EXISTS]<nombre_base_de_datos>
+  
+  ELIMINAR OBJETO 
+  
+  DROP TABLE [IF EXISTS]<nombre_tabla>
+  
+  ELIMINAR BASE DE DATOS
+  
+  DROP DATABASE [IF EXISTS]<nombre_tabla>
+  
+  MODIFICAR UNA TABLA
+  
+  ALTER TABLE <nombre_tabla>
+  [ADD <definicion_columna>]
+  [CHANGE <nombre_comlumna><definicion_columna>]
+  [DROP COLUMN <nombre_columna>]
+  [ADD CONSTRATAIN <restriccion>]
+  
+  
+ FLOAT Y DECIMAL SON PARA DECIMALES
+ 
+ 
+  
+  
+  
+  
+  
+  

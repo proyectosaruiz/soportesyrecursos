@@ -1,0 +1,17 @@
+PODEMOS VER CUANTOS ARGUMENTOS TIENE NUESTRA FUNCION ASI 
+
+function miFuncion(a, b){
+    console.log(arguments.length);
+    return a + b;
+}
+
+DEBEMOS HACERLA DENTRO DE LA FUNCION 
+
+
+_______________________________________
+PODEMOS ASIGNAR NUESTRA FUNCION COMO SI FUERA TEXTO ASI 
+
+let miFuncionTexto = miFuncion.toString();
+console.log(miFuncionTexto);
+
+PERO NO ES NECESARIO

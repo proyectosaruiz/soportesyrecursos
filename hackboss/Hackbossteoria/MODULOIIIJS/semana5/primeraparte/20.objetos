@@ -1,0 +1,21 @@
+ES UN TIPO DE DATO QUE PODEMOS GUARDAR PARES DE PROPIEDADES Y VALORES:
+
+PODEMOS PONERLE "" A LAS PROPIEDADES 
+                "nombre": "pepe",
+                "nombre Y apellido": "pepe",
+    LAS PROPIEDADES DE UN OBJETO PODEMOS HACER STRINGS
+    
+    PARA ACCEDER A ELLAS SERIA ASI
+    console.log(usuario["nombre Y apellido"])
+    
+    const usuario = {
+             nombre: "pepe",
+             edad: 36,
+             colorFavorito: "azul",
+      }
+    
+    PODEMOS AGREGAR VALORES EN UN OBJETO
+    usuario.pais = "España"
+    
+   EL OBJETO ES EL MISMO PERO LO PODEMOS MUTAR
+      usuario.nombre ="marcos"; ES DECIR PODEMOS MUTARLA, PERO NO ELIMINAMOS A PEPE, SOLO AGREGAMOS UNA NUEVA Y QUEDA EL ULTIMO

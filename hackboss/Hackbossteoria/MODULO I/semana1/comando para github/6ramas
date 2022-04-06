@@ -1,0 +1,42 @@
+main es la rama principal y viene por defecto
+
+
+PARA AGREGAR COMPAÑEROS
+setting=colaborator
+
+
+git branch: nos dice la rama y las que hay
+
+git branch nombre: agregar rama
+
+para mover rama git checkout header
+  
+  
+  PARA HACER RAMA
+ git branch portada
+   git checkout portada
+   
+   
+   DESPUES 
+   git push -u origin formulario
+   
+    CUANDO PANTALLA AZUL 
+control x
+ no
+  
+  
+ PARA GUARDAR LA RAMA 
+     pull resquest= SON SOLICITUDES
+            new resquest=PARA NUEVA RAMA
+            
+         DONDE QUIERE QUE ESTE LA RAMA   <==> DONDE ESTARA LA RAMA
+         
+           LUEGO=create pull resquest
+               create =  merge=aceptar = confirmar
+                 
+                 PARA VERIFICAR  VCS
+                     TRAER RAMA AL VSC 
+                         Pull r -l
+                         
+  
+

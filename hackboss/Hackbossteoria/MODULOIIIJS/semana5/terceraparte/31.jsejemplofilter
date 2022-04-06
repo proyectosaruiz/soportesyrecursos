@@ -1,0 +1,35 @@
+ESTA FUNCION FILTRA Y SE RECORRE 3 VECES POR SUS OBJETOS Y LLAMA A LOS QUE SELECCIONAMOS
+AS:
+const coches = [
+  {
+    marca: "bmw",
+    modelo: "serie3",
+    cv: 130,
+  },
+  {
+    marca: "nissan",
+    modelo: "micra",
+    cv: 100,
+  },
+  {
+    marca: "bmw",
+    modelo: "serie4",
+    cv: 130,
+  },
+  {
+    marca: "fiat",
+    modelo: "palio",
+    cv: 110,
+  },
+];
+const cochesBmw = coches.filter((coche) => {
+  return coche.marca === "bmw";
+}, 0);
+console.log(cochesBmw);
+ SI QUEREMOS QUE NOS DE LOS COCHES CON MAS DE 100 CV POR EJEMPLO:
+ 
+ const masDe100Cv = coches.filter((coche) => {
+  return coche.cv > 100;
+}, 0);
+console.log(cochesBmw);
+

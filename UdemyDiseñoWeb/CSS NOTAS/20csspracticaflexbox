@@ -1,0 +1,10 @@
+header{
+    width: 100%;
+    padding: 50px 0px;
+    background: black;
+    display:flex;
+    flex-direction: row;LO PONEMOS UNO AL LADO DEL OTRO
+     justify-content: space-between; PARA PONER EL MENU A LA DERECHA
+     flex-direction: row; hace que respete los otros elementos
+flex-wrap: wrap; LO HACEMOS FLEXIBLES DENTRO DE LA CAJA, CUANDO EL CONTENIDO NO QUEPA PASE ABAJO
+}

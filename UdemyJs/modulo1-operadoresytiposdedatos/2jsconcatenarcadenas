@@ -1,0 +1,34 @@
+DECLARAMOS DOS VARIABLES 
+
+var nombre = 'Juan';
+var apellido = 'Perez';
+
+
+HACEMOS UNA NUEVA VARIABLE DONDE LLAMAMOS A LA VARIABLE NOMBRE Y APELLIDO, AL HACER CONSOLE LOG CEMOS QUE SALE JUAN PEREZ
+var nombreCompleto = nombre + ' ' + apellido;
+console.log(nombreCompleto);
+
+_______________________________
+PERO NO ES NECESARIO HACER DOS VARIABLES, TAMBIE PODEMOS ASI:
+var nombreCompleto2 = 'Carlos' + ' ' + 'Lara';
+console.log(nombreCompleto2);
+____________________________
+LAS EXPRESIONES EN JS SE EVALUAN DE IZQUIERDA A DERECHA Y PODEMOS CONCATENAR NUMERO CON STRING ASI :
+
+var x = nombre + 2 + 4;
+console.log(x);
+
+PASANDO EL NUMERO A STRING juan24
+_________________
+PERO SI QUEREMOS SUMAR SERIA ASI:
+
+x = nombre + (2 + 4);
+console.log(x);
+
+juan6
+
+______________________________________
+
+EN ESTE CASO DA 6juan YA QUE LOS DOS PRIMEROS SON NUMERO Y ASUME QUE ES NUMBER Y LOS SUMA
+x = 2 + 4 + nombre;
+console.log(x);

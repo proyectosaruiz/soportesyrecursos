@@ -1,0 +1,37 @@
+SE EVALUA DE IZQUIERDA A DERECHA
+
+let a = 3, b = 2, c = 1, d = 4;
+
+let z = a * b + c;
+console.log(z); SERIA 7
+
+PERO SI LO HACEMOS ALREVES DA IGUAL 7, YA QUE PRIMERO SE EJECUTA LA MULTIMIPLICACION POR EL ORDEN DE PRECEDENCIA DE JS
+ASI:
+
+
+let z = c + a * b;
+console.log(z); SERIA 7 IGUAL POR QUE LE DA PRIORIDAD A MULTIPLICACIO QUE A LA SUMA
+_______________________________________
+let z = a * b + c / d;
+console.log(z);6.25
+
+EN ESTE CASO PRIMERO SE EJECUTA LA MULTIPLICACION Y LUEGO LA DIVISION, YA QUE LOS DOS TIENEN EL MISMO ORDEN DE PRIORIDAD PERO ES DE IZQUIERDA A DERECHA,  PARA TERMINAR EN LA SUMA
+
+___________________________________________________
+
+z = c + a * b / d;
+console.log( z ); 2.5
+
+EN ESTE CASO PRIMERO SE a*b Y LUEGO ESE RESULTADO ENTRE d PARA DESPUES SUMARLO A c, 
+
+______________________________________________________
+
+COLOCANDO () HACE QUE SE EJECUTE PRIMERO Y LUEGO LO DEMAS
+
+z = (c + a) * b / c;
+console.log(z);
+
+
+
+
+

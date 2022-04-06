@@ -1,0 +1,9 @@
+CON ESTE ATRIBUTO SE MANTIENE A SU TAMAÑO
+ CON FLEX-BASIS. PERO CON FLEX-WRAP HACE QUE SE CREÉ OTRAS LINEAS
+  EN EL CASO HACER LON UN CONTENEDOR SERIA
+   FLEX-GROW:1; 
+   
+   PARA MOVER A LAS CAJAS HIJOS PODEMOS CON
+     aling-self:flex-end=abajo
+     aling-self:center=centro
+     aling-self:flex-star=arriba

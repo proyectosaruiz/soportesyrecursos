@@ -1,0 +1,26 @@
+HAREMOS UN PROGRAMA QUE EJECUTE MESES DEL AÑO PARA VER LAS ESTACIONES
+ EJEMPLO
+ 
+ SI LA VARIABLE ES 1, QUE SERIA ENERO ES INVIERNO Ó || FEBRERO Ó || DICIEMBRE, SI NO ES NINGUNO DE ESOS CRITERIOS PASARIA IF ELSE
+ if (mes == 1 || mes == 2 || mes == 12) {
+  estacion = "Invierno";
+  
+  CREAMOS LA  VARIABLE mes DONDE SE EJECUTARA Y estacion DONDE AVISARA
+  
+  EJECUTAMOS LAS SENTENCIAS ASI:
+  let mes = 6;
+let estacion;
+
+if (mes == 1 || mes == 2 || mes == 12) {
+  estacion = "Invierno";
+} else if (mes == 3 || mes == 4 || mes == 5) {
+  estacion = "Primavera";
+} else if (mes == 6 || mes == 7 || mes == 8) {
+  estacion = "Verano";
+} else if (mes == 9 || mes == 10 || mes == 11) {
+  estacion = "Otoño";
+} else {
+  estacion = "Valor incorrecto";
+}
+
+console.log(estacion);

@@ -1,0 +1,76 @@
+" uso estricto " ;
+
+// Sintaxis
+
+función  f1 ()  {
+JSON . analizar ( " { " );
+
+// referencia
+
+consola _ registro ( variable );
+
+// Escribe
+ numero  constante =  5 ;
+número _ a Mayúsculas ();
+
+// Rango
+
+ numero  constante =  3 ;
+consola _ log ( núm . a Precisión ( 201 ));
+
+// Gestión de errores con try/catch
+
+prueba  {
+   numero  constante =  5 ;
+  número _ a Mayúsculas ();
+
+  consola _ registro ( variable );
+}  atrapar  ( error )  {
+  if  ( error . nombre  ===  " TypeError " )  {
+    consola _ error ( " Error de escritura " );
+  }
+
+  if  ( error . nombre  ===  " Error de referencia " )  {
+    consola _ error ( " Error de referencia " );
+  }
+}
+
+// Ejemplo: Funcion saludar que valida el nombre recibido
+
+const  saludar  =  ( nombre )  =>  {
+  prueba  {
+    // Validamos que el nombre sea una cadena
+    if  ( tipo de  nombre  !==  " cadena " )  {
+      // Si no lo es, creamos un error
+      const  error  =  new  TypeError ( " Tu nombre debe ser un texto " );
+
+      // Lo lanzamos
+      lanzar  error ;
+    }
+    return  `Hola ${ nombre } ! :D` ;
+  }  atrapar  ( error )  {
+    // Gestionamos el error en el catch
+    consola _ error ( error . mensaje );
+     error de retorno mensaje ;
+  }
+};
+
+consola _ log ( saludar ( " Pepe " ));
+
+
+// EJEMPLO: Función de sumar validando que los parámetros que recibimos sean números
+ suma  constante =  ( a ,  b )  =>  {
+  prueba  {
+    if  ( tipo de a !== "  numero " || tipo de b ! == " numero " ) {        
+      throw  new  TypeError ( " Estás intentando sumar cosas que no son números " );
+    }
+
+    devuelve  a  +  b ;
+  }  atrapar  ( err )  {
+    consola _ error ( err . mensaje );
+    devolver  error ;
+  }
+};
+
+consola _ registro ( suma ( 2 ,  " 2 " ));
+

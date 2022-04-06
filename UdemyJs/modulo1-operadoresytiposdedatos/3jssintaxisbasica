@@ -1,0 +1,52 @@
+LA LITERAL SON LOS VALORES QUE LE DAMOS A LAS VARIABLES
+
+let nombre;
+nombre = "Juan";
+console.log(nombre);
+
+EN ESTE CASO SI NO TENEMOS EL VALOR DE LA VARIABLE LA PODEMOS DECLARA ASI, let nombre Y LUEGO DARLE EL VALOR DE Juan
+
+const apellido = "Perez";
+//apellido = "Lara"; Error no se puede cambiar el valor de una constante
+
+NO PODEMOS CAMBIAR LOS DATOS PRIMITIVOS SI SON CONST
+
+_______________________POR EJEMPLO
+console.log(nombre);
+
+console:ES UN OBJETO CREADO EN JS
+log: ES UN METODO DE JS
+
+FUNCION O METODOS ES LO MISMO
+
+(nombre); ES EL ARGUMETO QUE NECESITA ESTA FUNCION PARA TRABAJAR
+
+_________________________________
+PODEMOS DECLARA DOS VARIABLES EN UNA LNEA DE CODIGO ASI
+
+let x, y;
+
+Y DARLE SUS VALORES DESPUES
+
+x = 10, y = 20;
+
+ADEMAS PODEMOS HACER UNA TERCERA VARIABLE SUMANDO LAS DOS VARIABLES
+
+let z = x + y;
+
+AL HACERLE UN console.log(X); SERIA 30
+
+____________________
+UNA VARIABLE NO PUEDE COMENZAR CON NUMEROS PERO $ Y _ SON LOS UNICOS CARACTER ESPECIALES QUE SE PUEDE COLOCAR AL COMENZAR UNA VARIABLE
+
+let nombreCompleto = "Juan Perez";
+let nombrecompleto = "Carlos Lara";
+console.log( nombreCompleto );
+console.log( nombrecompleto );
+
+let a1nombreCompleto;
+let _nombreCompleto;
+let $nombreCompleto;
+//let 1nombreCompleto; no está permitido iniciar el nombre de una variable con numeros
+
+let ruptura = 10;

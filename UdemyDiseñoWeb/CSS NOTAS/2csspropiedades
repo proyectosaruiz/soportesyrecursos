@@ -1,0 +1,84 @@
+text shadow=para sombra
+. para las clases en css
+# para los id en css
+> podemos seleccionar un seleccion mas especifica
+input [type] {}
+input [type="text"] {}
+background=cover abarca toda la imagen
+
+a:hover{
+
+    opacity: 0.8;
+}
+ con esta opacidad oscurece al pasar el mouse
+ 
+ 
+ 
+ <div class="opciones">
+       <nav>
+          <ul>
+            <li><a href="http://wwww.sistemadeinventario.com">
+      <img src="imagenes/inventario1.png" width="100" title="Sistema de Inventarios"></a>
+      <br>
+      <a href="http://wwww.sistemadeinventario.com">Sistema de Inventarios</a></li>
+         
+      <li><a href="http://wwww.estructuradecosto.com">
+      <img src="imagenes/estructurac1.png" width="100" title="Estructura de Costo"></a>
+      <br>
+      <a href="http://wwww.estructuradecosto.com">Estructura de Costo</a></li>
+         
+      <li> <a href="http://wwww.aportesalimenticios.com">
+      <img src="imagenes/aporte1.png" width="100" title="Aportes Alimenticios"></a>   
+      <br> 
+      <a href="http://wwww.aportesalimenticios.com">Aportes Alimenticios</a></li>
+         
+      <li> <a href="http://wwww.productividadyhorarios.com">
+      <img src="imagenes/horario1.jpg" width="100" title="Productividad y Horarios"></a>
+      <br>
+      <a href="http://wwww.productividadyhorarios.com">Productividad y Horarios</a></li>
+
+      <li><a href="http://wwww.indicadoresdegestion.com">
+     <img src="imagenes/indicadores1.png" width="100" title="Indicadores de Gestion"></a> 
+     <br>
+     <a href="//wwww.indicadoresdegestion.com">Indicadores de Gestion</a></li>
+   </ul>
+   </nav>
+   </div>
+   
+   
+   .opciones{
+    display:inline-block;
+padding-left: 185px;
+
+      
+}
+
+
+.contacto{
+
+    display:inline-block;
+    
+}
+
+
+  img{
+  
+ 
+      width: 150px;
+      height:130px;
+      display: flex;
+      margin: 0 auto;
+      margin-top: 15px;
+      border-radius: 50%;
+      overflow: hidden;
+      justify-content: center;
+    
+    }
+   
+   
+   
+   
+   
+   
+   
+   

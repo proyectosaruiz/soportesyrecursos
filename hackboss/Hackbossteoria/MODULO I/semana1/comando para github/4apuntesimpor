@@ -1,0 +1,11 @@
+1. Git clone del repositorio remoto con los enunciados
+ 2. Borrar la carpeta .git (rm -rf .git)
+  3. Crear repositorio local (git init) 
+  4. Hacer los ejercicios
+   5. Añadimos todos los cambios y ficheros al stage (git add .) 
+   6. Hacemos un commit (git commit -m "mensajequequeráis") 
+   7. Crear repositorio remoto en github
+    8. Seguir las líneas de comando que os indica 
+    - git remote add origin "sshrepositorio" 
+    - git branch -M main 
+    - git push -u origin main 

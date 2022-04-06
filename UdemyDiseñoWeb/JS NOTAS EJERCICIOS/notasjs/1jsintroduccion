@@ -1,0 +1,18 @@
+Prueba en jv
+
+<script>
+alert('Hola Mundo');
+
+</script>
+
+CREAMOS UN BOTON PARA QUE DESPUES EJECUTE UN JV
+
+<button onclick="alert('Hola')">Alerta</button>
+
+PARA ENLAZAR EN EL BODY:
+
+en HTML
+<script src="../Udemy/prueba.js"></script>
+
+EN JS
+alert('prueba')

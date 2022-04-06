@@ -1,0 +1,25 @@
+COLOCAREMOS LOS SALARIOS EN UN ARRAIS Y SERIAN VARIOS AOBJEOS EL CUAL LO SUAMREMOS EN ESTE CASO CON LA FUNCION REDUCE LLAMANDO TODOS LOS SARIOS A LA VEZ
+ ASI:
+ const empleados = [
+  {
+    nombre: "pepe",
+    salario: 1000,
+  },
+  {
+    nombre: "maria",
+    salario: 1200,
+  },
+  {
+    nombre: "juan",
+    salario: 1150,
+  },
+  {
+    nombre: "Luis",
+    salario: 1100,
+  },
+];
+const salariosTotales = empleados.reduce((acc, empleados) => {
+  return acc + empleados.salario;
+}, 0);
+console.log(salariosTotales);
+

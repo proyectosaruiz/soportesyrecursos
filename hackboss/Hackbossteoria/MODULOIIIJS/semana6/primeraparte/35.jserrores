@@ -1,0 +1,74 @@
+// Sintaxis
+
+// funcion f1() {
+// JSON.parse("{");
+
+// referencia
+
+// consola.log(variable);
+
+// Escribe
+// numero constante = 5;
+// num.toUpperCase();
+
+// Rango
+
+// numero constante = 3;
+// consola.log(num.toPrecision(201));
+
+// tratar {
+// numero constante = 5;
+// // num.toUpperCase();
+
+// consola.log(variable);
+// } atrapar (error) {
+// if (error.nombre === "TypeError") {
+// console.error("Hubo un error de escritura");
+// }
+
+// if (error.nombre === "ReferenciaError") {
+// console.error("Hubo un error de referencia");
+// }
+// }
+
+// consola.log("Hola");
+
+// const saludar = (nombre) => {
+// tratar {
+// // Validamos que el nombre sea una cadena
+// if (tipo de nombre !== "cadena") {
+// // Si no lo es, creamos un error
+// const error = new TypeError("Tu nombre debe ser un texto");
+
+// // Lo lanzamos
+// lanzar error;
+// }
+// devuelve `Hola ${nombre}! :D`;
+// } atrapar (error) {
+// // Gestionamos el error en el catch
+// consola.error(error.mensaje);
+// regreso "";
+// }
+// };
+
+// consola.log(saludar("Pepe"));
+
+// suma constante = (a, b) => {
+// tratar {
+// if (tipo de a !== "número" || tipo de b !== "número") {
+// throw new TypeError("Estás intentando sumar cosas que no son números");
+// }
+
+// devuelve a + b;
+// } atrapar (error) {
+// consola.error(err.mensaje);
+// devuelve el error;
+// }
+// };
+
+// consola.log(suma(2, "2"));
+
+para  ( sea  i  =  0 ;  i  <  11 ;  i ++ )  {
+  consola _ registro ( yo );
+}
+

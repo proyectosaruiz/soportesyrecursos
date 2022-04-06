@@ -1,0 +1,50 @@
+PARA HACERLO FUNCIONAL CON TRY Y CATCH
+
+PARA PODER VER LOS ERRORES SI NO HAY INTERNET 
+
+UNA API SON UNA SERIE URL QUE DEVUELVE DATOS ESTRUCTURADOS EN JSON Y NOS PERMITE HACER PETICIONES FETCH, ES DE DECIR, DATOS
+
+JSON ES UN FORMATO NATIVO DE JS PARA ALMACENAR E INTERCAMBIAR DATOS
+
+
+
+async function main() {
+  try {
+    const response = await fetch("/data.json");
+
+    if (response.ok) {
+      const text = await response.json(); //LLAMAMOS AL CONTENIDO CON RESPONSE.TEXT QUE ES LE NOMBRE QUE LE DIMOS A LA VARIABLE Y () ES LO QUE ESTA ADENTRO
+      console.log(text);
+    } else {
+      console.log("hubo un error de peticion");
+    }
+  } catch (error) {
+    console.log(error.message); //SI NO TIENE CONEXION
+  }
+}
+
+main();
+
+
+PODEMOS EXTRAER UNA API DE UNA PAGINA
+
+
+
+
+
+async function main() {
+  try {
+    const response = await fetch("https://api.github.com/users/proyectosaruiz");
+
+    if (response.ok) {
+      const text = await response.json(); //LLAMAMOS AL CONTENIDO CON RESPONSE.TEXT QUE ES LE NOMBRE QUE LE DIMOS A LA VARIABLE Y () ES LO QUE ESTA ADENTRO
+      console.log(text);
+    } else {
+      console.log("hubo un error de peticion");
+    }
+  } catch (error) {
+    console.log(error.message); //SI NO TIENE CONEXION
+  }
+}
+
+main();

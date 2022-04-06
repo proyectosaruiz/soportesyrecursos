@@ -1,0 +1,43 @@
+OPERADORES Lógicos O De comparación
+  == IGUA A
+  === IGUAL EN VALOR Y TIPO
+  != NO IGUALES
+  !== NO IGUAL EN VALOR Y TIPO
+  > MAYOR QUE
+  < MENOR QUE
+  >= MAYOR O IGUAL QUE
+  <= MENOR O IGUAL QUE
+
+
+
+
+
+  NOS PERMITEN COMPARARA ENTRE DOS VALORES
+   "==" ESTOS SIMBOLOS NSO PERMITEN COMPARAR DOS NUMEROS
+   
+   
+   
+  var numero1 = 5;
+      var numero2 = 5;
+       
+         var resultado =  numero1 == numero2;
+         document.write(resultado); NOS DICE EN PANTALLA QUE ES VERDADERO ES DECIR TRUE
+          
+          "===" ES PARA COMPARAR TANTO COMO EN VALOR COMO EN TIPO, EJEMPLO:
+           var numero1 = 5;
+      var numero2 = '5';
+       
+         var resultado =  numero1 === numero2; AUNQUE 5 ES IGUAL QUE '5', LAS "' '" LO HACE DE TIPO DIFERENTE
+          
+          
+   OTROS OPERADORES:
+
+  ! NEGACION  NEGAR UN VALOR 
+    && ADN   AGREGAR DOS COMPARACIONES
+    || OR QUE SE CUMPLA UNA O LA OTRA
+
+Binarios
+De asignación
+
+
+

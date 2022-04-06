@@ -1,0 +1,16 @@
+console.log(window); //SISTEMA OPERATIVO
+
+console.log("innertHeigth", window); //ALTURA
+
+console.log("innerHeight", window.innerHeight);
+
+console.log("innertwidth", window.innerWidth); //ANCHO
+
+console.log("LOCATION", window.location); //LOCACION
+
+console.log("NAVIGATOR", window.navigator); //navegador
+
+console.log("navigator", window.navigator.userAgent); //NAVEGADOR
+
+
+

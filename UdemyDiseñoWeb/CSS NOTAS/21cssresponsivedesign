@@ -1,0 +1,23 @@
+
+PARA QUITAR ALGO EN RESPOSIVE DESING
+
+display:none
+
+ 
+/* para hacerlo adaptable a dispositivos moviles*/
+ @media screen and (max-width:800px){/* si lo hacemos min-width hace lo contrario*/
+     .main{
+         width: 100%;
+     }
+ aside {
+     width: 100%;
+ }
+ footer {
+    width: 100%;
+}
+
+
+ }
+
+
+

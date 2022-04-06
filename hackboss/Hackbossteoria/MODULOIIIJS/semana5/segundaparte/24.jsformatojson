@@ -1,0 +1,22 @@
+LOS OBJETOS JSON PARA PODER OBJETOS Y ARRAYS Y CREAR UN TEXTO, NOS PERMITE UN TEXTO QUE REPRESENTA O OBJETO O ARRAYS.
+
+LO COMVIERTE EN UN TEXTO LO ENVIA Y LO VUELVE A CONVERTIR EN UN OBJETO, COPIA TODO EL OBJETO Y ES MUY PESADO
+"use strict";
+
+const otro = { nombre: "maria" };
+const usuario = {
+  nombre: "pepe",
+  apellido: "ruiz",
+  direccion: {
+    pais: "pais",
+    provincia: "coruña",
+  },
+};
+
+const objetoJSON = JSON.stringify(usuario);
+
+const objetoParseado = JSON.parse(objetoJSON);
+
+console.log(usuario);
+
+console.log(objetoParseado);

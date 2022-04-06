@@ -1,0 +1,9 @@
+FUNCIONES MAS FACIL ES ASI:
+ TIENE EL RETURN IMPLICITO
+ ARROW FUCTION SE LLAMA
+ ejemplo 
+ const sumar = (numerouno, numerodos) => numerodos + numerouno;
+
+console.log(sumar(2, 5));
+
+SE USA CUANDO QUIERES DEVOLVER ALGO PERO SIN DESARROLLAR CODIGO

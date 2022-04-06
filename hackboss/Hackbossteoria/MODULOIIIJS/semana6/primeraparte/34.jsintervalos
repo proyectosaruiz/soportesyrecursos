@@ -1,0 +1,41 @@
+uso estricto " ;
+
+// establecerIntervalo
+
+const  saludar  =  ()  =>  {
+  consola _ log ( " ¡Hola! :D " );
+};
+
+setInterval ( saludar ,  2000 );  // Ejecuta la función saludar cada dos segundos
+
+// establecerTiempo de espera
+
+// Hace un console.log de hola después de dos segundos
+establecerTiempo de espera (()  =>  {
+  consola _ log ( " hola " );
+},  2000 );
+
+// EJEMPLO CRONÓMETRO
+
+// La función timer recibe el parámetro de duración, que indica hasta donde tiene que contar el cronómetro
+const  timer  =  ( duración )  =>  {
+  // Los segundos empiezan a contar en 0
+  sean  segundos  =  0 ;
+
+  // Enseñamos por consola el 0
+  consola _ registro ( segundos );
+
+  // Iniciamos un intervalo, que cada segundo le suma uno a segundos y saca por consola el resultado
+  const  intervaloID  =  establecerIntervalo (()  =>  {
+    consola _ registro ( ++ segundos );
+
+    // Cuando segundos llegue a la duración del cronómetro, limpiamos el intervalo
+    if  ( segundos  ===  duración )  {
+      clearInterval ( intervaloID );
+    }
+  },  1000 );
+};
+
+// Ejecutamos nuestro cronómetro con una duración de 10 segundos
+temporizador ( 10 );
+

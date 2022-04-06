@@ -1,0 +1,98 @@
+METODOS
+
+1.METODOS LENGTH:
+
+  NOS PERMITE CONOCER CUANTOS ELEMENTOS TIENE UN ARREGLO
+  SE USA ASI:
+    <script>
+   var amigos = ['manuel','carlos','cesar', 'alejandro'];
+    document.write(amigos.length);
+
+    </script>
+    EN LA PAGINA DICE QUE HAY 4 ELEMENTOS
+
+2. EL METODO JOIN:
+   NOS PERMITE JUNTAR TODOS LOS ELEMENTOS Y HACERLO EN UNA CADENA DE TEXTO. PUEDE SER UN GUIoN, SIGNO O LO QUE SEA.ES DECIR NOS SEPARA LOS ELEMENTOS CON LO QUE QUERAMOS.
+    EN LA PAGINA SALDRIA ASI:
+    
+     manuel-carlos-cesar-alejandro
+     
+   PERO EN VSC SERIA ASI:
+   
+    var amigos = ['manuel','carlos','cesar', 'alejandro'];
+    document.write(amigos.join('-'));
+    EN ESTE CASO PUSIMOS "-" PERO PODEMOS COLOCAR CUALQUIER COSA.
+    
+    TAMBIEN PODEMOS DAR UNA VARIABLE :
+       var amigos = ['manuel','carlos','cesar', 'alejandro'];
+    var cadenaTexto = amigos.join('**')
+    document.write(cadenaTexto); 
+    EN LA PAGINA SERIA ASI:
+       manuel**carlos**cesar**alejandro
+          COLOCANDO LA VARIABLE cadenaTexto
+          
+          
+3. METODO POP Y PUSH
+
+ POR NOS PERMITE ELIMINAR EL ULTIMO ELEMENTO DE UN ARRGELO Y CON PUSH AGREGAR UN ELEMENTO.
+ 
+ A.EJEMPLO DE POP
+  EN VSC  var amigos = ['manuel','carlos','cesar', 'alejandro'];
+    amigos.pop();
+    console.log(amigos); ESTAMOS OCULTANDO A CESAR 
+    Y PROBAMOS EN LA CONSOLA
+ 
+(3) ['manuel', 'carlos', 'cesar']
+SI HACEMOS LA PRUEBA EN CONSOLA APARECE:
+amigos.pop()
+'cesar'
+   
+   B. EJEMPLO DE PUSH
+      var amigos = ['manuel','carlos','cesar', 'alejandro'];
+    amigos.push('Felipe'); AGREGAMOS A FELIPE 
+    console.log(amigos);
+     
+    EN CONSOLA APARECE NO 4 SI NO AHORA 5 CON FELIPE
+     ASI:
+      (5) ['manuel', 'carlos', 'cesar', 'alejandro', 'Felipe']   
+ 
+ 4. METODO SHIFT Y PUSH
+  SI QUEREMOS QUITAR EL PRIMER ELEMENTO O AGREGAR A PAR DEL PRIMER ELEMENTO SERIA ASI:
+   A.SHIFT QUITAMOS EL PRIMER ELEMENTO ASI:
+     var amigos = ['manuel','carlos','cesar', 'alejandro'];
+    amigos.shift();
+    console.log(amigos);
+    
+    B.UNSHIFT AGREMAMOS ASI:
+       var amigos = ['manuel','carlos','cesar', 'alejandro'];
+    amigos.unshift('oscar');
+    console.log(amigos);
+    
+ 5.METODO CONCAT 
+  NOS PERMITE JUNTAR DOS ARREGLO
+  
+   var amigos = ['manuel','carlos','cesar', 'alejandro']; 
+   var amigos2 = ['mario','manolo'];
+   var todosMisAmigos = amigos.concat(amigos2)
+     
+      HACEMOS DOS VARIABLES  amigos y amigos2 LUEGO LLAMOS A LAS DOS VARIABLES CON  todosMisAmigos donde estan todos mis amigos.
+       APARECIENDO EN LA CONSOLA ASI:
+       (6) ['manuel', 'carlos', 'cesar', 'alejandro', 'mario', 'manolo']
+       
+METODO SORT Y REVERSE
+ NOS PERMITE ORDENAR ALFABETICAMENTE NUESTROS ELEMENTOS, SOLO NOS PERMITE ARREGLAR TEXTO NO NUMEROS
+ 
+  A.CON SORT ORDENAMOS DE A-Z
+  var amigos = ['manuel','carlos','cesar','alejandro'];
+    amigos.sort()
+   console.log(amigos)
+   
+   B. REVERSE LO HACE VISCEVERSA ASI:
+     amigos.sort();
+      amigos.reverse();
+        console.log(amigos)
+      
+      
+      
+      
+      

@@ -1,0 +1,8 @@
+INSERTAR DATOS
+
+INSERT INTO "nombre_tabla" ("columna1", "columna2", ...)
+VALUES ("valor1", "valor2", ...);
+
+CON WHERE SON PARA ACCEDER AL REGISTRO Y SUS CONDICIONES
+
+GROUP BY PARA AGRUPAR LOS DATOS

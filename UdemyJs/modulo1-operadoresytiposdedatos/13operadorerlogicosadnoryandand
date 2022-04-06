@@ -1,0 +1,42 @@
+OPERADOR ADN OPERADOR LOGICO
+
+VERDADERO && VERDADERO =VERDADERO
+VERDADERO && FALSO = FALSO
+
+DEBEN CUMPLIRSE LAS DOS SENTENCIAS OBLIGATORIAMENTE
+
+let a = 15;
+let valMin = 0, valMax = 10;
+
+if( a >= valMin && a <= valMax ){
+    console.log("Dentro de rango");
+}
+else{
+    console.log("Fuera de rango");
+}
+
+EN ESTE CASO SALE "Fuera de rango", PERO SI LE COLOCAMOS POR EJEMPLO 8 "Dentro de rango"), YA QUE SE CUMPLE UN NUMERO ENTRE 0 A 10.
+
+______________________________________________OPERADOR OR ||
+
+VAMOS TRABAJR CON UN EJEMPLO DE UN PADRE QUE NECESITA IR AL JUEGO DE SU HIJO PERO QUIERE VER QUE DIA TIENE LIBRE
+ PARA QUE EL OPERADOR DE false LOS DOS ARGUMENTOS DEBEN SER false
+ 
+ FALSE || FALSE=FALSE
+ 
+ PERO SI 
+ 
+  FALSE || TRUE =TRUE
+  
+  TRUE || TRUE =TRUE
+  
+  
+  //Ejemplo OR (||), regresa true si cualquier operando es true
+let vacaciones = false, diaDescanso = true;
+if( vacaciones || diaDescanso ){
+    console.log("Padre puede asistir al juego del hijo");
+}
+else{
+    console.log("El padre está ocupado");
+}
+ 

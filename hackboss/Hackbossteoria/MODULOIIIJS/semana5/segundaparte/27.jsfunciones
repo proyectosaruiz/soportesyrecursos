@@ -1,0 +1,15 @@
+function saludar() {
+  console.log("funciones");
+}
+
+//FUNCION FLECHA
+const saludar = () => {
+  console.log("funciones");
+};
+
+//FUNCIONES ANONIMAS
+function(){
+    console.log("funciones")
+}
+
+() => console.log("funciones");

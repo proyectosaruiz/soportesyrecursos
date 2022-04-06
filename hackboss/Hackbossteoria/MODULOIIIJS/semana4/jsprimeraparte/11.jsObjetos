@@ -1,0 +1,58 @@
+// Creación objetos SE UTILIZA PARA GUARDAR PARES PARA VALORES
+
+
+
+  name     =         "pepe"
+   |                    |
+ESTIQUETA VALOR      VALOR
+
+ASI SERIA VARIAS CONSTANTES
+const name = "pepe";
+const lastname = "gonzalez";
+const birthYear = 1996;
+const favColor = "blue";
+
+// Pares de key: value PERO SE GUARDAN MEJOR, ESTO UN OBJETO {}
+const user = {
+  name: "pepe",
+  lastname: "gonzalez",
+  birthYear: 1996,
+  favColor: "blue",
+};
+
+KEY:PROPIEDAD
+VALUE:VALOR DE LA PROPIEDAD
+SERIA key =value;
+// new Object()ESTO ES PARA CREAR UN NUEVO OBJETO PERO NO SE UTILIZARA
+
+// Podemos escribir cualquier expresión que se evalúe a un valor
+
+const coche = {
+  marca: "maz" + "da",
+  cv: 100 + 120,
+};
+
+console.log(coche);
+
+// Acceder a datos de objetos
+
+const elDatoQueNecesito = "ciudad";
+
+const experiencia = {
+  ciudad: "Vigo",
+  actividad: "surfear",
+  dia: "martes",
+};
+
+console.log(experiencia.ciudad);
+console.log(experiencia[elDatoQueNecesito]);
+
+console.log(
+  `La experiencia es en ${experiencia.ciudad}, se va a ${experiencia.actividad} y es el ${experiencia.dia}`
+);
+
+
+
+   
+     
+     

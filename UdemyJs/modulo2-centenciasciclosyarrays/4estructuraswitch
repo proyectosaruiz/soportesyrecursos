@@ -1,0 +1,38 @@
+EN SWITCH SI NO COLOCAMOS BREACK PASARA AL OTRO CASO SIN VERIFICAR 
+AGREGAMOS LA VARIABLE NUMERO PARA PROBAR EN SWITCH
+
+COMO ES default SE USA SI NINGUNO DE LOS CASO SE USAN, SE PUEDE  USAR AL INICIO O AL FINAL
+
+let numero = 1;
+
+let numeroTexto = 'Valor desconocido';
+
+switch( numero ){
+    case 1: 
+        numeroTexto = 'Número uno';
+        break;
+    case 2:
+        numeroTexto = 'Número dos';
+        break;
+    case 3:
+        numeroTexto = 'Número tres';
+        break;
+    case 4:
+        numeroTexto = 'Número cuatro';
+        break;
+    default:
+        numeroTexto = 'Caso no encontrado';                
+}
+
+console.log(numeroTexto);
+
+
+_____________________________USO ESTRICTO DE SWITCH
+
+TAMBIEN SE USA EN CADENAS DE TEXTO 
+LA COMPARACION EXTRICTA TAMBIEN COMPARA TIPOS DE DATOS PRIMITIVOS ES DECIR UN STRING ES SENSIBLE ENTRE NUMBER, SI EL CASO ES STRING LA VARIABLE DEBE  SER STRING O SI NO PASA A DEFAULT
+
+
+
+
+

@@ -1,0 +1,39 @@
+LAAS DECLARACIONES NO LLEVA ";" PERO LAS EXPRESIONES DE LAS FUNCIONES SI
+
+//Declaración de la función
+function miFuncion(a, b){
+     return a + b;
+}
+
+//Llamando a la función
+let resultado = miFuncion(2, 3);
+console.log(resultado);
+
+NOTA: let sumar TIENE LOS VALORES DE UNA FUNCION ADEMAS QUE YA LE HABIAMOS DADO VALORES EN EL LET RESULTADO miFuncion(2, 3); PERO AHORA LA CONVERTIMOS EN UNA EXPRESIO ASI:
+//Declaración Función de tipo Expresión
+let sumar = function (a, b){return a + b};
+
+resultado = sumar(1, 2);
+console.log(resultado);
+
+SERIA ASI:
+
+//Declaración de la función
+function miFuncion(a, b){
+     return a + b;
+}
+
+//Llamando a la función
+let resultado = miFuncion(2, 3);
+console.log(resultado);
+
+//Declaración Función de tipo Expresión
+let sumar = function (a, b){return a + b};
+
+resultado = sumar(1, 2);
+console.log(resultado);
+
+
+REUTILIZANDO LA VARIABLE RESULTADO Y USANDOLA EN LA VARIABLE SUMAR QUE TAMBIEN TIENE UNA FUNCION QUE RETORNA UNA SUMA
+
+

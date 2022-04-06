@@ -1,0 +1,54 @@
+PARA CONSTRUIR EN ESTE EJEMPLO TIPO PERSONA, LA MEJOR FORMA ES CON CONSTRUCTOR
+
+ES UNA FUNCION ESPECIAL Y SE USA NEW PARA LLAMAR UNA FUNCION CON LA PRIMERA LETRA EN ESTE EJEMPLO Persona, SIMILAR COMO EL OBJETO persona.
+
+LA DIFERENCIA QUE PODEMOS CREAR VARIOS OBJETOS TIPOS Persona Y NO UN SOLO OBJETO let persona, ASI:
+  function Persona(nombre, apellido, email)
+
+ UTILIZANDO this Y CON new SE CREA ESTA NUEVA PROPIEDAD ASI: 
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
+
+EL NOMBRE DEL PARAMENTRO ES IGUAL AL NOMBRE DEL ATRIBUTO
+  this.nombre = nombre;
+        |          |
+    PROPIEDAD VARIABLE
+    
+AHORA PODEMOS CREAR VARIOS OBJETOS TIPO PERSONA, ES DECIR, REUTILIZAR Y CAMBIA LOS VALORES DEL Objeto padre y madre
+
+let padre = new Persona
+
+let madre = new Persona
+
+NO ES NECESARIO PASAR VALORES POR DEFECTO, ES DECIR ASI.
+   function Persona(nombre, apellido, email)
+        PERO SI QUEREMOS PODEMOS 
+         function Persona(nombre='Amilcar', apellido= 'ruiz', email='amilcar@hotmail.com')
+         
+ SIN EMBARGO LE PODEMOS DAR VALORES ASI 
+   let padre = new Persona('Juan', 'Perez', 'jperez@mail.com');
+    EN EL OBJETO NUEVO LLAMADO padre
+    
+ SI HACEMOS UN CAMBIO POR EJEMPLO DEL OBJETO padre SOLO AFECTARA ESE OBJETO, COMO EN EL SIGUIENTE OBJETO SOLO CAMBIAMOS EL NOMBRE:
+   padre.nombre = 'Carlos';
+   
+LA FUNCION COMPLETA:
+
+/Funcion constructor de objetos de tipo Persona
+function Persona(nombre, apellido, email){
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
+}
+
+let padre = new Persona('Juan', 'Perez', 'jperez@mail.com');
+console.log( padre );
+
+let madre = new Persona('Laura', 'Quintero', 'lquintero@mail.com');
+console.log( madre );
+
+padre.nombre = 'Carlos';
+
+console.log( padre );
+console.log( madre );

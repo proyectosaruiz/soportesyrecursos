@@ -1,0 +1,18 @@
+aling-content: SOLO FUCNIONA SI HAY MAS DE DOS FILAS
+
+ aling-content: stretch DISTRIBUYE EL TAMAÑO EN EL CONTENEDOR
+ 
+ CUANDO ESTA EN ROW Y TENEMIS JUSTIFY, ALING CONTEN Y ALING CONTENT  SE DARA POR EJEMPLO 
+    justify-content:flex-end 
+    con
+    aling-content:flex-star
+    aling-items: center
+      LAS CAJAS E PEGARAN ARRIBA A LA DERECHA POR FLEX-END
+TRUCOS DE EMET
+https://devhints.io/emmet
+CAJAS FLEX
+https://codepen.io/enxaneta/full/adLPwv
+
+JUSTIFY-CONTENT:CENTER
+ALING-ITEM CENTER CON ESTOS TRES CENTRAMOS
+FLEX-DIRECTION:ROW  

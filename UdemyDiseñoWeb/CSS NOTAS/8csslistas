@@ -1,0 +1,12 @@
+para quitar las viñetas
+list-style: none;
+
+ PARA QUITAR EL ESPACIADO SOLO QUITAMOS EL PADINNG COLOCANDOLO EN 0 ASI:
+ 
+ padding: 0px;
+ 
+ 
+ FLATICO ES UNA PAGINA PARA ICONOS 
+ 
+ PARA AGREGAR IMAGEN EL CHECK DE UNA LISTA PODEMOS CON
+ list-style-image: url(img/);

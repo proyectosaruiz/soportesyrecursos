@@ -1,0 +1,13 @@
+//ES RECOMENDABLE COLOCAR EL NOMBRE DE LA VARIABLE Y NO EL DATO PRIMITIVO, EN ESTE CASO HACEMOS LA VARIABLE adulto = 18;
+let edad = 20,
+  adulto = 18;
+if (edad >= adulto) {
+  console.log("Es mayor de edad");
+} else {
+  console.log("Es menor de edad");
+}
+
+//SIMPLIFICAMOS ASI
+let verEdad = 12;
+let resultado = verEdad >= 18 ? "Puede votar" : "Muy joven para votar";
+console.log(resultado);

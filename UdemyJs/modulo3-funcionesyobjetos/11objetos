@@ -1,0 +1,62 @@
+UN DATO PRIMITIVO NO TIENE PROPIEDAD NI METODOS, PERO LOS OBJETOS SI.
+
+UN OBJETO PUEDE TENER PROPIEDADES Y OBJETOS
+
+POR EJEMPLO ESTE OBJETO SE ALMACENA EN MEMORIA X0333, YA QUE ES HEXADECIMAL
+
+EN EL SIGUIENTE EJEMPLO LE DAMOS A UN OBJETO PROPIEDADES
+let x = 10;
+console.log(x.length);
+
+let persona = {
+    nombre: 'Juan',
+    apellido: 'Perez',
+    email: 'jperez@mail.com',
+    edad: 28,
+}
+
+PODEMOS ACCEDER A LOS VALORES ASI
+console.log(persona.nombre);
+console.log(persona.edad);
+console.log(persona.apellido);
+
+console.log(persona);
+
+_________________________________AGREGAMOS METODOS A LOS OBJETOS, AGREGANDO UNA FUNCION TIPO EXPRESION ASI CONCATENANDO LOS COMBRE Y APELLIDOS CON THIS. ASI:
+
+ 
+ let persona = {
+    nombre: 'Juan',
+    apellido: 'Perez',
+    email: 'jperez@mail.com',
+    edad: 28,
+    nombreCompleto: function(){
+        return this.nombre + ' ' + this.apellido;
+    }
+}
+
+console.log(persona.nombre);
+console.log(persona.edad);
+console.log(persona.apellido);
+console.log(persona.nombreCompleto());
+
+console.log(persona);
+
+THIS ES UNA VARIABLE QUE APUNTA AL OBJETO QUE SE ESTE EJECUTANDO EN ESE MOMENTO, PERO DEBEMOS USARLA DENTRO DEL OBJETO
+
+console.log(persona.nombreCompleto()); CON LOS () SABEMOS QUE TENEMOSQUE LLAMAR UNA FUNCION
+
+______________CREACION DE OBJETO
+
+CON LA PALABRA NEW PODEMOS RESERVAR EN MEMORIA Y CREAR OBJETOS, SERIA ASI
+
+let persona2 = new Object();
+persona2.nombre = 'Carlos';
+persona2.direccion = 'Saturno 15';
+persona2.tel = '55443322';
+
+console.log( persona2.tel );
+
+
+CON new Object(); LE DECIMOS QUE ES UN OBJETO
+

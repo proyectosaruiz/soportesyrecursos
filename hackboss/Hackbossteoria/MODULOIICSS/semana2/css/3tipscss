@@ -1,0 +1,35 @@
+PARA LOS CONTENEDORES PODEMOS HACERLE UNA MEDIDA MAXIMA Y MINIMA PARA QUE NO CAMBIE DEPENDIENDO DEL TAMAÑO DONDE SE ABRA
+
+ max-width: 800vw 
+ mam-width: 800vw
+ 
+    vh ES EL ALTO DE LA PANTALLA
+    
+POSITIONS
+
+  STIKCKY
+    CON sticky debemos colocarle TOP ASI:
+   position:sticky;
+   top:10px;
+   
+   
+   FIXED SE QUEDA FIJO, ESTA POR ENCIMA DEL HTML
+     position: fixed;
+     top:30px
+     left:30px;
+     DEBO RESERVAR MI CONTENEDOR  UN ESPACIO PARA EL FIXED Y NO CREE CONFLICTOS
+     
+     #stacking-context .item {} ES UN CONTENEDOR Y LOS LLAMO ASI
+      .item
+      
+      PARA PONER CAJAS ARRIBA DE OTRAS
+       CON EL 
+       z-index:10;
+         top:20px;
+         
+         #id PARA IDENTIFICARLO EN CSS
+   
+   
+   
+
+

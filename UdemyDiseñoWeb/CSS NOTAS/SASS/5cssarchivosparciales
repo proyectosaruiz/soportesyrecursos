@@ -1,0 +1,38 @@
+PRIMERO DEBEMOS HACER UN ARCHIVO EN SASS DENTRO DE LA CARPETA SASS
+
+LUEGO ABRIMOS LA TERMINAL Y UBICAMOS NUESTRA CARPETA 
+ Y COLOCAMOS EL SIGUIENTE COMANDO 
+   sass --whatch tabla.sass:tabla.css ESTA LA CARPETA DE SASS Y LA NUEVA EN CSS QUEREMOS
+   
+luego compilamos y luego hacemos otro archivo que utilizaremos para pegar los archivos y de ahi en el archivo sass principal colocaremos 
+
+estilosmenu
+
+@import headermenu
+
+*
+    margin: 0px
+    padding: 0px
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+    
+    
+    
+body
+    width: 90%
+    background: #000
+    color: #690e0e
+    font-size: 70px
+    text-align: center
+
+   div
+        background: #fff
+        width: 10%
+        height: 20%
+        margin: auto
+        
+        
+        
+        

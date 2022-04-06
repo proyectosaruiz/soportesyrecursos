@@ -1,0 +1,24 @@
+EN HTML
+<section id="principal">
+      <p class="content">uno</p>
+      <p class="content">dos</p>
+      <p class="content">tres</p>
+    </section>
+
+EN JS
+PARA SELECCIONAR UN PARRFO DE HTML ES ASI:
+
+const section = document.querySelector("#principal");
+console.log(section.children[2]);
+
+console.log(section.firstChild); EL PRIMER ELEMENTO
+
+console.log(section.lastChild); EL ULTIMO
+
+console.log(section.previousElementSibling);ELEMENTO ANTERIOR
+
+console.log(section.nextElementSibling); AL HERMANO POSTERIOR
+
+console.log(section.parentElement); ELEMENTO PADRE
+
+

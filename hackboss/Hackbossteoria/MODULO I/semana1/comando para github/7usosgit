@@ -1,0 +1,32 @@
+git branch VER EL LISTADO DE RAMAS
+
+git checkout [nueva_rama] PARA LA RAMA DE DESARROLLO CREADA
+
+Switched to branch ‘prueba’ PUEDE VER LOS CAMBIOS
+
+git branch -M main PARA CAMBIAR DE UNA RAMA PRINCIPAL A UNA MAESTRA
+
+git branch -d [nombre_de_ rama] ELIMMINAR RAMA
+
+git checkout master 
+git branch -d test VERIFICAS LA RAMA QUE QUIERAS BORRAR
+
+git merge [rama]  FUSIONAMOS LA RAMA QUE TRABAJAMOS A LA RAMA MASTER
+
+git branch --list COMPROBAR LAS RAMAS
+
+git checkout -b nombre-de-tu-rama CREAR UNA RAMA
+
+git push -u origin nombre-de-tu-rama SUIR UNA RAMA
+
+git log --merge PRODUCIR LISTA QUE NOS CAUSA CONFLICTOS
+
+git diff NOS AYUDA A VER DIFERENCIA ENTRE REPOSITORIOS Y ARCHIVOS
+
+git reset --mixed DESHASER CAMBIOS DE DIRECTORIOS
+
+git merge --abort AYUDA A SALIR DEL PROCESO ANTERIOR Y VOLVER AL ESTADO DONDE COMENZARA LA FUSION
+
+git reset PARA CUANDO CONFLICTOS EN FUSION Y VOLVERA A SU ESTADO ORIGINAL
+
+                         

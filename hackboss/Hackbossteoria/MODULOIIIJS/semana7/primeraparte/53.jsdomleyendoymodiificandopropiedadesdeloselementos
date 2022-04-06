@@ -1,0 +1,12 @@
+
+
+section.children[1].textContent; NOS PERMITE VER EL CONTENIDO
+
+console.log((section.children[1].textContent = "Mi Contenido")); MUTAMOS LOS DATOS DE UNA VARIABLE Y LA TENEMOS EN LA PAGINA
+
+
+console.log(section.children[1].innerTex ); NOS BUSCA TEXTO QUE NO APARECE EN PANTALLA QUE ESTEN OCULTO CON visibility:hidden
+
+console.log(section.innerHTML);DEMOSTRAMOS LOS HTML PURO
+
+section.innerHTML = <p>jejeje</p> CAMBIAR

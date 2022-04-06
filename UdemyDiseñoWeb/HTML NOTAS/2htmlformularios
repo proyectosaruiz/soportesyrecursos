@@ -1,0 +1,28 @@
+para iniciar sesion
+ NOta CAN I USE es una pagina para identificar los colores que soportan los navegadores
+ 
+ para  agregar numeros en un formulario
+ 
+ input="number"  min="1"max="10"> para numeros
+ 
+ input="range"  min="1"max="10"> eso dice un rango en barrita especifica
+ 
+ todos los imput estan 
+ 
+ https://developer.mozilla.org/es/docs/Web/HTML/Element/input
+ 
+para iniciar sesion
+
+form action="" method="">
+    
+    <input type="email" placeholder="Correo"name="correo" required>
+    <br>
+    <input type="password" placeholder="Contraseña" maxlength="20" required>
+    <br>
+    <textarea name="Mensaje" placeholder="Mensaje" ></textarea>
+
+    
+    <input type="submit" value="Enviar">
+
+ 
+</form>

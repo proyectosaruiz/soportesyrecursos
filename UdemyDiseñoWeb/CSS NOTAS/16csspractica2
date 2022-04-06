@@ -1,0 +1,242 @@
+EN CSS
+
+*{
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+
+    
+}
+
+body{
+    background: #4a465b;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.contenedor{
+    width: 1000px auto;
+    background: #ccc;
+    margin: 20px;
+    overflow:hidden; /* lo colocamos en el contenedor
+    padre para utilizar el floar left en los contenedores
+    hijo */
+}
+
+
+header{
+ background: #fff;
+
+
+}
+
+header nav{
+    width: 100%;
+}
+
+header nav ul {
+
+    width: 100%;
+    overflow: hidden; /* arreglamos el error */
+    list-style: none;
+}
+
+header nav ul li{
+
+float: left;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    color: black;
+}
+header nav ul li a:hover{
+    background: black;
+    color: #fff;
+}
+
+.main{
+
+    width: 70%;
+    background: #fff;
+    float: left;
+
+}
+
+.main .imagen{
+   width: 100%;
+}
+.main .imagen img{
+    width: 100%;
+    vertical-align: top;/* quitamos el margen */
+}
+
+.main .post{
+
+    padding: 40px;
+   
+  
+}
+
+.main .post article h2{
+    margin-bottom: 20px;
+    color: #424242;
+}
+
+.main .post article p{
+    margin-bottom: 15px;
+   line-height: 27px; /* distancia entre lineas*/
+}
+
+aside{
+    width: 30%;
+    background: #161f26;
+    padding: 20px;
+    float: left;
+    color: #fff;
+}
+aside .widget{
+margin-bottom: 20px;
+
+
+}
+
+aside .widget .titulo{
+   color: #ff8000;
+   border-bottom: 1px solid #ff8000;
+   margin-bottom: 10px;
+    
+    
+    }
+
+    aside .widget ul{
+        list-style: none;
+         
+         
+         }
+     aside .widget li{
+      border-bottom: 1px solid rgba(255,255,0.2);
+             
+             
+             }
+             aside .widget ul li{
+                color:#fff;
+                text-decoration: none;          
+                 
+                 }
+ aside .widget ul li:hover{
+     color: #8f8f8f;
+ }
+ aside  .widget{
+     line-height: 27px;
+ }
+
+ footer{
+     width: 1000px;
+     background: #0000;
+     color: bisque;
+     text-align: center;
+     padding: 10px;
+   
+ }
+ 
+ EN HTML
+ 
+ <!doctype html>
+<html lang="es,en,ga">
+    <head>
+       <meta charset="utf-8"/>
+       <title>pruebas css y HTML</title>  
+ 
+      
+<link rel="stylesheet" href="../Udemy/pruebasencss.css" type="text/css"/>
+     
+
+
+
+
+   </head>
+   <body>
+
+<div class="contenedor">
+<Header>
+   <nav>
+      <ul>
+ 
+  <li><a href="www.prueba1.com" class="inicio1">Iniciar Sesión</a></li>
+  <li><a href="www.prueba2.com" class="inicio1">Conócenos</a></li>
+  <li><a href="www.prueba2.com" class="inicio1">Contactenos</a></li>
+
+  </ul>
+     </nav>
+   </Header>
+
+
+   <section class="main">
+      <div class="imagen">
+      <img src="../Udemy/img/descarga (1).jpeg" alt="">
+   </div>
+
+<section class="post">
+      <article>
+         <h1>Titulo del Articulo</h1>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+       aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+       sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   
+      </article>
+    
+   </section>
+</section>
+   <aside>
+         
+        <div class="widget">
+       <h3 class="titulo">Articulo Destacado</h3>
+
+       <ul>
+ 
+         <li><a href="www.prueba1.com" class="inicio1">enlace1</a></li>
+         <li><a href="www.prueba2.com" class="inicio1">enlace2</a></li>
+         <li><a href="www.prueba2.com" class="inicio1">enlace3</a></li>
+       
+         </ul>
+
+
+      </div>
+      <div class="widget">
+         <h3 class="titulo">Informacion</h3>
+
+       <p>Elementum curabitur vitae nunc sed. Arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc. Varius morbi
+         enim nunc faucibus a pellentesque sit amet. Volutpat sed cras ornare arcu. Blandit massa enim nec dui nunc mattis 
+         enim ut tellus. Ultrices vitae auctor eu augue ut lectus arcu. Sem nulla pharetra diam sit amet. Scelerisque in 
+         dictum non consectetur. Diam sit amet nisl suscipit adipiscing bibendum est. Ac feugiat sed lectus vestibulum mattis
+          ullamcorper. Curabitur gravida arcu ac tortor. Sapien faucibus et molestie ac feugiat sed. Consectetur purus ut 
+          faucibus pulvinar. Interdum velit euismod in pellentesque massa placerat. Odio facilisis mauris sit amet massa
+           vitae. Nam at lectus urna duis convallis convallis.
+         </p>
+      </div>
+   </aside>
+</div>
+      <footer>
+
+         <p>Creado por la Ñonga</p>
+    
+      </footer>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+<html>

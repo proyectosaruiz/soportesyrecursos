@@ -1,0 +1,24 @@
+PRIMERO DEBEMOS SABER SI MYSQL ESTA INSTALADO, SI ES ASI LO DESINSTALAMOS CON L SIGUIENTE COMANDO:
+ 1. BORRAMOS
+sudo apt-get remove --purge mysql-server mysql client mysql-common -y
+
+2. LE DAMOS YES
+
+sudo apt-get autoremove -y
+
+3. Y LIMPIAMOS 
+
+sudo apt-get autoclean
+ 
+4. BORRAMOS LAS CARPETAS QUE TENGA MYSQL
+
+rm -rf /etc/mysql
+ SI NO NOS PERMITE HACEMOS 
+  sudo rm -rf /etc/mysql
+  
+5. POR ULTIMO
+ rm -rf /var/lib/mysql
+ 
+6.ESTO BORRA TODO LO QUE TENGA MYSQL
+
+sudo find / -iname 'mysql*' -exec rm -rf {} \;

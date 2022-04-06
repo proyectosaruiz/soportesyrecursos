@@ -1,0 +1,15 @@
+STORAGE EN LA CONSOLA
+
+LOS DATOS QUE GUARDE EN EL LOCAL STORAGE ALMACENA
+SESION ALMACENA MIENTRA ESTE ABIERTA
+
+"use strict";
+localStorage.setItem("thema", "dark"); //NOS PERMITE GUARDAR DATOS QUE NO SE GUARDE CON METODOS JSON NOS PERMITE TODO A TEXTO Y LUEGO HAGO UN PARSETIN PARA RECUPERAR
+const tareas = ["tarea1", "tarea2"];
+localStorage.setItem("tareas", JSON.stringify(tareas)); //LA GUARDAMOS
+const JSONTareas = localStorage.getItem("tareas"); //LO SACAMOS
+console.log(JSON.parse(JSONTareas)); //LO SACAMOS
+
+localStorage.removeItem("thema"); //BORRAMOS
+localStorage.clear(); //BORRA TODO
+

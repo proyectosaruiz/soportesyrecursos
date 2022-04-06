@@ -1,0 +1,13 @@
+ls -a TODAS LAS CARPETAS
+
+rm 'personal BORRAR CARPETA
+
+git config --global --unset user.email ENTRAR A CONFIGURACION DE UN USUARIO EN GIT
+
+cd .ssh BUSCAR CARPETA SSH 
+
+ssh-keygen -t ed25519 -C "amilcarjro@gmail.com" CREANDO USUARIO
+
+cat personal.pub IDENTIFICAR EL SHH PARA HACER UN USUARIO EN GITHUB COMPIANDO EL SIGUIENTE ENLACE
+
+mkdir nombre del archivo y su extension PARA CREAR UNA CARPETA

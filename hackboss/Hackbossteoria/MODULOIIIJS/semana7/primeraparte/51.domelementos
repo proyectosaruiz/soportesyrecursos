@@ -1,0 +1,15 @@
+EN HTML 
+
+<section id="principal">
+      <p class="content">uno</p>
+      <p class="content">dos</p>
+      <p class="content">tres</p>
+    </section>
+ 
+ 
+ EN JS 
+ const primerParrafoDentroDeSection = document.querySelector("section p");
+console.log(primerParrafoDentroDeSection);
+
+const ParrasfoDentroDeSection = document.querySelectorAll("section p");
+console.log(primerParrafoDentroDeSection);

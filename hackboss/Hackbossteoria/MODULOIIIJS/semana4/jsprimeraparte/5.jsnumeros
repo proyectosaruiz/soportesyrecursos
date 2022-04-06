@@ -1,0 +1,43 @@
+// String
+
+const nombre = "samu";
+
+console.log(nombre);
+
+// Numbers
+
+const edad = 44;
+
+console.log(edad);
+
+const resultado = 0.2 + 0.1; NOS DARA MAL JS
+console.log(resultado.toFixed(2));USAMOS ESTE METODO PARA DEFINIR CUANTOS DECIMALES, DEVUELVE STRINGS
+
+
+console.log(9007199254740994 + 9007199254740995);
+
+// BigInts
+
+console.log(9007199254740994n + 9007199254740995n);
+
+// Booleans
+
+const isFull = true;
+const isGameOver = false;
+
+console.log(isGameOver);
+
+// Null
+
+const direccion = null;
+
+console.log(direccion);
+
+// Undefined
+
+let genero;
+
+console.log(genero);
+
+// Symbol
+

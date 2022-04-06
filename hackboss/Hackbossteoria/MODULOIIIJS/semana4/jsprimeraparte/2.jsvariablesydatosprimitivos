@@ -1,0 +1,35 @@
+// Todo lo que veas después de barras dobles, es un comentario.
+
+// Lee con atención los comentarios: pues explican el código JavaScript.
+
+// Una variable es un nombre símbolico para un valor.
+
+// Las variables son declaradas con la palabra let:
+
+LOS ELEMENTOS NO SE MODIFICAN
+
+let x; // Declara una variable de nombre x.
+
+// Los valores pueden ser asignados a variables con el símbolo =  
+
+x = 0; // Ahora la variable x es igual a 0 
+x // => 0: Una variable se evalúa con su valor.
+
+// JavaScript acepta diversos tipos de valores 
+
+x = 1;   // Números.
+
+x = 0.01; // Los números pueden ser enteros y reales.
+
+x = "hello world"; // Cadenas de texto (Strings) entre comillas.
+
+x = 'JavaScript';// Los apóstrofes (Single quote marks) también delimitan strings.
+
+x = true; // Un valor booleano.
+
+x = false; // El otro valor booleano.
+
+x = null; // Null es un valor especial que significa "sin valor."
+
+x = undefined; // Undefined es otro valor especial similar a null.
+ 

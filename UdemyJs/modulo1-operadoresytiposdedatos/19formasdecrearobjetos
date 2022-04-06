@@ -1,0 +1,37 @@
+PODEMOS CREAR UN NUEVO OBJETO ASI:
+
+ let miObjeto = new Object();
+ 
+ let miObjeto2 = {};
+
+PARA UN STRING:
+
+   CLASE TIPO STRING
+    let miCadena1 = new String('Hola');
+
+   LO MAS RECOMENDABLE 
+    let miCadena2 = 'Hola';
+    
+EN NUMEROS
+  CLASE
+  let miNumero = new Number(1);
+  
+  RECOMENDABLE
+  let miNumero2 = 1;
+  
+BOLEANOS
+  CLASE
+    let miBoolean = new Boolean(false);
+   RECOMENDADA
+    let miBoolean = false;
+ 
+PARA LOS ARRAYS
+  let miArreglo1 = new Array();
+    let miArreglo2 = [];
+    
+PARA LAS FUNCIONES
+   let miArreglo1 = new Array();
+   let miArreglo2 = [];
+
+
+

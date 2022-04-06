@@ -1,0 +1,54 @@
+let miNumero = "18";
+ //console.log(typeof miNumero);
+ 
+ 
+ HACER UNA VARIABLE edad Y CONVERTIR miNumero A NUMBER
+ let edad = Number(miNumero);
+ //console.log(typeof edad);
+ if(edad >= 18){
+	 console.log("Puede votar");
+ }
+ else{
+	 console.log("Muy joven para votar");
+ }
+ 
+ SIMPLIFICANDO COMO ANTES OPERADOR  TERNARIO
+ let resultado = (edad >= 18)? "Puede votar" : "Muy joven para votar";
+ console.log( resultado );
+ 
+ ___________________________________________________FUNCION isNaN
+ 
+ NaN ES NOT A NUMBER
+ 
+ ES ESTE CASO NO SE PUEDE PASAR EL STRING A NUMERO YA QUE 18x POR EJEMPLO NO LO RECONOCERA COMO UN NUMERO EN EL SIGUIENTE EJEMPLO
+ 
+ let miNumero = "18x;
+
+let edad = Number(miNumero); 
+console.log( edad ); EN CONSOLA SERA NaN
+
+LO PODEMOS CORREGIR ASI
+
+COLOCAMOS UN IF DENTRO DE OTRO IF Y PREGUNTAMOS SI ES UN NUMBER ES DECIR UN NaN Y DE SER ASI SALE EN CONSOLA, No es un número, PERO SI ES UN NUMBER PASA AL OTRO IF ASI, ADEMAS AL FINAL UTILIZAMOS EL OPERADOR TERNARIO PARA VERIFICAR SI ES UN NUMERO let resultado = edad >= 18 ?  Y ASI COMPROBAMOS TODO, VALIDANDO SI TRABAJAMOS CON NUMERO
+
+let miNumero = "18";
+
+let edad = Number(miNumero);
+console.log(edad);
+
+if (isNaN(edad)) {
+  console.log("No es un número");
+} else {
+  if (edad >= 18) {
+    console.log("Puede votar");
+  } else {
+    console.log("Muy joven para votar");
+  }
+}
+
+if (isNaN(edad)) {
+  console.log("No es un número");
+} else {
+  let resultado = edad >= 18 ? "Puede votar" : "Muy joven para votar";
+  console.log(resultado);
+}

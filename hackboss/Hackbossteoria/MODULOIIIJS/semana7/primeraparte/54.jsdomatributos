@@ -1,0 +1,29 @@
+ EN HTML ES aria-label
+ EN JS ariaLabel
+ 
+ EN JS class en HTML ES className
+ 
+ 
+ <section id="principal">
+      <p class="content">uno</p>
+      <p class="content">dos</p>
+      <p class="content">tres</p>
+    </section>
+    
+ EJMPLO CAMBIAMOS EL COLOR DE UN DATO
+  LLAMAMOS EN JS
+  const section = document.querySelector("#principal");
+ 
+ 
+ section.firstElementChild.style.backgroundColor = "blue";
+ 
+ PARA ACCEDER AL VALOR PODEMOS 
+ 
+ EN HTML 
+ <p data-counter="content">tres</p>
+ 
+ EN JS 
+  console.dir(section.lastElementChild.dataset.counter);
+  
+  PARA ATRIBUTOS DESCONOCIDOS QUE NO EXISTEN O LO CREAMOS SERIA ASI
+  console.log(section.getAttribute(id))

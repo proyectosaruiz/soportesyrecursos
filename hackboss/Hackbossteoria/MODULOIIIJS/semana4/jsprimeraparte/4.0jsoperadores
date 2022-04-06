@@ -1,0 +1,34 @@
+// Los operadores actúan sobre los valores (operandos) para producir un nuevo valor. 
+// Los operadores aritméticos son los más comunes:
+3 + 2 // => 5: adición
+3 – 2 // => 1: sustracción
+3 * 2 // => 6: multiplicación
+3 / 2 // => 1.5: división
+points[1].x – points[0].x //=> 1: operandos más complicados también funcionan
+"3" + "2" // => "32": + agregar números o concatenar cadenas
+
+// JavaScript define algunos operadores aritméticos en forma abreviada
+let count = 0;  // Define una variable
+count++;        // Incrementa la variable
+count--;        // Disminuye la variable
+count+= 2;      // Suma 2: igual que count = count + 2;
+count*= 3;      // Multiplicar por 3: lo mismo que count = count * 3;
+count           // => 6: Los nombres de variables también son expresiones.
+  
+// Los operadores de igualdad y relación prueban si los dos valores son iguales,
+// desiguales, menor que, mayor que, etc. Se evalúan como verdaderas o falsas.
+let x = 2, y = 3; // Estos signos = son asignaciones, no pruebas de igualdad.
+x === y     // => false: igualdad
+x != y      // => true: desigual
+x < y       // => true: menor que 
+x <= y      // => true: menor o igual que
+x > y       // => false: mayor que
+x >= y      // => false: mayor o igual que
+"two" == "three" // => false: las dos cadenas de texto son diferentes
+"two" > "three" // => true: "tw" es alfabéticamente mayor que "th"
+false == (x > y) // => true: false es igual que false 
+
+// Los operadores lógicos combinan o invierten valores booleanos
+(x == 2) && (y == 3)// => true: las dos comparaciones son verdaderas. && es AND(y)
+(x > 3) || (y < 3) // => false: ninguna de las comparaciones es verdadera.
+!(x == y) // => true: ! invierte un valor booleano

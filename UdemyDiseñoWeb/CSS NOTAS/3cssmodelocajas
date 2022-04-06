@@ -1,0 +1,19 @@
+*{
+
+} es para seleccionar todos los elementos de la pagina
+
+float left es para que este uno al lado del otro
+
+
+LO elementos tipo bloque por defecto no puede ponerser uno al lado del otro
+
+los elementos tipo enlace si y no se hacen cambios con padding o margin
+coloca color y ver si es tipo blo o enlace
+
+
+con el elemento display:inline-block; podemos transformarlo en bloque
+
+
+
+
+

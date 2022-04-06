@@ -1,0 +1,14 @@
+ con callback
+ 
+ const sum = (a, b, callback) => {
+  let resultado;
+
+  setTimeout(() => {
+    resultado = a + b;
+  }, 2000);
+  callback(resultado);
+};
+
+sum(2, 2, (resultado) => {
+  console.log(resultado);
+});

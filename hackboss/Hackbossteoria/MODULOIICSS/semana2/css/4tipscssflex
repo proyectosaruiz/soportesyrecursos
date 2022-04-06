@@ -1,0 +1,41 @@
+
+display:
+ row ES PARA FILAS CON
+  flex-direction:row;
+   
+ column ES PARA COLUMNA
+ 
+ row-reverse LO HACE ALREVES
+ column-reverse lo hace alreves
+ 
+ 
+ PARA CENTRAR EN EL EJE HORIZONTAL EN ROW
+  justify-content: center alinien en el centro
+  justify-content: end PARA EL FIN DEL CONTENEDOR
+  justify-content: space-between ES PARA DEJAR ESPACIO ENTRE ELLOS
+  justify-content: space-around ES IGUAL QUE BETWEEN PERO TAMBIEN DEJA ESPACIO POR FUERA
+  
+  PARA EL EJE VERTICAL EN ROW
+  
+  aling-items:flex-star ES PARA EL PRINCIPIO
+  aling-items: flex-center EN EL CENTRO
+  aling-items:flex-end EN EL FIN DEL TEXTO
+  
+  EN COLUMN ES ALREVES
+   COLUMN=    JUSTIFY CONTENT:VERTICAL
+              aling-items: HORIZONTAL
+              
+              
+ CON FLEX-WRAP LOS OBJETOS NO SE SALEN DEL CONTENEDOR Y SE PASA PARA ABAJO SI LO TENEMOS 
+      min-width:200px
+      COLOCANDO
+        flex-wrap:wrap HACE QUE NO SE SALGA DEL CONTENEDOR
+                        Y LOS METE EN OTRA FILA
+CUANDO UTILIZAMOS 
+     flex-wrap Y HAY MAS DE DOS FILAS 
+       justify es HORIZONTAL
+        ALING-ITEM ES VERTICAL
+          LAS DOS DE CADA FILA
+          
+ ESO PASA CUANDO HAY WRAP
+   

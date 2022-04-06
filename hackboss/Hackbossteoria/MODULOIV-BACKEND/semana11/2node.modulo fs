@@ -1,0 +1,46 @@
+
+PARA USARLA:
+const fs = require('fs')//sistema de ficheros y archivos
+
+PARA ESCRIBIR UN ARCHIVO
+ PUEDE CREAR UN ARCHIVO Y VER SI ESXISTE SIENDO ASINCRONA:
+  const fs = require("fs"); //sistema de ficheros y archivos
+
+fs.writeFile("ejemplo.txt", "texto a guardar", (err) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log("el archivo se ha guardado correctamente");
+  }
+});
+
+SINCRONA PARA HACER PRUEBAS
+
+fs.writeFileSync("ejemplo.txt", "texto a guardar");
+
+
+PARA UN CALLBACK
+
+const readFile = async (filename) => {
+  try {
+    const data = await fs.readFile(filename, "utf8");
+    console.log(data);
+  } catch (err) {
+    console.error(`error leyendo archivo ${filename}`);
+  }
+};
+
+readFile("ejemplo.txt");
+
+
+PARA BORRAR UN ARCHIVO
+
+
+PARA VER METADATOS PRINTMETADATOS
+
+UN PARSEINT EN UN METODO DE ENTRADA QUE NOS FACILITA EL USO
+
+
+URL NOS ORDENA UN PARSEINT CON EL FIN DE PODER VISUALIZAR LAS URL
+
+encodeuri PARA REVISAR UNA URL NO ES VALIDA

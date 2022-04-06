@@ -1,0 +1,16 @@
+
+
+const users = [
+  { id: 1, name: "Pedro" },
+  { id: 2, name: "Laura" },
+];
+
+
+
+const userFound = users.find((user) => {
+  return user.id === 2;
+});
+console.log(userFound);
+
+
+

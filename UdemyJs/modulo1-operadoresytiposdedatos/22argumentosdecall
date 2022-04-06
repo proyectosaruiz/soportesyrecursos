@@ -1,0 +1,32 @@
+PODEMOS PASAR ARGUEMENTOS CON CALL
+ASI:
+nombreCompleto: function(titulo, tel)
+
+NO ES NECESARIO EN ESTE EJEMPLO USAR THIS PORQUE SOLO SON PARAMETROS QUE ESTAMOS USANDO SIMPLEMENTE COMO PROPIEDADES DE ESTE OBJETO
+
+CUANDO LO LLAMAMOS POR EJEMPLO EN EL OBJETO
+      console.log( persona1.nombreCompleto.call( persona2, 'Ing', '5544332211' ) 
+      
+PODEMOS AGREGAR UN NUMERO E Ing, SALIENDO EN CONSOLA 
+
+Ing: Carlos Lara, 5544332211  QUE SON LOS VALORES DE persona2 + titulo, tel DE LOS ARGUMENTOS AGREGADOS DANDO VALORES EN EL console.log  persona2, 'Ing', '5544332211' 
+
+LA FUNCION COMPLETA SERIA ASI:
+ let persona1 = {
+    nombre: 'Juan',
+    apellido: 'Perez',
+    nombreCompleto: function(titulo, tel){
+        return titulo + ': ' + this.nombre + ' ' + this.apellido + ', ' + tel;
+    }
+}
+
+let persona2 = {
+    nombre: 'Carlos',
+    apellido: 'Lara'
+}
+
+//Uso de call para usar 
+//el metodo persona1.nombreCompleto con los datos del persona2
+console.log( persona1.nombreCompleto('Lic.', '44332288') );
+
+console.log( persona1.nombreCompleto.call( persona2, 'Ing', '5544332211' ) );

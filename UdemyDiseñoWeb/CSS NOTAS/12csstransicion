@@ -1,0 +1,28 @@
+CON ESTA PROPIEDAD HACEMOS LA TRANSICION MAS LENTA PARA AGREGAR MAS ESTILO A LAS CAJAS CON EL SIGUIENTE EJEMPLO
+
+.caja{
+
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    transition:ease 1s; 
+}
+
+     transition:ease 1s all; le agremamos a todos las animaciones de la caja
+     
+     PODEMOS AUMENTAR EL TAMAÑO EN :hover
+     
+     
+PODEMOS HACER ROTAR CON :hove
+
+transform: rotate(360deg);
+
+
+ CON delay, ES DECIR RETRASO LA TRANSICION SE TARDA POR EJEMPLO DOS SEGUNDOS EN EJECUTAR
+ 
+  transition-delay: 2s;
+  
+  
+  USAREMOS TAMBIEN
+  
+  transition: all ease 1s linear; para que se tarde en la transicion en la vuelta elm mismo tiempo

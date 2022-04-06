@@ -1,0 +1,23 @@
+EN EL CICLO WHILE SOLO VAMOS  A TENER LA CONDICION
+ 1. SERIA ASI
+   while(condicion);
+     codigo
+     
+EJEMPLO:
+ var numero = 1;
+ while(numero <= 10){
+ document.write(numero + '<br>');
+ numero = numero + 1; ---DEBEMOS COLOCAR PARA QUE NO SE EJECUTE INFINITAMENTE
+ }
+ 
+ 2.DO WHILE
+ NOS PERMITE EJECUTAR EL CODIGO AUNQUE SEA UNA VEZ:
+ var numero = 1;
+do {
+console.log(numero);
+numero = numero + 1;
+
+ }while(numero <= 10);
+ 
+  SI COLOCAMOS 11 EL CODIGO NO SE VA EJECUTAR, SI NO SOLO UNA VEZ
+ 

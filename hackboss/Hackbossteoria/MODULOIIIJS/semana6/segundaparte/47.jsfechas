@@ -1,0 +1,47 @@
+FECHA EN JS
+ LA FECHA ACTUAL EN JS ES ASI:
+ 
+ const now = new Date();
+console.log(now);
+
+CUANTO TIEMPO HA TRANSCURRIDO ASI:
+
+  console.log("Unix epoch en este momento", Date.now()); //DESDE ESE INSTANTE
+  
+ PARAMENTRO DE UNIX PODEMOS PASARLE AL CONTRUCTOR UNIX PARA FECHA ANTERIORES Y NO ES RECOMENDABLE PASARLE EN TEXTO:
+   //EXTRAER AÑO ACTUAL:
+
+   console.log(`Año actual`, now.getFullYear());
+   EL MES SERIA getMonth, LOS MESES COMIENZAN DESDE 0
+   console.log(`dia del mes`, now.getDate()); //dia
+     console.log(`dia de la semana`, now.getDay()); //dia de la semana
+     
+     ______________UN IF PARA SABER SI ES FIN DE SEMANA
+     
+     const dayOfWeek = now.getDay();
+
+if (dayOfWeek === 5 || dayOfWeek === 6) {
+  console.log("es fin de semana");
+} else {
+  console.log("no es fin de semana");
+}
+
+TAMBIEN PODEMOS HACER SET COMO SETFULLYEAR
+
+_________________________________________________________________
+
+//FECHA COMPLETA:
+
+const now = new Date();
+console.log(
+  now.getHours() +
+    ":" +
+    now.getMinutes() +
+    "--" +
+    now.getDate() +
+    "/" +
+    (now.getMonth() + 1) +
+    "/" +
+    now.getFullYear()
+);
+

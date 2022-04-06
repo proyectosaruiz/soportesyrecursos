@@ -1,0 +1,37 @@
+// console.log(2 + 2);
+// console.log(2 - 2);
+// console.log(2 * 3);
+// console.log(6 / 3);
+// console.log(6 % 2.5); HALLAR EL RESTO DE UNA DIVISION
+
+Math. ES UN OBJETO PARA HACER FUNCIONES MATEMATICAS
+
+
+Math.pow(2, 3); // => 8: 2 elevado a la 3ª potencia EL DOS ES EL NUMERO QUE QUEREMOS EXPONER Y ES LA BASE, ES DECIR, DOS AL CUBO
+
+Math.round(0.6); // => 1.0: redondear al entero más cercano 
+
+Math.ceil(0.6); // => 1.0: redondear al entero más alto
+
+Math.floor(0.6); // => 0.0: redondear al entero más bajo
+
+Math.abs(-5); // => 5: valor absoluto, SI ES NEGATIVO, NOS DARA EL POSITIVO
+
+
+Math.max(2, 5, 1); // 5: Devuelve el argumento más grande, NOS VA A DAR EL NUMERO EL MAYOR
+
+Math.min(2, 5, 1); // 1: Devuelve el argumento más pequeño
+
+Math.random(); // Número aleatorio entre 0 y 1, sin incluir este último. ES UN GENERADOR DE NUMEROS SIN INCLUIR EL 1.
+ EJEMPLO:
+  console.log(Math.random() * 6);//NO PUEDE DAR UN 6, SOLO PUEDE DAR 5.99 Y DARA ENTRE 0-5.99   
+  EJEMPLO REDONDEANDO SIN DECIMALES:
+   console.log(Math.floor(Math.random() * 9));
+  
+Math.PI; // π: circunferencia de un círculo / diámetro
+
+
+Math.sqrt(3); // La raíz cuadrada de 3 O CUBICA SERIA 2
+
+Math.log(10); // Logaritmo natural de 10
+

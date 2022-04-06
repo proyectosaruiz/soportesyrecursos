@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es,en,ga">
+
+    <head>
+       <meta charset="utf-8"/>
+       <title>sr.gastronomo</title>  
+       <meta name="sistema de rentabilidad hostelera" content="inventario,rentabilidad,
+                                                               scorecard,gestion,comida,gastronomia,gourmet,negocio
+                                                               restaurante,hosteleria,restauracion"/>  
+       <link rel=stylesheet href="estilos.css" type="text/css"/>
+   </head>
+   <body>
+
+
+readonly es un atributo que no nos permite editar
+maxlength cantidad de letras
+required para llenar obligatoriamente
+<input type="submit" value="Enviar"> boton de enviar
+disable para desabilitar
+
+textarea name="mensaje" id="" para hacer campos de textos
+placeholder es para borrarlo predeterminado en el campo
+
+<input type="radio" name="genero" value="hombre">Hombre para seleccion
+    <input type="radio" name="genero" value="mujer">Mujer 
+
+label sirve para vincular atributos 
+for hace que realice la busqueda del nombre
+
+ejemplo:
+
+<input type="radio" name="genero" value="hombre"><label for="hombre">Hombre</label>
+    <input type="radio" name="genero" value="mujer"><label for="mujer">Mujer</label>
+
+  </body>
+<html>
+
+Formulario de nuevo usuario seria asi
+
+<form action="" method="">
+    <input type="text" placeholder="Nombre" maxlength="30" required>
+    <br>
+    <input type="email" placeholder="Correo"name="correo">
+    <br>
+    <label for="pais">Pais</label>
+    <select name="pais" id="pais">
+        <option value="Mexico">Mexico</option>
+        <option value="España">España</option>
+    </select>
+    <br>
+    <input type="radio" name="genero" value="hombre" id="hombre"><label for="hombre">Hombre</label>
+    <input type="radio" name="genero" value="mujer" id="mujer"><label for="mujer">Mujer</label>
+    <br>
+    <input type="checkbox" name="terminos" id="terminos"><label for="terminos">Terminos y Condiciones</label>
+     <br>
+     <br>
+    <input type="submit" value="Enviar">
+
+ 
+</form>
+
+
+
+
+
+
+

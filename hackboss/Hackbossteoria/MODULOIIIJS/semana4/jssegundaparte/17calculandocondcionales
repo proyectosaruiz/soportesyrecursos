@@ -1,0 +1,42 @@
+CALCULADOR
+ ----CON CONDCIONALES
+ 
+  const a = 4;
+  const b = 8;
+  const option = "*";
+
+console.log(`${a} * ${b} = ${a * b}`);
+
+PODEMOS HACER OPERACIONES ASI
+
+
+---SI COMPROBAMOS UN EJERCICIO
+ SERIA ASI:
+  const a = 4;
+ const b = 8;
+ const option = "-"; OPTION NOS DICE CON=== PODEMOS CONCATENAR SI ES SUMA O RESTA
+
+if (option === "+") {
+  console.log("Es un suma");
+} else if (option === "-") {
+  console.log("Es una resta");
+}
+
+-----TAMBIEN PODEMOS COMPROBAR CON:
+
+const a = 4;
+const b = 8;
+const option = "*";
+
+if (option === "+") {
+  console.log("Es un suma");
+} else if (option === "-") {
+  console.log("Es una resta");
+} else if (option === "*") {
+  console.log("Es una Multiplicacion");
+} else if (option === "/") {
+  console.log("Es una división");
+} else {
+  console.log("No se usa");
+}
+ CON ESTO OPTION BUSCAMOS CADA UNA

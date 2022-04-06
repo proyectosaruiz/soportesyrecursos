@@ -1,0 +1,33 @@
+USAREMOS call EN EL SIGUIENTE EJEMPLO TENIENDO DOS VARIABLES persona1 Y persona2, PERO DENTRO DE persona1 TENEMOS LA FUNCTION nombreCompleto
+
+ENTONCES HACEMOS UN 
+persona1.nombreCompleto.call( persona2 ) ) 
+
+LLAMANDO A LA FUNCTION DE persona1 PERO LE DAMOS LOS VALORES DE persona 2, ES DECIR, EL METODO CALL CON EL METODO
+  nombreCompleto: function(){
+        return this.nombre + ' ' + this.apellido;
+      }
+    }
+RECORDANDO QUE REUTILIZAMOS POR QUE TIENEN LOS MISMOS ELEMENTOS
+LA FUNCION COMPLETA 
+
+let persona1 = {
+    nombre: 'Juan',
+    apellido: 'Perez',
+    nombreCompleto: function(){
+        return this.nombre + ' ' + this.apellido;
+    }
+}
+
+let persona2 = {
+    nombre: 'Carlos',
+    apellido: 'Lara'
+}
+
+//Uso de call para usar 
+//el metodo persona1.nombreCompleto con los datos del persona2
+console.log( persona1.nombreCompleto() );
+
+console.log( persona1.nombreCompleto.call( persona2 ) );
+
+

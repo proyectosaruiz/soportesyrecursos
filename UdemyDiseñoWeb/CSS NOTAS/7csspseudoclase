@@ -1,0 +1,44 @@
+
+
+a:active{Nos permite dejar de color un enlace mientras se usa
+
+   background: #000;Nos permite dejar de color un enlace mientras se usa
+}
+
+   img.menu:visited{ ESta propiedad hace cambiar de color los enlaces ya visitados
+            background: #ccc;
+           
+                   }
+                   
+para seleccionar por ejemplo un parrafo de varios usamos la propiedad ejemplo:
+
+ div p:nth-child(2){} y esta selecciona el parrafo dos de nuestro html
+   
+PARA QUE LA PRIMERA LETRA SEA GRANDE 
+h1{
+
+   font-size: 25px;
+}
+
+h1::first-letter{
+
+   font-size: 45px;
+font-weight: bold;
+ }
+ 
+ EN EL CASO DE LA PRIMERA LINEA ES h1::first-line
+ 
+ PODEMOS HACER CAJAS EN CSS CON LA SIGUIENTE PROPIEDAD
+ 
+ caja::before {
+
+content: contenido detro de la caja;
+display: block;
+color: #000;
+position: relative;
+ } Siempre hay que agregar content 
+ 
+ 
+ PUEDE SER AFTER O BEFORE
+                   
+       

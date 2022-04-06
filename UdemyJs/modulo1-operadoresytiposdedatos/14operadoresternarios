@@ -1,0 +1,20 @@
+ES VERDADERA O FALSO DEPENDIENDO LOS VALORES DE LA VARIABLE
+TIENE TRES PARTES
+CONDICION?=EXPRE1:EXRE2
+
+SERIA ASI
+
+ let resultado = (1>2) ? "verdadero" : "falso";
+   LA CONDICION ES QUE SI 1 ES MAYOR QUE 2
+   EN TRUE APARECERIA verdadero
+   EN FALSE falso 
+   EN ESTE CASO DA FALSE PERO SE DIVIDE EN TRES PARTES PODEMOS AGREGAR STRING O NUMBER EN LOS BOOLEANOS
+   
+   let resultado = (1>2) ? "verdadero" : "falso";
+console.log(resultado);
+
+ASI USAMOS EL NUMERO ES PAR UTILIZANDO EL OPERADOR TERNARIO 
+
+let numero = 110;
+resultado = ( numero % 2 == 0 ) ? "Número par" : "Número impar"; 
+console.log( resultado );

@@ -1,0 +1,38 @@
+
+const nums = [4, 5, 7, 9];
+
+const arrayNuevo = nums.map((numero) => {
+  console.log(numero);
+  return "pepe";
+});
+
+console.log(arrayNuevo);
+
+EN CONSOLA
+4
+5
+7
+9
+[ 'pepe', 'pepe', 'pepe', 'pepe' ]
+
+EL MAP NOS HACE UN ARRAYS NUEVO
+_________________________________________________________
+
+EL FILTER NOS VA EVALUAR DE TRUE A FALSE
+
+const nums = [4, 2, 1, 8];
+
+const arrayNuevo = nums.filter((numero) => {
+  console.log(numero);
+  return numero < 4;
+});
+
+console.log(arrayNuevo);
+ EN CONSOLA
+ 4
+2
+1
+8
+[ 2, 1 ]
+
+

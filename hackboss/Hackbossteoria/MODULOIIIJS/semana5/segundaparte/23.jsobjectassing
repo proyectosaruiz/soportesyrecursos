@@ -1,0 +1,16 @@
+const otro = { nombre: "maria" };
+const usuario = {
+  nombre: "pepe",
+  apellido: "ruiz",
+  direccion: {
+    pais: "pais",
+    provincia: "coruña",
+  },
+};
+
+Object.assign(usuario, otro);
+console.log(usuario);
+
+
+ESTE NO SE USA
+

@@ -1,0 +1,17 @@
+NECESITA OTRA FUNCION QUE TRADUZCA AL ESPAÑOL, 
+UNA FUNCION QUE PASAMOS COMO UN ARGUMENTO PARA DESARROLLAR OTRA FUNCION.
+ PODEMOS PASAR TODAS LAS FUNCIONES QUE QUERRAMOS
+ 
+const traslateES = (nombre) => `Hola ${nombre}`;
+const traslateEN = (nombre) => `Hello ${nombre}`;
+const traslateGL = (nombre) => `Ola ${nombre}`;
+
+const saludar = (nombre, funcionQueTraduce) => {
+  const saludo = funcionQueTraduce(nombre);
+  return saludo;
+};
+
+console.log(saludar("pepe", traslateES));
+console.log(saludar("Mario", traslateEN));
+console.log(saludar("Jose", traslateGL));
+

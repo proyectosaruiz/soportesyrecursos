@@ -1,0 +1,22 @@
+"use strict";
+
+const users = [
+  { id: 1, name: "Pedro" },
+  { id: 2, name: "Laura" },
+];
+
+function getUser(nombre) {
+  const userFound = users.find((usuario) => {
+    return usuario.name === nombre;
+  });
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (userFound === undefined) {
+        reject(new TypeError("el usuario no existe"));
+      } else {
+        resolve(userFound);
+      }
+    }, 2000);
+  });
+}
+

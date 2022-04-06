@@ -1,0 +1,48 @@
+PODEMOS MODIFICAR EL INDICE DE UN ARREGLO ASI:
+DECLARAMOS EL ARRAYS
+
+
+const autos = ['BMW','Mercedes Benz','Volvo'];
+
+Y LO MODIFICAMOS ASI
+_____________________________________PARA AGREGAR UN ELEMENTO
+ DEL ARRAYS SERIA ASI
+
+const autos = ['BMW','Mercedes Benz','Volvo'];
+
+autos.push('Audi');
+console.log(autos); Y EN CONSOLA
+ 'BMW', 'MerecedesBenz', 'Volvo', 'Audi'
+ 
+
+TAMBIEN PODEMOS ASI:
+
+console.log(autos.length);
+autos[autos.length] = 'Cadillac';
+ SIN DEJAR INDICES VACIOS CADILLAC SERIA INDICE 4 PERO ELEMENTO 5
+ 
+ SI QUEREMOS ELEMENTOS VACIOS ASI:
+ 
+ autos[6] = 'Porshe';
+console.log(autos);
+
+ESTARIA VACIO EL INDICE 5 Y PORSHE SERIA EL 6, ELEMENTO 5
+ 
+
+______________________PARA IDENTIFICAR UN ARRAYS
+ SI HACEMOS 
+ 
+ console.log(typeof autos); NOS DICE QUE ES UN OBJETO, MAS QUE NO NOS DICE QUE ES UN ARRAYS
+ 
+ POR ELLO HACEMOS 
+ 
+ console.log( Array.isArray(autos) ); NOS DA TRUE, ES DECIR, QUE ES VERDAD ES UN ARRAYS
+ 
+ TAMBIEN PREGUNTAMOS ES UNA INSTANCIA DE TIPO ARRAYS ASI
+ 
+ console.log( autos instanceof Array);
+
+
+
+
+

@@ -1,0 +1,75 @@
+1. ACTUALIZAMOS EN UBUNTU
+
+ sudo apt-get update
+ 
+2. LUEGO DEJAR TODO LISTO ASI 
+
+sudo apt-get upgrade
+
+3. AHORA DESCARGAMOS 
+
+sudo apt-get install mysql-server
+
+4. VERIFICAMOS
+ mysql --version
+
+5.INSTALAMOS CONFIGURACION  DE SEGURIDAD
+ sudo mysql_secure_installation
+ 
+ 6.LUEGO NOS DIRA CREAR CONTRASEÑA LE DECIMOS QUE NO Y CREAREMOS DOS USUARIOS
+  EN LA CONTRASEÑA COLOCAMOS :root 
+  Y HARA 4 PREGUNTAS QUE LE DIREMOS YES
+ ADMINISTRADOR "root"
+ USUARIO
+ 
+ 7.CONFIGURAR LOS PERMISOS
+ 
+ sudo mysql -u root
+ 
+ SI PIDE CONTRASEÑA COLOCAREMOS root
+ 
+ 8. ENTRAMOS MYSQL A LA TERMINAL Y COLOCAMOS 
+ SALIENDO EN LA TERMINAL
+ 
+ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> 
+
+9. LE DAREMOSM LOS PERMISOS  EN TODO A root
+
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
+
+10. ACUALIZAMOS LOS PRIVILEGIOS
+ FLUSH PRIVILEGES;
+ 
+11. SALIMOS CON exit
+
+12. PROBAMOS
+ DECIMOS QUE QUEREMOS ENTRAR Y NOS PIDE EL PASSWORD
+ 
+ mysql -u root –p
+ 
+13.CREAMOS UN USUARIO demo
+
+CREATE USER 'demo'@'localhost' IDENTIFIED BY 'password'; 
+
+CON LA CONTRASEÑA password
+
+14. LE DAMOS PRIVILEGIOS 
+
+ GRANT ALL PRIVILEGES ON *.* TO 'demo'@'localhost';
+ 
+15. ACTUALIZAMOS PRIVILEGIOS
+ FLUSH PRIVILEGES;
+ 
+16. PROBAMOS AL USUARIO demo
+mysql -u demo –p
+
+18.PARA LA INTERFAZ GRAFICA
+ 
+ sudo snap install mysql-workbench-community
+ 
+ 19. CONECTAMOS CON LA INTERFAZ
+sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service
+ 
+

@@ -1,0 +1,69 @@
+CONDICIONALES SON LAS EXPRESIONES BOLEANOS SI ES TRUE O FALS
+
+ CON IF
+   EXPRESION ES CUALQUIER COSA QUE SE PUEDA VERIFICAR
+   
+   LOS SCOPE ES DECIR {} SON DE AFUERA HACIA ADENTRO COMO LA CAJA PPADRE E HIJO
+   
+   -----VERDADERO Y FALSO SE EFECUTAN ASI
+const a = 5;
+const b = 3;
+// if (a > b) {
+//   console.log("se cumple la condicion");CONDICIONAL SIMPLE
+// }
+
+if (a > b) {
+  console.log("se cumple la condicion");
+  if (a >= 0) {
+    console.log(`${a} es un numero positivo`);
+    if (a >= 0);
+  }
+}
+//SI LA CONDICION NO SE CUMPLE PASA A  LA OTRA POR ANIDACION
+
+
+------CON DOS CONDICIONES NO ANIDADAS:
+
+ const idioma = "ES";
+
+if (idioma === "ES") {
+  console.log("Hola AMigo :D");
+}
+if (idioma === "EN") {
+  console.log("Hello friend :D");
+} else{
+   No hay idioma encontrado
+} LA ULTIMA CONDICION DICE QUE NO HAY CONDICIONES DISPONIBLE, SOLO SE EJECUTARA 1 DE LAS SENTENCIAS
+
+<<NOTA:EL ELSE NOS PERMITE PASAR A LA OTRA Y NO EJECUTAR, PERO SI LO HACEMOS POR SEPARADO CADA CONDICIONAL SE EJECUTARA SOLA, ES DECIR, ELSE ES UN CONECTOR
+
+----COMPARA EL PRIMERO Y SI NO CUMPLE LA CONDICION ES ASI:
+
+const a = 5;
+
+if (a > 0) {
+  console.log(`${a} es mayor que cero`);
+} else if (a > 3) {
+  console.log(`${a} es mayor que tres`);
+}
+
+----CONDICIONAL SWITCH
+
+const nombre = "Paco";
+switch (nombre) {
+  case "Manuel":
+    console.log("Hola Manuel");
+    break;
+  case "Paco":
+    console.log("Hola Paco");
+    break;
+  case "Ramon":
+    console.log("Hola Ramon");
+    break;
+  default:
+    console.log("No te conozco");
+}
+
+CON DEFEAULT ES COMO EL ELSE SOLO SI NO CONSIGUE LA EXPRESION COLOCA LO QUE QUERAMOS.
+CON BREAK HACE QUE SI CONSIGUE LA EXPRESION SE PARA
+

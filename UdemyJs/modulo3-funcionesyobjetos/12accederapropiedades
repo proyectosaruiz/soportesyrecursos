@@ -1,0 +1,31 @@
+PODEMOS ACCEDER A LA PROPIEDADES COMO UN ARRAYS
+
+console.log( persona['apellido'] );
+
+TAMBIEN PODEMOS ACCEDER ASI:
+
+for( nombrePropiedad in persona){
+    console.log( nombrePropiedad );
+    
+    CON nombrePropiedad PODEMOS ACCEDER A LOS NOMBRE PROPIEDADES DE NOMBRE, PERO SI QUEREMOS  ACCEDER A UN VALOR DE LAS PROPIEDADES SERIA ASI:
+    
+    console.log( persona[nombrePropiedad]);
+    
+    let persona = {
+    nombre: 'Juan',
+    apellido: 'Perez',
+    email: 'jperez@mail.com',
+    edad: 28,
+    nombreCompleto: function(){
+        return this.nombre + ' ' + this.apellido;
+    }
+}
+
+console.log( persona.nombre);
+console.log( persona['edad'] );
+
+//for in
+for( nombrePropiedad in persona){
+    console.log( nombrePropiedad );
+    console.log( persona[nombrePropiedad]);
+}

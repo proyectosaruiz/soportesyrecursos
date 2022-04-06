@@ -1,0 +1,23 @@
+"use strict";
+const usuario = {
+  nombre: "pepe",
+  apellido: "ruiz",
+};
+
+const masDatosUsuarios = {
+  edad: 35,
+  pais: "españa",
+};
+
+const usuarioCompleto = {
+  ...usuario,
+  ...masDatosUsuarios,
+};
+
+const copiaUsuario = {
+  ...usuario,
+};
+console.log(usuario);
+
+
+TRAER DATOS

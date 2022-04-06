@@ -1,0 +1,21 @@
+OPERADORES ARITMETICOS:
+
+
+ // console.log(2 + 2);
+// console.log(2 - 2);
+// console.log(2 * 3);
+// console.log(6 / 3);
+// console.log(6 % 2.5);
+
+Math.pow(2, 3); // => 8: 2 elevado a la 3ª potencia
+Math.round(0.6); // => 1.0: redondear al entero más cercano
+Math.ceil(0.6); // => 1.0: redondear al entero más alto
+Math.floor(0.6); // => 0.0: redondear al entero más bajo
+Math.abs(-5); // => 5: valor absoluto
+Math.max(2, 5, 1); // 5: Devuelve el argumento más grande
+Math.min(2, 5, 1); // 1: Devuelve el argumento más pequeño
+Math.random(); // Número aleatorio entre 0 y 1, sin incluir este último
+Math.PI; // π: circunferencia de un círculo / diámetro
+Math.sqrt(3); // La raíz cuadrada de 3
+Math.log(10); // Logaritmo natural de 10
+

@@ -1,0 +1,7 @@
+  1. git clone "direccion_respositorio_enunciados" 
+  2. Crear repositorio nuestro en github 
+  3. git clone "direccion_repositorio_github" 
+  4. Copiar los enunciados de los ejercicios que están en el repositorio de enunciados y pegarlos en nuestro repositorio 5. Resolvemos los ejercicios en nuestro repositorio 
+  6. git add . 
+  7. git commit -m "mensaje" 
+  8. git push 

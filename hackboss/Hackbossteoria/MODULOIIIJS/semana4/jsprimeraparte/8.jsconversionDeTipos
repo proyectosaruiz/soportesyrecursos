@@ -1,0 +1,62 @@
+"use strict";
+
+----CONVERSION; ES CUANDO NOSOTROS HACEMOS EL CAMBIO EXPLICITO
+----COERCION: ES CUANDO JS DECIDE REALIZAR EL CAMBIO IMPLICITAS
+
+//UNA CONVERSION DE TIPO EXPLICITA, ES DECIR, LA HACEMOS MANUAL SERIA PASAR STRING A NUMBER
+
+const edad = "20";
+console.log(Number.parseInt(edad));LO CONVERTI EN NUMERO
+
+
+
+--PODEMOS HACER UN VALOR NUEVO DEL VALOR ORIGINAL, PERO LOS STRINGS NO CAMBIAN
+EJEMPLO
+ let edad = 19;
+  edad = 32; NO CAMBIAMOS EL VALOR QUE ES DE TIPO STRING PRIMITIVO, CAMBIO
+    NO MUTAMOS EL NUMERO, CAMBIAMOS EL VALOR QUE ALMACENE EN LA VARIABLE
+    
+    
+    
+--PERO PODEMOS CAMBIAR LA VARIABLE LET ASI:
+  
+let edad = "19";
+edad = Number.parseInt(edad); //LA VARIABLE LA PUEDO CAMBIAR POR SER LET
+console.log(edad);
+LA PASAMOS DE STRINGS A NUMBER, PERO NO CAMBIAMOS LA STRINGS ORIGINAL
+
+EJEMPLO:
+
+
+const user = {
+  name: "Amilcar",
+  apellido: "Ruiz",
+  colorFav: "gris",
+};
+
+user.comidaFav = "Caraotas";LE AGREGUE A LA VARIABLE OTRO ELEMENTO QUE ES comidaFav, NO PUEDO CAMBIAR LA VARIABLE SOLO QUE COLOCAMOS MAS COSAS AL OBJETO, POR SER UN TIPO DE DATOS QUE PODEMOS MODIFICAR
+
+console.log(user);
+
+
+
+// const precio = "20.5";
+
+// console.log(parseInt(precio));LO TRANSFORMA A UN ENTERO
+// console.log(parseFloat(precio));SI LO QUEREMOS CON DECIMALES
+
+// const birthYear = prompt("¿En qué año naciste?");
+// console.log(birthYear);
+
+// console.log(2022 - birthYear);
+
+// console.log(10 + "5" - 1);
+
+const edad = 20;
+
+// Al intentar acceder a un método de un tipo primitivo (en este caso el número 20) Javascript crea un objeto de ese tipo para que tengamos acceso al método correspondiente
+// Javascript convierte edad en un new Number(edad) para acceder al método toString
+console.log(edad.toString());
+
+console.log(typeof new Number(edad));
+

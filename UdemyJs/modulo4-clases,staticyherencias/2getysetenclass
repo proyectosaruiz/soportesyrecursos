@@ -1,0 +1,43 @@
+IGUAL QUE CON LOS OBJETOS 
+GET PARA LEER LOS VALORES DE UN ATRIBUTO
+SET PARA MODIFICAR LOS VALORES DE UN ATRIBUTO
+
+EL METODO GET NO SE PUEDE LLAMAR IGUAL QUE LA PROPIEDAD POR ESO SE USA _nombre POR EJEMPLO
+  this._nombre = nombre; 
+  
+  PARA LUEGO LLAMARLO
+       get nombre(){
+        return this._nombre;
+        
+   NO ES NECESARIO USAR () YA QUE SI CREAMOS UNA VARIABLE Y LE DAMOS new Persona PODEMOS LLAMAR A get
+   
+    let persona1 = new Persona('Juan', 'Perez');
+    
+    Y AL LLAMARLO
+     console.log( persona1.nombre )
+     
+ TAMBIEN PODEMOS MODFICAR CON SET 
+   set nombre(nombre) {
+    this._nombre = nombre;
+  }
+  
+  CREAMOS persona1.nombre = "Juan Carlos"; 
+   AL LLAMARLOS :
+     console.log(persona1.nombre); 
+     
+ EL EJEMPLO COMPLETO SERIA ASI:
+  class Persona {
+  get nombre() {
+    return this._nombre;
+  }
+  set nombre(nombre) {
+    this._nombre = nombre;
+  }
+}
+
+let persona1 = new Persona("Juan", "Perez");
+persona1.nombre = "Juan Carlos"; //set nombre('Juan Carlos')
+console.log(persona1.nombre);
+
+_________________HOISTING
+ NO PODEMOS DECLARAR HOISNTING EN LAS CLASES

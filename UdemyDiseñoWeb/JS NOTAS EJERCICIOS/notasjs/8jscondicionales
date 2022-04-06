@@ -1,0 +1,46 @@
+CONDICIONALES
+
+1. CONDCIONAL IF
+ ES UNA ESTRUCTURA QUE NOS PERMITE TOMAR DECISIONES DEPENDIENDO DE LA CONDICIONE LE PONGAMOS, ES LA FPORMA EN QUE NUESTRO SITIO WEB TOME UNA DECISION. ES DECIR PENSAR.
+  ES if.
+   EJEMPLO:
+    var edad = 17; ESTA ES LA VARIABLE
+    if (edad =17){
+        document.write('Eres mayor de edad');
+    }else{
+        document.write('Eres mayor de edad');
+    }
+LAS CONDICIONALES ES SI ES MAYOR O MENOR DE EDAD, EN ESTE CASO ES 17, ES DECIR, ES MENOR DE EDAD 
+EJEMPLO: 
+ if (pais == 'Mexico'){             ---- SI EL PAIS ES IGUAL == A MEXICO, ES DECIR COMPARAMOS
+        document.write('Eres mexicano');---ME DEMUESTRAS -ERES MEXICANO"
+    } else if(pais == 'España'){
+        document.write('Eres español')
+    }else {
+        document.write('No sabemos de donde eres')}--SI NO ERES MEXICANO O DE ESPAÑA --NO SABEMOS--
+        
+    
+2.CONDICIONAL SWICTH
+
+
+
+var pais = 'Colombia';--LE DAMOS LA VARIABLE PAIS
+switch(pais){
+    case 'Mexico':  ---SEA DEL CASO QUE SEA MEXICO
+    document.write('Eres mexicano'); ---EJECUTAMOS EL SIGUIENTE CODIGO
+    break;
+    case 'Colombia':
+    document.write('Eres colombiano');
+    break;
+    case 'España':
+    document.write('Eres español');
+    break;
+    default:
+    document.write('No sabemos');
+    break;
+    
+   
+    
+    
+    
+    

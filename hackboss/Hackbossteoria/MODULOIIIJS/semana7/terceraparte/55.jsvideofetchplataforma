@@ -1,0 +1,72 @@
+FETCH, ES COMO AJAX, ES EL METODO PARA SOLICITAR CONTIDO DE URL
+SE HACE UNA PETICION DEL NAVEGADOR Y DEVUELVE DEL HTML, REALIZA UNA PETICION CUANDO CARGAMOS UNA PETICION.
+
+PARA EMPEZARA A PROBAR HACEMOS DENTRO DE LA CARPETA DONDE TENEMOS EL HTML Y JS UN ARCHIVO TXT Y LO ABRIMOS POR LA TERMINAL CON ESE ARCHIVO CORRESPONDIENTE Y LO VISUALIZAMOS EN EL NAVEGADOR.
+
+http://127.0.0.1:5500/texto.txt ES EL SERVIDOR LOCAL, ES COMO DECIR: localhost 0555
+
+LAS PETICIONES GET SIGNIFICA DAME ESAS PETICIONES
+
+FETCH=>NOS PERMITE HACER  PETICIONES CON DOS PAREMETROS
+
+1 LAS URL A LA QUEREMOS HACER LA PETICION
+2 UN OBJETO DONDE SE CONFIGURA ESA FUNCION
+
+PRIMERO HACEMOS UNA VARIABLE DONDE USEMO EL METODOS FETCH Y LA URL DONDE ESTA UBICADA
+
+NOTA, SOLO LO PUEDES DEV DESDE LE NAVEGADOR Y NO EN EL VSC
+
+404 ES QUE NO FUE ENCONTRADA
+
+RECONOCEMOS LOS DATOS TXT POR EJEMPLO ASI
+async function main() {
+  const response = await fetch("../texto.txt");
+
+  // console.log(response);//VEMOS QUE RECONOCE EL ARCHIVO
+  // console.log(response.status); //NOS DA UN ESTADO QUE ESTA BIEN SI DIERA 404 ES FALLO, LA PETICION FUE BIEN
+  // console.log(response.ok); //NOS DA UN TRUE, ES DECIR QUE ESTA AHI
+  if (response.ok) {
+  } else {
+    console.log("hubo un error de peticion");// SI NO ESTUVIERA EL ARCHIVO SERIA ASI
+  }
+}
+
+main();
+
+PARA EXTRAER USAREMOS DOS METODOS
+
+Y DEVUELVE UNA PROMESA PARA TEXTO ES ASI
+
+
+async function main() {
+  const response = await fetch("../texto.txt");
+
+  if (response.ok) {
+    const text = await response.text(); //LLAMAMOS AL CONTENIDO CON RESPONSE.TEXT QUE ES LE NOMBRE QUE LE DIMOS A LA VARIABLE Y () ES LO QUE ESTA ADENTRO
+    console.log(text);
+  } else {
+    console.log("hubo un error de peticion");
+  }
+}
+
+main();
+
+
+SI QUEREMOS FUNCIONABILIDAD SERIA CON JSON
+
+async function main() {
+  const response = await fetch("/data.json");
+
+  if (response.ok) {
+    const text = await response.json(); //LLAMAMOS AL CONTENIDO CON RESPONSE.TEXT QUE ES LE NOMBRE QUE LE DIMOS A LA VARIABLE Y () ES LO QUE ESTA ADENTRO
+    console.log(text);//LO RECONOCE COMO UN ARRAY
+  } else {
+    console.log("hubo un error de peticion");
+  }
+}
+
+main();
+
+
+
+

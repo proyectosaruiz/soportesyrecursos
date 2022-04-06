@@ -1,0 +1,59 @@
+LOAS TIPOS DE OOERADORES EN JS SON:
+ En JavaScript encontramos cinco tipos de operadores:
+ 
+ 
+ 1.ASIGANACION=NOS PERMITEN ASIGNAR UN VALOR A UNA VARIABLE, PODEMOS DEJAR LAS VARIABLES DECLARADAS POR EJEMPLO
+    var nombre;
+       nombre = 'Amilcar';
+       
+       
+    NOTA:RECOMENDABLE COLOCAR TODAS LAS VARIABLES AL INICIO DEL DOCUMENTO Y LUEGO LA PUEDES LLAMAR.
+    
+    EJEMPLO    
+     var nombre;
+     var pais;
+     var numero;
+     
+     LUEGO DE DAMOS EL OPERADOR DE ASIGNACION:
+      nombre = 'Amilcar'; NOS PERMITE ASIGNAR EL VALOR A LA VARIABLE.
+      
+      
+       
+2.Aritméticos O MATAMATICO:NOS PERMITE HACER OPERACIONES, VAR RESULTADO
+
+    var numero1=10;
+    var numero2=5;
+    var resultado = numero1 + numero2; PUEDE SER SUMA, RESTA
+    document.write(resultado);
+    
+    PARA MULTIPLICACION "*" Y DIVISION "/"
+    LA DE "%" NOS SIRVE PARA SABER CUANTOS NOS SOBRA AL REALIZAR UNA DIVISIOON, EJEMPLO SI TENGO 11 Y LO DIVIDIMOS ENTRE 5 SOBRARIA 1.
+
+ 
+
+
+
+ICREMENTO Y DECREMENTO; ES PARA BAJAR O SUBIR CANTIDADES BASADOS EN LAS VARIABLES DADAS, EJEMPLO:
+   var numero1=10;
+       
+         var resultado = numero1 - 1;
+         document.write(resultado);
+
+                       Ó
+                       TAMBIEN ASI:
+                       
+                var numero1=10;
+       
+         var resultado = --numero1;
+         document.write(resultado);
+  SI INCREMENTAMOS SERIA ASI
+   var numero1=10;
+       
+         var resultado = ++numero1;
+         document.write(resultado);
+
+NOTA:PODEMOS AGREGAR RESULTADO ASI:
+  document.write(numero1);
+     
+
+

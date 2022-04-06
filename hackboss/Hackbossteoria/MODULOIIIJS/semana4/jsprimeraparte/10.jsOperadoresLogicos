@@ -1,0 +1,78 @@
+
+
+1.&&  COMPRUEBA QUE TODOS LOS VALORES SEAN TRU, SI TODOS SON TRUE DA TRUE PERO SI HAY ALGUN FALSE TODO ES FALSE, EJEMPLO:
+  console.log(true && true); CONSOLA TRUE
+  console.log(true && false); CONSOLA FALSE
+  console.log(false && true); CONSOLA FALSE
+  console.log(false && false); CONSOLA FALSE
+ 
+ 
+ 2. || SIEMPRE DARA FALSEconsole.log(true && true); CONSOLA TRUE DA TRUE
+  console.log(false || false); CONSOLA FALSE
+  console.log(false || true); CONSOLA TRUE
+  console.log(true || false); CONSOLA TRUE
+  console.log(true && true); CONSOLA TRUE
+ 
+ 
+ ---NOTA:SIEMPRE DEVUELVE EL ULTIMO VALOR QUE ANALIZARON EJEMPLO
+ console.log(false || false || ""||  8 || "TEXTO"); ES DECIR 8 QUE LLEGO AL QUE DIO TRUE Y PARA
+ 
+ EJMPLO:const colorFavoritoDelFormulario = "";
+const colorFavorito = colorFavoritoDelFormulario || "rojo";
+
+console.log(colorFavorito); APARECE "rojo" YA QUE ES FALSE, PORQUE 
+PERO SI AGREGAMOS colorFavoritoDelFormulario UN TEXTO:
+
+ const colorFavoritoDelFormulario = "azul";
+const colorFavorito = colorFavoritoDelFormulario || "rojo";
+
+console.log(colorFavorito); DICE AZUL, YA QUE LLEGO ES AZUL Y ES UN TRUE Y DEVUELVE EL ULTIMO VALOR QUE ES AZUL
+ 
+ 3.NULLISH OPERATOR ??
+ 
+ ES COMO EL OR, COMPRUEBA QUE EL VALOR DE LA IZQUIERDA SEA NULL O UNDIFINE DEVUELVE EL VALOR DE LA DERECHA.
+  EJEMPLO:
+   console.log(null ?? "pepe"); CONSOLA DICE PEPE POR QUE SOLO ARROJA A LA DERECHA SI EN LA IZQUIERDA ES NULL
+   
+   console.log(undefined ?? "pepe");
+   CONSOLA DICE PEPE POR QUE SOLO ARROJA A LA DERECHA SI EN LA IZQUIERDA ES undefine
+   
+  --PERO SI EL VALOR DE LA IZQUIERDA ES OTRO:
+  console.log(false ?? "pepe"); EN ESTE EJEMPLO COLOCAMOS FALSE, DA EL DE LA DERECHA
+   
+   UN EJEMPLO SI UN FORMULARIO VIENE VACIA PODEMOS USAR ?? ASI:
+   ES DECIR, SEA NULL O UNDIFINE
+     
+     const colorFavoritoDelFormulario = "azul";
+const colorFavorito = colorFavoritoDelFormulario ?? "rojo";
+
+console.log(colorFavorito); EN CONSOLA APARECE AZUL PORQUE ?? ESTA LLENO
+ 
+ PERO SI NO LO LLENAMOS QUEDA EN BLANCO:
+   const colorFavoritoDelFormulario = "";
+const colorFavorito = colorFavoritoDelFormulario ?? "rojo";
+
+console.log(colorFavorito);EN BLANCO EN CONSOLA
+
+ EJEMPLO REAL DE ??
+ console.log(colorFavorito);
+
+const horasJugadasFormulario = null;
+
+const horasJugadas = horasJugadasFormulario ?? "no respondió"; // Si lo de la izquierda es NULL o UNDEFINED, devuelve lo de la derecha. Si no, devuelve lo de la izquierda
+
+console.log(horasJugadas); APARECE EN CONSOLA  no respondió YA QUE horasJugadasFormulario = null; Y COMO NULL EN LA IZQUIERA PASA AL TEXTO DE LA DERECHA
+   
+   
+   
+   
+   
+ 
+ 
+ 
+
+
+
+   
+     
+     

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Día 3: accesibilidad</title>
+    <meta name="author" content="Samuel Rodriguez" />
+    <meta name="description" content="Clases en HAB sobre accesibilidad" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 tabindex="0">Hola, vamos a aprender sobre accesibilidad</h1>
+
+      <nav>
+        <ul>
+          <li><a href="/">Enlace uno</a></li>
+          <li><a href="/">Enlace dos</a></li>
+          <li><a href="/">Enlace tres</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 tabindex="0">
+        Vamos a ver un caso en el que necesitamos los atributos aria
+      </h1>
+      <ul>
+        <li>
+          <section>
+            <button
+              id="expander_1"
+              aria-label="Haz click para desplegar el contenido de la sección"
+              aria-expanded="false"
+              aria-controls="content_1"
+            >
+              Sección uno
+            </button>
+            <p id="content_1" hidden aria-labelledby="expander_1">
+              Contenido de la sección uno.
+              <a href="/" aria-label="Leer más sobre contenido uno">Leer más</a>
+            </p>
+          </section>
+        </li>
+        <li>
+          <section>
+            <button
+              id="expander_2"
+              aria-label="Haz click para desplegar el contenido de la sección"
+              aria-expanded="false"
+              aria-controls="content_2"
+            >
+              Sección dos
+            </button>
+            <p id="content_2" hidden aria-labelledby="expander_2">
+              Contenido de la sección dos.
+              <a href="/" aria-label="Leer más sobre contenido dos">Leer más</a>
+            </p>
+          </section>
+        </li>
+        <li>
+          <section>
+            <button
+              id="expander_3"
+              aria-label="Haz click para desplegar el contenido de la sección"
+              aria-expanded="false"
+              aria-controls="content_3"
+            >
+              Sección tres
+            </button>
+            <p id="content_3" hidden aria-labelledby="expander_3">
+              Contenido de la sección tres.
+              <a href="/" aria-label="Leer más sobre contenido tres"
+                >Leer más</a
+              >
+            </p>
+          </section>
+        </li>
+      </ul>
+      <p id="price" aria-live="polite" data-price="1">Precio: 1€</p>
+      <button
+        id="price_button"
+        aria-label="Haz click para cambiar el precio que está encima"
+        aria-controls="price"
+      >
+        Cambiar precio
+      </button>
+    </main>
+  </body>
+</html>

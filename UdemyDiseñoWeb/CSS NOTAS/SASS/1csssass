@@ -1,0 +1,33 @@
+puede ser archivos
+
+.scssn ES MAS NUEVA Y HACE QUE NO REPITAMOS ATRIBUTOS Y COLOCAMOS UN SELECTOR DENTRO DE OTRO
+
+EJEMPLO 
+
+body{
+ 
+background: #f2f2f2;
+}
+
+.contenedor{
+   background: #fff; colocamos un titulo dentro de otro
+.titulo{
+    color: #000;
+}
+
+}
+
+
+
+
+.sas NO UTILIZA LLAVES Y HACE TABULACIONES, TAMPO ";" 
+EJEMPLO 
+ .contenedor
+   background: #fff
+   .titulo
+    color: #000
+      p 
+       tex-decoration: none
+       
+
+  

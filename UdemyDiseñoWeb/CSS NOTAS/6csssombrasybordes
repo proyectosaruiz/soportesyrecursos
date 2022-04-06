@@ -1,0 +1,9 @@
+Para sombrear una caja utilizaremos lo siguientes atributos en CSS
+
+box-shadow: 0 5px 3px rgba(0,0,0,.5);
+
+Y PARA LOS BORDES 
+border: dashed#484848; rayas
+border: solid #484848; solido
+border: double #785278;doble
+border: dotted #568556; puntos
